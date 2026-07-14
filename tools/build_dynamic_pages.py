@@ -98,54 +98,296 @@ def build_raids_page():
     print(f"  raids.html -> {len(bosses)} bosses, {len(modifiers)} modifiers")
 
 # =================================================================
-# LEGENDARY SITES  ->  gameplay/world/legendary-monuments.html
+# STRUCTURES + LEGENDARY MONUMENTS + BIOMES
+#   -> gameplay/world/structures.html
+#   -> gameplay/world/legendary-monuments.html
+#   -> gameplay/world/biomes.html
 # =================================================================
+# Landmark structures that are legendary encounter sites, named after the
+# location rather than the Pokémon. Grounded in the pack's own lumymon radar
+# recipes (e.g. necrozma_dawn_radar, space_time_radar, calyrex_ice_radar)
+# plus Pokémon canon for the location names.
+LANDMARK_LEGENDS = {
+    "bell_tower": "Ho-Oh",
+    "burned_tower": "Raikou / Entei / Suicune",
+    "whirl_island": "Lugia",
+    "celebi_shrine": "Celebi",
+    "sky_pillar": "Rayquaza",
+    "dyna_tree": "Galarian Articuno / Zapdos / Moltres",
+    "secret_garden": "Latias / Latios",
+    "spear_pillar": "Dialga / Palkia",
+    "fullmoon_island": "Cresselia",
+    "crescent_isle": "Darkrai",
+    "flower_paradise": "Shaymin",
+    "snowpoint_temple": "Regigigas",
+    "split_decision_temple": "Regieleki / Regidrago",
+    "crown_cemetery": "Spectrier (Calyrex)",
+    "crown_spire": "Calyrex / Glastrier",
+    "dawn_tower": "Necrozma (Dawn Wings)",
+    "dusk_tower": "Necrozma (Dusk Mane)",
+    "eterna_building": "Rotom",
+    "wind_plant": "Heatran",
+}
+VILLAIN_STRUCTURES = {"team_rocket_tower", "rocket_radio_tower", "team_galactic_hq"}
+REGION_ORDER = ["Kanto", "Johto", "Hoenn", "Sinnoh"]
+
+STRUCTURE_TRAINER_ALIASES = {
+    ("Hoenn", "tell_pat"): "tell",  # shared gym — structure file covers both Tell and Pat
+}
+
+def _load_structures_categorized():
+    """Returns structures.json rows with category refined to
+    gym / league / legendary / mythical / legendary-landmark / villain / landmark,
+    plus the matching trainer (for gyms)."""
+    structures = load("structures.json") or []
+    trainers = load("trainers.json") or []
+    trainer_by_key = {}
+    for t in trainers:
+        parts = t["slug"].split("_", 1)
+        if len(parts) == 2:
+            trainer_by_key[(t["region"], parts[1])] = t
+    for s in structures:
+        lookup_name = STRUCTURE_TRAINER_ALIASES.get((s["region"], s["name"]), s["name"])
+        t = trainer_by_key.get((s["region"], lookup_name))
+        if s["category"] == "other":
+            if s["name"] in VILLAIN_STRUCTURES:
+                s["category"] = "villain"
+            elif s["name"] in LANDMARK_LEGENDS:
+                s["category"] = "legendary-landmark"
+                s["legendary"] = LANDMARK_LEGENDS[s["name"]]
+            elif t and t["rank"] == "Gym Leader":
+                s["category"] = "gym"
+            else:
+                s["category"] = "landmark"
+        s["trainer"] = {"name": t["name"], "rank": t["rank"], "slug": t["slug"],
+                        "level_range": t.get("level_range")} if t else None
+    return structures
+
+def _structure_label(name):
+    return name.replace("_", " ").title().replace("Ltsurge", "Lt. Surge").replace("Tell Pat", "Tell & Pat")
+
+def _dim_badge(dim):
+    return f' <span class="badge">{dim}</span>' if dim != "Overworld" else ""
+
+def build_structures_page():
+    structures = _load_structures_categorized()
+    if not structures:
+        write_page("gameplay/world/structures.html", "Structures", basic_guide_page("Structures"),
+            crumb='<a href="../../index.html">Home</a> / World / Structures')
+        print("  structures.html -> placeholder (no structures.json)")
+        return
+
+    region_sections = ""
+    for region in REGION_ORDER:
+        rows = [s for s in structures if s["region"] == region]
+        if not rows:
+            continue
+        gyms = sorted([s for s in rows if s["category"] == "gym"], key=lambda s: s["name"])
+        leagues = [s for s in rows if s["category"] == "league"]
+        villains = [s for s in rows if s["category"] == "villain"]
+        landmarks = sorted([s for s in rows if s["category"] == "landmark"], key=lambda s: s["name"])
+
+        gym_trs = ""
+        for s in gyms:
+            t = s["trainer"]
+            lvl = f'Lv {t["level_range"][0]}\u2013{t["level_range"][1]}' if t and t.get("level_range") else ""
+            leader = (f'<a href="../trainers/{region.lower()}.html#trainer-{t["slug"]}">{t["name"]}</a>'
+                      if t else _structure_label(s["name"]))
+            gym_trs += (f'<tr><td>{_structure_label(s["name"])}\u2019s Gym{_dim_badge(s["dimension"])}</td>'
+                        f'<td>{leader}</td><td>{s["biome"]}</td><td class="mono">{lvl}</td>'
+                        f'<td class="mono">{s["spacing"] or "?"} / {s["separation"] or "?"}</td></tr>')
+
+        other_trs = ""
+        for s in leagues + villains + landmarks:
+            kind = {"league": "Pokémon League", "villain": "Villain Base", "landmark": "Landmark"}[s["category"]]
+            other_trs += (f'<tr><td>{_structure_label(s["name"])}{_dim_badge(s["dimension"])}</td>'
+                          f'<td>{kind}</td><td>{s["biome"]}</td>'
+                          f'<td class="mono">{s["spacing"] or "?"} / {s["separation"] or "?"}</td></tr>')
+
+        region_sections += f"""
+        <h2>{region} <span class="badge">{len(rows)} structures</span></h2>
+        <h3>Gyms</h3>
+        <table><tr><th>Structure</th><th>Leader</th><th>Biome</th><th>Levels</th><th>Spacing / Sep.</th></tr>{gym_trs}</table>
+        <h3>League, Villain Bases &amp; Landmarks</h3>
+        <table><tr><th>Structure</th><th>Type</th><th>Biome</th><th>Spacing / Sep.</th></tr>{other_trs}</table>
+        <p>Legendary and mythical monuments for {region} are listed on the
+        <a href="legendary-monuments.html">Legendary Monuments</a> page.</p>
+        """
+
+    n_gyms = sum(1 for s in structures if s["category"] == "gym")
+    content = f"""
+    <div class="callout"><strong>Auto-generated</strong> from every region pack's
+    <code>worldgen/structure</code> + <code>structure_set</code> files — real biomes, dimensions, and
+    placement rarity. Spacing/Separation are vanilla placement values in chunks; higher spacing = rarer.
+    Gym leader links jump to that leader's full team.</div>
+    <h2>How structures work in CobbleVerse</h2>
+    <p>Each gym is a real building that generates naturally in one specific biome — track them down with
+    <a href="../server-features/lumymon.html">LumyMon treasure maps</a> from each region's Cartographer.
+    Note the dimension badges: some gyms generate in the <strong>Nether</strong>, and every regional League
+    generates in <strong>The End</strong>, so those fights come with a journey attached.</p>
+    {region_sections}
+    <h2>Base Cobblemon structures</h2>
+    <p>On top of the CobbleVerse buildings above, the Cobblemon mod itself generates several structure
+    families throughout the world (full details on the
+    <a href="https://wiki.cobblemon.com/index.php/Structure">official Cobblemon wiki</a>):</p>
+    <div class="card-grid">
+      <div class="card bevel"><h3>Fossil Dig Sites</h3><p>23 "Prehistoric" archaeology structures (fallen trees,
+      frozen ponds, hydrothermal vents, mud pits…), each blending into its biome. Brush their Suspicious
+      Sand/Gravel for <a href="../items/fossils.html">Fossils</a>, held items, evolution stones, and herbs —
+      each variant has one guaranteed-fossil block.</p></div>
+      <div class="card bevel"><h3>Ruins</h3><p>Gimmighoul-themed ruins containing Gilded Chests and ancient
+      Relic Coin treasure. The place to start a Gimmighoul \u2192 Gholdengo hunt.</p></div>
+      <div class="card bevel"><h3>Mini Dungeons</h3><p>Compact dungeons built around vanilla Trial Spawners,
+      with Pokémon-themed loot.</p></div>
+      <div class="card bevel"><h3>Village Structures</h3><p>Pokécenters and Pokémon-themed buildings that
+      generate inside villages — CobbleVerse extends these with its own variants for every village biome
+      (badlands, cherry, jungle, swamp, mushroom and more).</p></div>
+    </div>
+    <h2>Tips &amp; Strategies</h2>
+    <ul class="tasks"><li>{fill("Which map mods (Xaero's) mark these structures, and how")}</li>
+    <li>{fill("Server-specific tips — e.g. is structure locating via commands allowed?")}</li></ul>
+    """
+    write_page("gameplay/world/structures.html", "Structures", content,
+        crumb='<a href="../../index.html">Home</a> / World / Structures',
+        lede=f"{len(structures)} CobbleVerse structures across {len(REGION_ORDER)} regions — {n_gyms} gyms, league buildings, villain bases, landmarks — plus the base Cobblemon structure families.")
+    print(f"  structures.html -> {len(structures)} structures ({n_gyms} gyms)")
+
 def build_legendary_monuments_page():
-    sites = load("legendary_sites.json")
+    structures = _load_structures_categorized()
+    sites = [s for s in structures if s["category"] in ("legendary", "mythical", "legendary-landmark")]
     if not sites:
         write_page("gameplay/world/legendary-monuments.html", "Legendary Monuments", basic_guide_page("Legendary Monuments"),
             crumb='<a href="../../index.html">Home</a> / World / Legendary Monuments')
-        print("  legendary-monuments.html -> placeholder (no legendary_sites.json)")
+        print("  legendary-monuments.html -> placeholder (no structures.json)")
         return
 
-    by_region = {}
-    for s in sites:
-        by_region.setdefault(s["region"], []).append(s)
+    mons = load("pokemon.json") or []
+    slug_to_dex = {m["slug"]: m["dex"] for m in mons if m.get("dex")}
 
     region_sections = ""
-    for region, rows in by_region.items():
+    for region in REGION_ORDER:
+        rows = [s for s in sites if s["region"] == region]
+        if not rows:
+            continue
         trs = ""
-        for r in sorted(rows, key=lambda r: (r["category"], r["name"])):
-            biome = (r["biome"] or "").replace("minecraft:", "").replace("terralith:", "T:").replace("_", " ")
-            height = r["start_height"].get("absolute") if isinstance(r["start_height"], dict) else r["start_height"]
-            trs += (f'<tr><td>{title_species(r["name"])}</td>'
-                    f'<td>{r["category"].title()}</td>'
-                    f'<td>{biome}</td><td>{r["dimension"]}</td>'
-                    f'<td class="mono">{height}</td>'
-                    f'<td class="mono">{r["spacing"] or ""} / {r["separation"] or ""}</td></tr>')
+        for s in sorted(rows, key=lambda s: (s["category"], s["name"])):
+            if s["category"] in ("legendary", "mythical"):
+                pkmn = clean_pokemon_name(s["name"])
+                dex = slug_to_dex.get(s["name"])
+                img = (f'<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{dex}.png" '
+                       f'alt="{pkmn}" width="32" height="32" style="image-rendering:pixelated;vertical-align:middle;margin-right:6px;">'
+                       if dex else "")
+                pokemon_cell = (f'{img}<a href="../pokemon/index.html?mon={s["name"]}">{pkmn}</a>' if dex else pkmn)
+                site_cell = f'{pkmn}\u2019s Monument'
+                cat = s["category"].title()
+            else:
+                pokemon_cell = s["legendary"]
+                site_cell = _structure_label(s["name"])
+                cat = "Landmark Site"
+            trs += (f'<tr><td>{site_cell}{_dim_badge(s["dimension"])}</td><td>{pokemon_cell}</td>'
+                    f'<td>{cat}</td><td>{s["biome"]}</td>'
+                    f'<td class="mono">{s["spacing"] or "?"} / {s["separation"] or "?"}</td></tr>')
         region_sections += f"""
-        <h3>{region}</h3>
-        <table><tr><th>Pokémon</th><th>Category</th><th>Biome</th><th>Dimension</th><th>Height</th><th>Spacing / Separation</th></tr>{trs}</table>
+        <h3>{region} <span class="badge">{len(rows)} sites</span></h3>
+        <table><tr><th>Site</th><th>Pokémon</th><th>Type</th><th>Biome</th><th>Spacing / Sep.</th></tr>{trs}</table>
         """
 
+    n_landmark = sum(1 for s in sites if s["category"] == "legendary-landmark")
     content = f"""
-    <div class="callout"><strong>Auto-generated</strong> from each region datapack's worldgen structure files —
-    re-run the extractor after adding a new region or legendary site.</div>
+    <div class="callout"><strong>Auto-generated</strong> from every region pack's worldgen files —
+    now covering all four regions, including named landmark sites (Sky Pillar, Spear Pillar, Bell Tower…)
+    that previous versions of this page missed. Landmark\u2192Pokémon associations are grounded in the pack's
+    own radar-crafting recipes plus Pokémon canon; confirm any you're unsure of in-game.</div>
     <h2>What is it?</h2>
     <p>Legendary and Mythical Pokémon in CobbleVerse each guard a unique structure that generates naturally
-    in the world, rather than only spawning via events. Spacing/Separation are the vanilla structure-placement
-    values (in chunks) — higher spacing means rarer.</p>
+    in the world, rather than only spawning via events. Spacing/Separation are vanilla structure-placement
+    values (in chunks) — higher spacing means rarer. Watch the dimension badges: some sites are in the
+    Nether or The End.</p>
+    <h2>How do I find them?</h2>
+    <p>Two tools, both from <a href="../server-features/lumymon.html">LumyMon</a>: craftable
+    <strong>radar items</strong> tuned to a specific legendary (about 30 recipes across the regions), and
+    <strong>Cartographer treasure maps</strong> that point straight at gyms and league towers to get you
+    into the right area.</p>
+    <div class="callout"><strong>Note on regions below:</strong> groupings reflect which datapack/build
+    area a site is bundled into on this server, not always the Pokémon's mainline-game region — Calyrex
+    and Necrozma's sites are bonus content tucked into the Kanto-area files rather than native to Kanto.</div>
     {region_sections}
     <h2>Tips &amp; Strategies</h2>
-    <ul class="tasks"><li>{fill("Tip one — e.g. what tool helps players find these")}</li>
-    <li>{fill("Tip two")}</li></ul>
+    <ul class="tasks"><li>{fill("Recommended progression — which legendaries are realistic early vs late game")}</li>
+    <li>{fill("Any server rules about legendary claims/camping")}</li></ul>
     <h2>Related Pages</h2>
-    <p><a href="../server-features/lumymon.html">LumyMon treasure maps</a> can point you toward several of these sites directly.</p>
+    <p><a href="structures.html">All structures</a> · <a href="../mechanics/raids.html">Raids</a> (several
+    legendaries also appear as raid bosses) · <a href="../items/mega-evolution.html">Mega Evolution</a></p>
     """
     write_page("gameplay/world/legendary-monuments.html", "Legendary Monuments", content,
         crumb='<a href="../../index.html">Home</a> / World / Legendary Monuments',
-        lede=f"{len(sites)} legendary/mythical sites across {len(by_region)} regions.")
-    print(f"  legendary-monuments.html -> {len(sites)} sites across {len(by_region)} regions")
+        lede=f"{len(sites)} legendary/mythical sites across all 4 regions — {len(sites) - n_landmark} dedicated monuments + {n_landmark} named landmark sites.")
+    print(f"  legendary-monuments.html -> {len(sites)} sites across 4 regions")
+
+def build_biomes_page():
+    mons = load("pokemon.json") or []
+    if not mons:
+        write_page("gameplay/world/biomes.html", "Biomes", basic_guide_page("Biomes"),
+            crumb='<a href="../../index.html">Home</a> / World / Biomes')
+        print("  biomes.html -> placeholder (no pokemon.json)")
+        return
+
+    biome_counts = {}
+    biome_examples = {}
+    for m in mons:
+        seen = set()
+        for sp in m.get("spawns", []):
+            for b in sp.get("biomes", []):
+                if b in seen:
+                    continue
+                seen.add(b)
+                biome_counts[b] = biome_counts.get(b, 0) + 1
+                biome_examples.setdefault(b, [])
+                if len(biome_examples[b]) < 8:
+                    biome_examples[b].append(m["name"])
+
+    top = sorted(biome_counts.items(), key=lambda kv: -kv[1])[:30]
+    trs = "".join(
+        f'<tr><td>{b}</td><td class="mono">{n}</td>'
+        f'<td class="mono">{", ".join(biome_examples[b][:6])}\u2026</td></tr>'
+        for b, n in top
+    )
+
+    structures = _load_structures_categorized()
+    terralith_structs = [s for s in structures if s.get("biome_raw") and "terralith" in s["biome_raw"]]
+
+    content = f"""
+    <div class="callout"><strong>Auto-generated</strong> from the spawn data of all {len(mons)} species —
+    this table counts how many different Pokémon can spawn in each biome group, straight from this
+    server's datapacks.</div>
+    <h2>How biomes work here</h2>
+    <p>Cobblemon assigns spawns to <em>biome tags</em> (groups like "is_jungle" or "is_freezing") rather than
+    single biomes, so one row below usually covers several vanilla and Terralith biomes at once. Rarity,
+    time-of-day, weather, and light conditions then narrow down what actually appears — check any species
+    in the <a href="../pokemon/index.html">Pokédex</a> for its exact conditions.</p>
+    <h2>Terralith</h2>
+    <p>This pack ships <strong>Terralith</strong> world generation as a datapack, adding nearly a hundred
+    new overworld biomes. They matter for more than scenery: {len(terralith_structs)} CobbleVerse structures
+    generate exclusively in Terralith biomes (for example
+    {', '.join(_structure_label(s['name']) + ' in ' + s['biome'] for s in terralith_structs[:3])}\u2026),
+    so learning the new biomes pays off directly when structure-hunting.</p>
+    <h2>Most Pokémon-rich biome groups</h2>
+    <table><tr><th>Biome group</th><th># Species</th><th>Examples</th></tr>{trs}</table>
+    <h2>Special spawn conditions worth knowing</h2>
+    <ul class="tasks">
+      <li>Hundreds of spawns are day-only or night-only — the same forest has a different cast after dark.</li>
+      <li>Some species only appear in rain or thunder, at specific heights (deep caves vs mountain peaks),
+      near specific blocks, inside structures, or in slime chunks.</li>
+      <li>Fishing spawns depend on rod, bait, and lure level — roughly 600 spawn entries are fishing-based.</li>
+    </ul>
+    <h2>Tips &amp; Strategies</h2>
+    <ul class="tasks"><li>{fill("Best early-game biomes to settle near on this server's world")}</li>
+    <li>{fill("Where players have actually found rare biomes on the live map")}</li></ul>
+    """
+    write_page("gameplay/world/biomes.html", "Biomes", content,
+        crumb='<a href="../../index.html">Home</a> / World / Biomes',
+        lede=f"Which biomes hold the most Pokémon — computed from all {len(mons)} species' real spawn data.")
+    print(f"  biomes.html -> {len(biome_counts)} biome groups from spawn data")
 
 # =================================================================
 # TM RECIPES  ->  gameplay/items/tms.html
@@ -709,7 +951,9 @@ def build_search_index():
 def main():
     print("Building data-driven pages...")
     build_raids_page()
+    build_structures_page()
     build_legendary_monuments_page()
+    build_biomes_page()
     build_tms_page()
     build_fossils_page()
     build_lumymon_page()

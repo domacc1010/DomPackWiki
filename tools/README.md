@@ -30,7 +30,9 @@ you haven't re-extracted new data.
 | Source in datapacks | Extracted to | Rendered page |
 |---|---|---|
 | `cobblemonraiddens/raid/boss/*.json` + `boss_additions/*.json` | `tools/data/raids.json` | `gameplay/mechanics/raids.html` |
-| `extra/*-DP/data/cobbleverse/worldgen/structure/{legendary,mythical}/*.json` (+ matching `structure_set/`) | `tools/data/legendary_sites.json` | `gameplay/world/legendary-monuments.html` |
+| `*/data/cobbleverse/worldgen/structure/**/*.json` (all 4 region packs — gyms, leagues, monuments, landmarks) + matching `structure_set/` | `tools/data/structures.json` | `gameplay/world/structures.html` + `gameplay/world/legendary-monuments.html` |
+| *(derived from `pokemon.json`'s spawn conditions — no separate source file)* | — | `gameplay/world/biomes.html` |
+| *(reference content, not datapack-sourced — see note below)* | — | `gameplay/world/blocks.html` |
 | `*/tmcraft/recipe/*.json` | `tools/data/tm_recipes.json` | `gameplay/items/tms.html` |
 | `*/cobblemon/fossils/*.json` | `tools/data/fossils.json` | `gameplay/items/fossils.html` |
 | `*/lumymon/trades/*_cartographer.json` | `tools/data/lumymon_maps.json` | `gameplay/server-features/lumymon.html` |
@@ -44,6 +46,15 @@ Every extracted page opens with a callout marking it as auto-generated, and
 still has `fill`-style placeholders for the parts no datapack can answer
 (where to find something in-world, tips, strategy) — the goal is to remove
 the tedious data-entry, not replace the writing.
+
+### The Blocks page (`gameplay/world/blocks.html`)
+Unlike everything else in this table, block definitions (what a Healing
+Machine does, what an Apricorn Tree drops) are compiled into the Cobblemon
+mod jar itself — they're not datapack-configurable, so there's nothing for
+`extract_data.py` to read. This page is hand-written reference content
+sourced from the official Cobblemon Wiki instead, and won't auto-update —
+edit `build_blocks_page()` in `build_static_pages.py` directly if a future
+Cobblemon version changes something.
 
 ### The Pokédex app (`gameplay/pokemon/index.html`)
 This one works differently from the other 7 pages. The datapacks only give us

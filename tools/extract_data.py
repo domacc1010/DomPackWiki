@@ -14,8 +14,8 @@ COBBLEVERSE-DP-v19-CF/, COBBLEVERSE-Loot-DP-v11/, extra/, etc. — i.e. the
 What it extracts (see the README in this folder for the full list):
   - raid_bosses.json     <- cobblemonraiddens/raid/boss/*.json
   - raid_modifiers.json  <- cobblemonraiddens/raid/boss_additions/*.json
-  - legendary_sites.json <- extra/*/data/cobbleverse/worldgen/structure/{legendary,mythical}/*.json
-                            + matching worldgen/structure_set/ entries for spacing/rarity
+  - structures.json      <- */data/cobbleverse/worldgen/structure/**/*.json (all packs — gyms, leagues,
+                            legendary/mythical monuments, landmarks) + matching structure_set/ entries
   - tm_recipes.json      <- data/tmcraft/recipe/*.json
   - fossils.json         <- data/cobblemon/fossils/*.json
   - lumymon_maps.json    <- data/lumymon/trades/*_cartographer.json (treasure map trades)
@@ -84,9 +84,13 @@ def extract_raids(root):
     return {"bosses": bosses, "modifiers": modifiers}
 
 # ---------------------------------------------------------------
-# 2. Legendary / mythical world spawn sites (structure + structure_set)
+# 2. All CobbleVerse worldgen structures — gyms, leagues, landmarks,
+#    legendary & mythical monuments — across every region pack.
+#    (Replaces the old extra/-only legendary extractor, which missed
+#    the main pack's Kanto sites and all non-legendary structures.)
 # ---------------------------------------------------------------
-REGION_DIR_MAP = {
+PACK_REGION_MAP = {
+    "COBBLEVERSE-DP-v19-CF": "Kanto",
     "COBBLEVERSE-Hoenn-DP": "Hoenn",
     "COBBLEVERSE-Sinnoh-DP": "Sinnoh",
     "COBBLEVERSE-Johto-DP": "Johto",
@@ -98,48 +102,74 @@ def infer_dimension(biome):
     b = biome.lower()
     if "end" in b:
         return "The End"
-    if "nether" in b or "basalt" in b or "soul_sand" in b:
+    if "nether" in b or "basalt" in b or "soul_sand" in b or "crimson" in b or "warped" in b:
         return "Nether"
     return "Overworld"
 
-def extract_legendary_sites(root):
-    sites = []
-    for region_dir, region_name in REGION_DIR_MAP.items():
-        base = os.path.join(root, "extra", region_dir, "data", "cobbleverse", "worldgen")
-        struct_dir = os.path.join(base, "structure")
-        set_dir = os.path.join(base, "structure_set")
-        for category in ("legendary", "mythical"):
-            cat_dir = os.path.join(struct_dir, category)
-            if not os.path.isdir(cat_dir):
-                continue
-            for f in sorted(glob.glob(os.path.join(cat_dir, "*.json"))):
-                name = os.path.splitext(os.path.basename(f))[0]
-                try:
-                    sd = load_json(f)
-                except Exception:
-                    continue
-                set_path = os.path.join(set_dir, category, os.path.basename(f))
-                spacing = separation = None
-                if os.path.isfile(set_path):
-                    try:
-                        setd = load_json(set_path)
-                        placement = setd.get("placement", {})
-                        spacing = placement.get("spacing")
-                        separation = placement.get("separation")
-                    except Exception:
-                        pass
-                biome = sd.get("biomes")
-                sites.append({
-                    "name": name,
-                    "region": region_name,
-                    "category": category,
-                    "biome": biome if isinstance(biome, str) else biome,
-                    "dimension": infer_dimension(biome if isinstance(biome, str) else str(biome)),
-                    "start_height": sd.get("start_height"),
-                    "spacing": spacing,
-                    "separation": separation,
-                })
-    return sites
+def pretty_biome(b):
+    if not b:
+        return ""
+    ns, _, name = b.rpartition(":")
+    label = name.replace("_", " ").title()
+    if "terralith" in ns:
+        label += " (Terralith)"
+    return label
+
+def extract_structures(root):
+    """Every */data/cobbleverse/worldgen/structure/**/*.json across all packs,
+    categorized, with spacing/separation joined from the matching structure_set."""
+    structures = []
+    pattern = os.path.join(root, "**", "data", "cobbleverse", "worldgen", "structure", "**", "*.json")
+    for f in sorted(glob.glob(pattern, recursive=True)):
+        rel_parts = os.path.relpath(f, root).split(os.sep)
+        pack = rel_parts[1] if rel_parts[0] == "extra" else rel_parts[0]
+        region = PACK_REGION_MAP.get(pack, pack)
+        name = os.path.splitext(os.path.basename(f))[0]
+        parent = os.path.basename(os.path.dirname(f))
+        try:
+            sd = load_json(f)
+        except Exception:
+            continue
+
+        if parent == "legendary":
+            category = "legendary"
+        elif parent == "mythical":
+            category = "mythical"
+        elif name.endswith("_league"):
+            category = "league"
+        else:
+            category = "other"  # resolved to gym/landmark by the page builder via trainer cross-ref
+
+        set_rel = os.path.relpath(f, root).replace(
+            os.sep + "structure" + os.sep, os.sep + "structure_set" + os.sep)
+        set_path = os.path.join(root, set_rel)
+        spacing = separation = None
+        if os.path.isfile(set_path):
+            try:
+                placement = load_json(set_path).get("placement", {})
+                spacing = placement.get("spacing")
+                separation = placement.get("separation")
+            except Exception:
+                pass
+
+        biome = sd.get("biomes")
+        biome_str = biome if isinstance(biome, str) else (biome[0] if isinstance(biome, list) and biome else None)
+        height = sd.get("start_height")
+        if isinstance(height, dict):
+            height = height.get("absolute")
+
+        structures.append({
+            "name": name,
+            "region": region,
+            "category": category,
+            "biome_raw": biome_str,
+            "biome": pretty_biome(biome_str),
+            "dimension": infer_dimension(biome_str),
+            "height": height,
+            "spacing": spacing,
+            "separation": separation,
+        })
+    return structures
 
 # ---------------------------------------------------------------
 # 3. TM crafting recipes
@@ -529,7 +559,7 @@ def main():
 
     datasets = {
         "raids.json": extract_raids(root),
-        "legendary_sites.json": extract_legendary_sites(root),
+        "structures.json": extract_structures(root),
         "tm_recipes.json": extract_tm_recipes(root),
         "fossils.json": extract_fossils(root),
         "lumymon_maps.json": extract_lumymon_maps(root),

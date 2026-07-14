@@ -69,9 +69,9 @@ def build_mechanics():
 
 # ---------------------------------------------------------------
 WORLD_PAGES = [
-    ("biomes", "Biomes"), ("structures", "Structures"), ("villages", "Villages"),
+    ("villages", "Villages"),
     ("waystones", "Waystones"), ("nether", "Nether"), ("the-end", "The End"), ("custom-builds", "Custom Builds"),
-    # NOTE: "legendary-monuments" deliberately excluded — owned by build_dynamic_pages.py
+    # NOTE: "biomes", "structures", and "legendary-monuments" deliberately excluded — owned by build_dynamic_pages.py
 ]
 def build_world():
     for slug, title in WORLD_PAGES:
@@ -118,6 +118,68 @@ def build_items_index():
     </div>
     """
     write_page("gameplay/items/index.html", "Items", content, crumb='<a href="../../index.html">Home</a> / Items')
+
+# ---------------------------------------------------------------
+BLOCK_GROUPS = [
+    ("Wood & Plants", [
+        ("Apricorn Wood Set", "Log/plank/leaves set from Apricorn trees — the source of Apricorns, which craft every base Poké Ball type."),
+        ("Apricorn Leaves / Sprout", "Grows Apricorns over time; five colors correspond to five base ball types."),
+        ("Saccharine Wood Set", "A second custom wood set — Saccharine trees, the source of Saccharine Sap used in several recipes."),
+    ]),
+    ("Crops & Berries", [
+        ("Berry Tree", "Grows any Berry species — used in cooking, held-item strategies, and status-cure items."),
+        ("Medicinal Leek", "Crop used in several medicine recipes."),
+        ("Revival Herb", "Fully heals HP and status but lowers friendship — same trade-off as the mainline games."),
+        ("Vivichoke", "Cooking crop; also a common Fossil Dig Site drop."),
+        ("Big Root", "Boosts HP-draining move recovery when held."),
+        ("Nature Mints", "Changes a Pokémon's effective nature for battle without breeding for it."),
+        ("Hearty Grains / Hearty Grain Bale", "Farmable feed crop."),
+        ("Galarica Nuts", "Crafts Galarica Cuffs/Wreaths — used for Alolan/Galarian form items."),
+    ]),
+    ("Minerals", [
+        ("Evolution Stone Ore", "Ore variant that drops raw Evolution Stones (Fire/Water/Thunder/Leaf/Moon/Sun/Shiny/Dusk/Ice/Dawn)."),
+        ("Tumblestone", "Base + Sky/Black variants — crafts into Tumblestone blocks, tied to Rockruff/Alolan evolution lines."),
+    ]),
+    ("Utility", [
+        ("PC", "Access the Pokémon storage system."),
+        ("Healing Machine", "Fully heals a party — the block form of Pokémon Centers."),
+        ("Pasture Block", "Lets a Pokémon roam outside its Poké Ball in a fenced area."),
+        ("Campfire Pot", "Cooks Poké Snacks/Poké Cake, added in Cobblemon 1.7 ('Set Course!')."),
+        ("Poké Snack / Poké Cake", "Food items that can attract wild Pokémon when placed."),
+        ("Data Monitor", "Multiblock computer terminal used by several other machines."),
+        ("Resurrection Machine (Fossil Analyzer / Restoration Tank)", "Restores a Pokémon from a Fossil — see this wiki's Fossils page for CobbleVerse's actual combinations."),
+    ]),
+    ("Decorative", [
+        ("Relic Coin / Relic Coin Pouch/Sack", "Currency and storage tied to Gimmighoul."),
+        ("Evolution Stone Blocks", "Decorative full-block form of each Evolution Stone."),
+        ("Tatami Block Set", "Japanese-styled flooring set."),
+        ("Gilded Chest / Gimmighoul Chest", "Special storage found in Ruins structures."),
+        ("Display Case", "Shows off a held item or Poké Ball on a shelf."),
+        ("Plaque", "Wall-mounted trophy/achievement display."),
+    ]),
+]
+
+def build_blocks_page():
+    sections = ""
+    for group, blocks in BLOCK_GROUPS:
+        rows = "".join(f"<tr><td>{name}</td><td>{desc}</td></tr>" for name, desc in blocks)
+        sections += f'<h2>{group}</h2><table><tr><th>Block</th><th>What it does</th></tr>{rows}</table>'
+    content = f"""
+    <div class="callout"><strong>Reference content</strong> — sourced from the
+    <a href="https://wiki.cobblemon.com/index.php/Category:Block">official Cobblemon Wiki's Block category</a>.
+    These are base Cobblemon blocks compiled into the mod itself, not something the server's datapacks configure,
+    so this page won't auto-update — edit it by hand if a future Cobblemon version adds/changes blocks.</div>
+    <p>Every block Cobblemon adds, grouped the same way the official wiki groups them. This covers what each
+    block <em>is</em> — for where things actually generate on this server, see
+    <a href="structures.html">Structures</a> and <a href="biomes.html">Biomes</a>.</p>
+    {sections}
+    <h2>Related Pages</h2>
+    <p><a href="structures.html">Structures</a> · <a href="../items/fossils.html">Fossils</a> ·
+    <a href="../items/index.html">Items</a></p>
+    """
+    write_page("gameplay/world/blocks.html", "Blocks", content,
+        crumb='<a href="../../index.html">Home</a> / World / Blocks',
+        lede="Every block Cobblemon adds to the game, grouped by category.")
 
 # ---------------------------------------------------------------
 def build_decorations():
@@ -260,6 +322,7 @@ def main():
     build_home()
     build_getting_started()
     build_items_index()
+    build_blocks_page()
     build_mechanics()
     build_world()
     build_server_features()

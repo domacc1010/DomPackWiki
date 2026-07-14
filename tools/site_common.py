@@ -71,6 +71,7 @@ NAV = [
     ("World", None, [
         ("Biomes", "gameplay/world/biomes.html"),
         ("Structures", "gameplay/world/structures.html"),
+        ("Blocks", "gameplay/world/blocks.html"),
         ("Villages", "gameplay/world/villages.html"),
         ("Legendary Monuments", "gameplay/world/legendary-monuments.html"),
         ("Waystones", "gameplay/world/waystones.html"),
