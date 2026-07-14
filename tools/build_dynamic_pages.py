@@ -17,7 +17,7 @@ import json, os, sys, glob, re
 import html as html_lib
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from site_common import write_page, fill, basic_guide_page, SITE_ROOT, clean_pokemon_name, BUILD_STAMP  # noqa: E402
+from site_common import write_page, fill, basic_guide_page, SITE_ROOT, clean_pokemon_name, BUILD_STAMP, img_peek  # noqa: E402
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
@@ -271,6 +271,7 @@ def build_legendary_monuments_page():
             continue
         trs = ""
         for s in sorted(rows, key=lambda s: (s["category"], s["name"])):
+            img_base = f'../../assets/images/LenMonu/{s["name"]}'
             if s["category"] in ("legendary", "mythical"):
                 pkmn = clean_pokemon_name(s["name"])
                 dex = slug_to_dex.get(s["name"])
@@ -278,11 +279,11 @@ def build_legendary_monuments_page():
                        f'alt="{pkmn}" width="32" height="32" style="image-rendering:pixelated;vertical-align:middle;margin-right:6px;">'
                        if dex else "")
                 pokemon_cell = (f'{img}<a href="../pokemon/index.html?mon={s["name"]}">{pkmn}</a>' if dex else pkmn)
-                site_cell = f'{pkmn}\u2019s Monument'
+                site_cell = img_peek(f'{pkmn}\u2019s Monument', img_base)
                 cat = s["category"].title()
             else:
                 pokemon_cell = s["legendary"]
-                site_cell = _structure_label(s["name"])
+                site_cell = img_peek(_structure_label(s["name"]), img_base)
                 cat = "Landmark Site"
             trs += (f'<tr><td>{site_cell}{_dim_badge(s["dimension"])}</td><td>{pokemon_cell}</td>'
                     f'<td>{cat}</td><td>{s["biome"]}</td>'
@@ -311,6 +312,11 @@ def build_legendary_monuments_page():
     <div class="callout"><strong>Note on regions below:</strong> groupings reflect which datapack/build
     area a site is bundled into on this server, not always the Pokémon's mainline-game region — Calyrex
     and Necrozma's sites are bonus content tucked into the Kanto-area files rather than native to Kanto.</div>
+    <p><span class="img-peek" data-img-base="../../assets/images/LenMonu/articuno">Hover any site name
+    with a dotted underline</span> to see a screenshot of the structure; hover the preview to enlarge it,
+    click it to open full-size. Previews load from <code>assets/images/LenMonu/</code> — drop in a
+    screenshot named after the site (e.g. <code>sky_pillar.png</code>) and it appears automatically,
+    no rebuild needed.</p>
     {region_sections}
     <h2>Tips &amp; Strategies</h2>
     <ul class="tasks"><li>{fill("Recommended progression — which legendaries are realistic early vs late game")}</li>

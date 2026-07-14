@@ -36,6 +36,20 @@ Drop screenshots/renders into `assets/images/` and reference them with the
 ```
 Use `.gallery-grid` around multiple `.img-frame` elements for a grid layout.
 
+### Hover previews (image peek)
+Any text can show a floating image preview on hover — hover the preview to
+enlarge it, click to open full-size:
+```html
+<span class="img-peek" data-img-base="../../assets/images/LenMonu/sky_pillar">Sky Pillar</span>
+```
+`data-img-base` is the image path **without extension** (.png/.jpg/.jpeg/.webp
+all work). If no image exists yet, hovering just shows nothing — so markup can
+go in before the screenshot is taken, and the image appears the moment the
+file is dropped in, no rebuild needed. The Legendary Monuments page already
+has this on every site name, reading from `assets/images/LenMonu/` — see the
+README in that folder for the exact expected filenames. In build scripts, use
+the `img_peek()` helper from `tools/site_common.py`.
+
 ## To add a new page
 1. Copy the closest existing page as a starting point (matching folder depth).
 2. Update the `<title>`, `<h1>`, and content.

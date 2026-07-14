@@ -169,6 +169,7 @@ PAGE_TMPL = """<!DOCTYPE html>
   </main>
 </div>
 <script src="{search_js_href}"></script>
+<script src="{peek_js_href}"></script>
 </body>
 </html>
 """
@@ -179,14 +180,22 @@ def write_page(path, title, content, crumb="", lede=""):
     depth = path.count("/")
     css_href = rel(depth, "assets/style.css") + "?v=" + BUILD_STAMP
     search_js_href = rel(depth, "assets/js/search.js") + "?v=" + BUILD_STAMP
+    peek_js_href = rel(depth, "assets/js/peek.js") + "?v=" + BUILD_STAMP
     lede_html = f'<p class="lede">{lede}</p>' if lede else ""
     html = PAGE_TMPL.format(
         title=title, fonts=FONTS, css_href=css_href, depth=depth,
         nav=render_nav(path, depth), crumb=crumb, lede=lede_html, content=content,
-        search_js_href=search_js_href, build_stamp=BUILD_STAMP,
+        search_js_href=search_js_href, peek_js_href=peek_js_href, build_stamp=BUILD_STAMP,
     )
     with open(full, "w") as f:
         f.write(html)
+
+def img_peek(label, img_base):
+    """Wrap text so hovering it shows an image preview (see assets/js/peek.js).
+    img_base is the image path WITHOUT extension — png/jpg/jpeg/webp all work.
+    Safe to use before the screenshot exists: with no matching file, hovering
+    just shows nothing."""
+    return f'<span class="img-peek" data-img-base="{img_base}">{label}</span>'
 
 def fill(label):
     return f'<div class="fill">{label}</div>'

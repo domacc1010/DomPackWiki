@@ -257,6 +257,43 @@ footer.foot{
 }
 
 /* ===========================================================
+   Image peek — hover text for a small image preview, hover the
+   preview to enlarge. Trigger deliberately does NOT use link
+   styling: gold dotted underline + zoom cursor instead of blue.
+   =========================================================== */
+.img-peek{
+  border-bottom:1px dotted var(--gold);
+  cursor:zoom-in;
+  color:inherit;
+  text-decoration:none;
+}
+.img-peek:hover{border-bottom-style:solid;}
+
+#img-peek-pop{
+  display:none;
+  position:fixed;
+  z-index:60;
+  background:var(--panel);
+  border:2px solid var(--forest);
+  border-radius:4px;
+  padding:4px;
+  box-shadow:4px 4px 0 rgba(0,0,0,0.28);
+  cursor:zoom-in;
+}
+#img-peek-pop.open{display:block;}
+#img-peek-pop img{
+  display:block;
+  width:190px;
+  max-width:70vw;
+  height:auto;
+  border-radius:2px;
+  image-rendering:auto;
+  transition:width .15s ease;
+}
+#img-peek-pop.big{cursor:zoom-out;}
+#img-peek-pop.big img{width:460px;}
+
+/* ===========================================================
    Images — generic support used across the wiki
    =========================================================== */
 .img-frame{
