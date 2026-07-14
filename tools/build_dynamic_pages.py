@@ -17,7 +17,7 @@ import json, os, sys, glob, re
 import html as html_lib
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from site_common import write_page, fill, basic_guide_page, SITE_ROOT, clean_pokemon_name  # noqa: E402
+from site_common import write_page, fill, basic_guide_page, SITE_ROOT, clean_pokemon_name, BUILD_STAMP  # noqa: E402
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
@@ -356,7 +356,7 @@ def build_pokedex_page():
     with open(path, "r", encoding="utf-8") as f:
         html = f.read()
     modal_html = ('<div class="dex-modal-backdrop"><div class="dex-modal"></div></div>\n'
-                  '<script src="../../assets/js/pokedex.js"></script>\n</body>')
+                  f'<script src="../../assets/js/pokedex.js?v={BUILD_STAMP}"></script>\n</body>')
     html = html.replace("</body>", modal_html)
     with open(path, "w", encoding="utf-8") as f:
         f.write(html)

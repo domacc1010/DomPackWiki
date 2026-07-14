@@ -4,9 +4,15 @@ Shared NAV model + page template for the CobbleVerse wiki generator scripts.
 Every generator script (build_site.py, or any future one-off page script)
 should import from here so every page keeps the same sidebar and theme.
 """
-import os
+import os, time
 
 SITE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # .../CobbleVerse-Site
+
+# Stamped into every page on rebuild: (a) appended as ?v= to css/js URLs so
+# browsers can't keep serving stale cached assets after an update, and
+# (b) shown in the sidebar so you can instantly tell which build you're
+# looking at when debugging "did my change take?" issues.
+BUILD_STAMP = time.strftime("%Y%m%d-%H%M")
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">')
@@ -147,6 +153,7 @@ PAGE_TMPL = """<!DOCTYPE html>
   <nav class="sidebar">
     <span class="brand">COBBLEVERSE<br>WIKI</span>
     <span class="version-tag">MC 1.21.1 · Cobblemon 1.7.3</span>
+    <span class="build-tag">build {build_stamp}</span>
     <div class="site-search" data-depth="{depth}">
       <input type="search" class="site-search-input" placeholder="Search the wiki…" aria-label="Search the wiki" autocomplete="off">
       <div class="site-search-results"></div>
@@ -169,13 +176,13 @@ def write_page(path, title, content, crumb="", lede=""):
     full = os.path.join(SITE_ROOT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
     depth = path.count("/")
-    css_href = rel(depth, "assets/style.css")
-    search_js_href = rel(depth, "assets/js/search.js")
+    css_href = rel(depth, "assets/style.css") + "?v=" + BUILD_STAMP
+    search_js_href = rel(depth, "assets/js/search.js") + "?v=" + BUILD_STAMP
     lede_html = f'<p class="lede">{lede}</p>' if lede else ""
     html = PAGE_TMPL.format(
         title=title, fonts=FONTS, css_href=css_href, depth=depth,
         nav=render_nav(path, depth), crumb=crumb, lede=lede_html, content=content,
-        search_js_href=search_js_href,
+        search_js_href=search_js_href, build_stamp=BUILD_STAMP,
     )
     with open(full, "w") as f:
         f.write(html)

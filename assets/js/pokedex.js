@@ -96,41 +96,30 @@
     });
 
     function buildFilters() {
-      TYPES.forEach(function (t) {
+      function makeChip(row, value, label, getState, setState) {
         var chip = document.createElement("button");
         chip.type = "button";
         chip.className = "dex-chip";
-        chip.textContent = t;
+        chip.textContent = label;
+        chip.setAttribute("data-val", value);
         chip.addEventListener("click", function () {
-          state.type = state.type === t ? null : t;
-          syncChipRow(typeRow, chip);
+          setState(getState() === value ? null : value);
+          syncChipRow(row, getState());
           renderGrid();
         });
-        typeRow.appendChild(chip);
+        row.appendChild(chip);
+      }
+      TYPES.forEach(function (t) {
+        makeChip(typeRow, t, t,
+          function () { return state.type; }, function (v) { state.type = v; });
       });
       GEN_RANGES.forEach(function (g) {
-        var chip = document.createElement("button");
-        chip.type = "button";
-        chip.className = "dex-chip";
-        chip.textContent = g[2];
-        chip.addEventListener("click", function () {
-          state.gen = state.gen === g[2] ? null : g[2];
-          syncChipRow(genRow, chip);
-          renderGrid();
-        });
-        genRow.appendChild(chip);
+        makeChip(genRow, g[2], g[2],
+          function () { return state.gen; }, function (v) { state.gen = v; });
       });
       ["common", "uncommon", "rare", "ultra-rare"].forEach(function (r) {
-        var chip = document.createElement("button");
-        chip.type = "button";
-        chip.className = "dex-chip";
-        chip.textContent = r;
-        chip.addEventListener("click", function () {
-          state.rarity = state.rarity === r ? null : r;
-          syncChipRow(rarityRow, chip);
-          renderGrid();
-        });
-        rarityRow.appendChild(chip);
+        makeChip(rarityRow, r, r,
+          function () { return state.rarity; }, function (v) { state.rarity = v; });
       });
       searchInput.addEventListener("input", function () {
         state.q = searchInput.value.trim().toLowerCase();
@@ -138,10 +127,13 @@
       });
     }
 
-    function syncChipRow(row, active) {
-      var wasActive = active.classList.contains("active");
-      Array.prototype.forEach.call(row.children, function (c) { c.classList.remove("active"); });
-      if (!wasActive) { active.classList.add("active"); }
+    // Derive every chip's look from the single source of truth (state) —
+    // the clicked chip is never toggled in isolation, so the UI can't desync.
+    function syncChipRow(row, activeValue) {
+      Array.prototype.forEach.call(row.children, function (c) {
+        c.classList.toggle("active", c.getAttribute("data-val") === activeValue);
+        c.blur();
+      });
     }
 
     function matches(m) {

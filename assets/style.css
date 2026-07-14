@@ -103,7 +103,14 @@ code, pre, .mono, table{
   border:1px solid var(--gold);
   border-radius:3px;
   padding:2px 6px;
-  margin-bottom:1.25rem;
+  margin-bottom:.25rem;
+}
+.build-tag{
+  display:block;
+  font-family:'JetBrains Mono', monospace;
+  font-size:.58rem;
+  color:rgba(237,242,233,0.45);
+  margin-bottom:1rem;
 }
 .nav-group{margin-bottom:.15rem;}
 .nav-group summary{
@@ -346,8 +353,14 @@ main img{max-width:100%; height:auto;}
   border:1.5px solid var(--line);
   cursor:pointer; user-select:none;
   transition:transform .08s;
+  -webkit-tap-highlight-color:transparent;
 }
-.dex-chip:hover{border-color:var(--forest); color:var(--forest);}
+/* Hover styles ONLY on devices that actually hover — on touch screens the
+   browser keeps :hover stuck on a chip after tapping it, which looks
+   exactly like it's still selected after deselecting. */
+@media (hover: hover){
+  .dex-chip:hover{border-color:var(--forest); color:var(--forest);}
+}
 .dex-chip.active{background:var(--forest); color:var(--moss); border-color:var(--forest-dark);}
 .dex-count{
   font-family:'JetBrains Mono', monospace; font-size:.75rem; color:var(--ink-soft);
@@ -375,7 +388,10 @@ main img{max-width:100%; height:auto;}
   box-shadow:2px 2px 0 rgba(31,61,43,0.12);
   transition:transform .08s, box-shadow .08s;
 }
-.dex-card:hover{transform:translateY(-2px); box-shadow:3px 4px 0 rgba(31,61,43,0.2);}
+.dex-card:hover{transform:none;}
+@media (hover: hover){
+  .dex-card:hover{transform:translateY(-2px); box-shadow:3px 4px 0 rgba(31,61,43,0.2);}
+}
 .dex-card .dex-num{
   font-family:'JetBrains Mono', monospace; font-size:.68rem; color:var(--ink-soft);
 }
