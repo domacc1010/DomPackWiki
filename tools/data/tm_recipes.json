@@ -1,0 +1,4551 @@
+[
+  {
+    "move": "acupressure",
+    "result_id": "tmcraft:tm_acupressure",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:arrow",
+      "minecraft:piston"
+    ]
+  },
+  {
+    "move": "afteryou",
+    "result_id": "tmcraft:tm_afteryou",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:oak_door"
+    ]
+  },
+  {
+    "move": "aquaring",
+    "result_id": "tmcraft:tm_aquaring",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "cobblemon:potion",
+      "cobblemon:water_stone",
+      "minecraft:gold_ingot"
+    ]
+  },
+  {
+    "move": "armthrust",
+    "result_id": "tmcraft:tm_armthrust",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:punching_glove"
+    ]
+  },
+  {
+    "move": "aromatherapy",
+    "result_id": "tmcraft:tm_aromatherapy",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:pink_petals"
+    ]
+  },
+  {
+    "move": "aromaticmist",
+    "result_id": "tmcraft:tm_aromaticmist",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "cobblemon:sachet",
+      "minecraft:peony"
+    ]
+  },
+  {
+    "move": "assist",
+    "result_id": "tmcraft:tm_assist",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:iron_ball"
+    ]
+  },
+  {
+    "move": "babydolleyes",
+    "result_id": "tmcraft:tm_babydolleyes",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:ender_eye",
+      "pokeblocks:pokedoll_eevee"
+    ]
+  },
+  {
+    "move": "barrier",
+    "result_id": "tmcraft:tm_barrier",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:shield"
+    ]
+  },
+  {
+    "move": "bellydrum",
+    "result_id": "tmcraft:tm_bellydrum",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:note_block",
+      "minecraft:stick"
+    ]
+  },
+  {
+    "move": "bestow",
+    "result_id": "tmcraft:tm_bestow",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:chest"
+    ]
+  },
+  {
+    "move": "block",
+    "result_id": "tmcraft:tm_block",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:obsidian"
+    ]
+  },
+  {
+    "move": "bonerush",
+    "result_id": "tmcraft:tm_bonerush",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "minecraft:bone"
+    ]
+  },
+  {
+    "move": "camouflage",
+    "result_id": "tmcraft:tm_camouflage",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:covert_cloak"
+    ]
+  },
+  {
+    "move": "celebrate",
+    "result_id": "tmcraft:tm_celebrate",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:yellow_gilded_chest"
+    ]
+  },
+  {
+    "move": "clamp",
+    "result_id": "tmcraft:tm_clamp",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "cobblemon:deep_sea_tooth"
+    ]
+  },
+  {
+    "move": "clangoroussoul",
+    "result_id": "tmcraft:tm_clangoroussoul",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "minecraft:note_block"
+    ]
+  },
+  {
+    "move": "conversion",
+    "result_id": "tmcraft:tm_conversion",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:upgrade"
+    ]
+  },
+  {
+    "move": "copycat",
+    "result_id": "tmcraft:tm_copycat",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:paper"
+    ]
+  },
+  {
+    "move": "cosmicpower",
+    "result_id": "tmcraft:tm_cosmicpower",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:nether_star"
+    ]
+  },
+  {
+    "move": "cottonguard",
+    "result_id": "tmcraft:tm_cottonguard",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:shield",
+      "minecraft:white_wool"
+    ]
+  },
+  {
+    "move": "cottonspore",
+    "result_id": "tmcraft:tm_cottonspore",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:spore_blossom",
+      "minecraft:white_wool"
+    ]
+  },
+  {
+    "move": "courtchange",
+    "result_id": "tmcraft:tm_courtchange",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:fire_charge",
+      "minecraft:grass_block"
+    ]
+  },
+  {
+    "move": "craftyshield",
+    "result_id": "tmcraft:tm_craftyshield",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:shield"
+    ]
+  },
+  {
+    "move": "decorate",
+    "result_id": "tmcraft:tm_decorate",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "cobblemon:ribbon_sweet",
+      "cobblemon:berry_sweet",
+      "cobblemon:flower_sweet",
+      "cobblemon:clover_sweet",
+      "cobblemon:love_sweet",
+      "cobblemon:strawberry_sweet"
+    ]
+  },
+  {
+    "move": "disable",
+    "result_id": "tmcraft:tm_disable",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:stone_button"
+    ]
+  },
+  {
+    "move": "doodle",
+    "result_id": "tmcraft:tm_doodle",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:mirror_herb"
+    ]
+  },
+  {
+    "move": "electrify",
+    "result_id": "tmcraft:tm_electrify",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:electric_seed"
+    ]
+  },
+  {
+    "move": "entrainment",
+    "result_id": "tmcraft:tm_entrainment",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:soothe_bell"
+    ]
+  },
+  {
+    "move": "fairylock",
+    "result_id": "tmcraft:tm_fairylock",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:iron_bars"
+    ]
+  },
+  {
+    "move": "filletaway",
+    "result_id": "tmcraft:tm_filletaway",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:swift_feather",
+      "cobblemon:genius_feather",
+      "cobblemon:muscle_feather"
+    ]
+  },
+  {
+    "move": "floralhealing",
+    "result_id": "tmcraft:tm_floralhealing",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "cobblemon:potion",
+      "cobblemon:pep_up_flower"
+    ]
+  },
+  {
+    "move": "flowershield",
+    "result_id": "tmcraft:tm_flowershield",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:shield",
+      "minecraft:white_tulip",
+      "minecraft:orange_tulip",
+      "minecraft:pink_tulip"
+    ]
+  },
+  {
+    "move": "focusenergy",
+    "result_id": "tmcraft:tm_focusenergy",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:light_ball"
+    ]
+  },
+  {
+    "move": "foresight",
+    "result_id": "tmcraft:tm_foresight",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:amethyst_shard"
+    ]
+  },
+  {
+    "move": "glare",
+    "result_id": "tmcraft:tm_glare",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:spider_eye"
+    ]
+  },
+  {
+    "move": "grasswhistle",
+    "result_id": "tmcraft:tm_grasswhistle",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:goat_horn"
+    ]
+  },
+  {
+    "move": "growl",
+    "result_id": "tmcraft:tm_growl",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem"
+    ]
+  },
+  {
+    "move": "growth",
+    "result_id": "tmcraft:tm_growth",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:bone_meal"
+    ]
+  },
+  {
+    "move": "guardsplit",
+    "result_id": "tmcraft:tm_guardsplit",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:x_special_defence",
+      "cobblemon:x_defence"
+    ]
+  },
+  {
+    "move": "happyhour",
+    "result_id": "tmcraft:tm_happyhour",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:relic_coin_pouch"
+    ]
+  },
+  {
+    "move": "harden",
+    "result_id": "tmcraft:tm_harden",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:iron"
+    ]
+  },
+  {
+    "move": "healbell",
+    "result_id": "tmcraft:tm_healbell",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:shell_bell"
+    ]
+  },
+  {
+    "move": "healblock",
+    "result_id": "tmcraft:tm_healblock",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:rotten_flesh"
+    ]
+  },
+  {
+    "move": "healingwish",
+    "result_id": "tmcraft:tm_healingwish",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:max_revive"
+    ]
+  },
+  {
+    "move": "healpulse",
+    "result_id": "tmcraft:tm_healpulse",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:super_potion"
+    ]
+  },
+  {
+    "move": "heartswap",
+    "result_id": "tmcraft:tm_heartswap",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:exp_share"
+    ]
+  },
+  {
+    "move": "holdhands",
+    "result_id": "tmcraft:tm_holdhands",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:protective_pads"
+    ]
+  },
+  {
+    "move": "hypnosis",
+    "result_id": "tmcraft:tm_hypnosis",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:pink_bed"
+    ]
+  },
+  {
+    "move": "ingrain",
+    "result_id": "tmcraft:tm_ingrain",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:big_root"
+    ]
+  },
+  {
+    "move": "instruct",
+    "result_id": "tmcraft:tm_instruct",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:repeater"
+    ]
+  },
+  {
+    "move": "iondeluge",
+    "result_id": "tmcraft:tm_iondeluge",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "minecraft:ghast_tear",
+      "cobblemon:cell_battery"
+    ]
+  },
+  {
+    "move": "laserfocus",
+    "result_id": "tmcraft:tm_laserfocus",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:focus_band"
+    ]
+  },
+  {
+    "move": "leechseed",
+    "result_id": "tmcraft:tm_leechseed",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:grassy_seed"
+    ]
+  },
+  {
+    "move": "leer",
+    "result_id": "tmcraft:tm_leer",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:ender_eye"
+    ]
+  },
+  {
+    "move": "lifedew",
+    "result_id": "tmcraft:tm_lifedew",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:ghast_tear",
+      "cobblemon:water_stone"
+    ]
+  },
+  {
+    "move": "lovelykiss",
+    "result_id": "tmcraft:tm_lovelykiss",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:love_sweet"
+    ]
+  },
+  {
+    "move": "luckychant",
+    "result_id": "tmcraft:tm_luckychant",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:clover_sweet"
+    ]
+  },
+  {
+    "move": "magiccoat",
+    "result_id": "tmcraft:tm_magiccoat",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "handcrafted:pink_sheet"
+    ]
+  },
+  {
+    "move": "magicpowder",
+    "result_id": "tmcraft:tm_magicpowder",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:bright_powder"
+    ]
+  },
+  {
+    "move": "magneticflux",
+    "result_id": "tmcraft:tm_magneticflux",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:magnet"
+    ]
+  },
+  {
+    "move": "magnetrise",
+    "result_id": "tmcraft:tm_magnetrise",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:magnet",
+      "cobblemon:air_balloon"
+    ]
+  },
+  {
+    "move": "matblock",
+    "result_id": "tmcraft:tm_matblock",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:green_carpet"
+    ]
+  },
+  {
+    "move": "meanlook",
+    "result_id": "tmcraft:tm_meanlook",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:fermented_spider_eye"
+    ]
+  },
+  {
+    "move": "meditate",
+    "result_id": "tmcraft:tm_meditate",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:twisted_spoon"
+    ]
+  },
+  {
+    "move": "mefirst",
+    "result_id": "tmcraft:tm_mefirst",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:oak_sign"
+    ]
+  },
+  {
+    "move": "milkdrink",
+    "result_id": "tmcraft:tm_milkdrink",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:moomoo_milk"
+    ]
+  },
+  {
+    "move": "mindreader",
+    "result_id": "tmcraft:tm_mindreader",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:twisted_spoon"
+    ]
+  },
+  {
+    "move": "miracleeye",
+    "result_id": "tmcraft:tm_miracleeye",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:ender_eye"
+    ]
+  },
+  {
+    "move": "mirrorcoat",
+    "result_id": "tmcraft:tm_mirrorcoat",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:mirror_herb"
+    ]
+  },
+  {
+    "move": "mirrormove",
+    "result_id": "tmcraft:tm_mirrormove",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "cobblemon:mirror_herb"
+    ]
+  },
+  {
+    "move": "moonlight",
+    "result_id": "tmcraft:tm_moonlight",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "cobblemon:moon_stone"
+    ]
+  },
+  {
+    "move": "morningsun",
+    "result_id": "tmcraft:tm_morningsun",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:sun_stone"
+    ]
+  },
+  {
+    "move": "mudsport",
+    "result_id": "tmcraft:tm_mudsport",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "minecraft:mud"
+    ]
+  },
+  {
+    "move": "noretreat",
+    "result_id": "tmcraft:tm_noretreat",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:protein"
+    ]
+  },
+  {
+    "move": "nuzzle",
+    "result_id": "tmcraft:tm_nuzzle",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:love_ball",
+      "cobblemon:electric_seed"
+    ]
+  },
+  {
+    "move": "octolock",
+    "result_id": "tmcraft:tm_octolock",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:nautilus_shell"
+    ]
+  },
+  {
+    "move": "odorsleuth",
+    "result_id": "tmcraft:tm_odorsleuth",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:bone"
+    ]
+  },
+  {
+    "move": "perishsong",
+    "result_id": "tmcraft:tm_perishsong",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:disc_fragment_5"
+    ]
+  },
+  {
+    "move": "playnice",
+    "result_id": "tmcraft:tm_playnice",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:rare_candy"
+    ]
+  },
+  {
+    "move": "powershift",
+    "result_id": "tmcraft:tm_powershift",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:link_cable"
+    ]
+  },
+  {
+    "move": "powersplit",
+    "result_id": "tmcraft:tm_powersplit",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:x_attack",
+      "cobblemon:x_special_attack"
+    ]
+  },
+  {
+    "move": "powertrick",
+    "result_id": "tmcraft:tm_powertrick",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:x_attack",
+      "cobblemon:x_defence"
+    ]
+  },
+  {
+    "move": "protect",
+    "result_id": "tmcraft:tm_protect",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:shield"
+    ]
+  },
+  {
+    "move": "psychoshift",
+    "result_id": "tmcraft:tm_psychoshift",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:link_cable"
+    ]
+  },
+  {
+    "move": "quickguard",
+    "result_id": "tmcraft:tm_quickguard",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:expert_belt"
+    ]
+  },
+  {
+    "move": "refresh",
+    "result_id": "tmcraft:tm_refresh",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:water_bucket"
+    ]
+  },
+  {
+    "move": "revivalblessing",
+    "result_id": "tmcraft:tm_revivalblessing",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:bell"
+    ]
+  },
+  {
+    "move": "roar",
+    "result_id": "tmcraft:tm_roar",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:tnt"
+    ]
+  },
+  {
+    "move": "roleplay",
+    "result_id": "tmcraft:tm_roleplay",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:ring_target"
+    ]
+  },
+  {
+    "move": "rototiller",
+    "result_id": "tmcraft:tm_rototiller",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "minecraft:iron_hoe"
+    ]
+  },
+  {
+    "move": "sandattack",
+    "result_id": "tmcraft:tm_sandattack",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "minecraft:sand"
+    ]
+  },
+  {
+    "move": "sharpen",
+    "result_id": "tmcraft:tm_sharpen",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:stonecutter"
+    ]
+  },
+  {
+    "move": "shedtail",
+    "result_id": "tmcraft:tm_shedtail",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:shears",
+      "cobblemon:tasty_tail"
+    ]
+  },
+  {
+    "move": "shellsmash",
+    "result_id": "tmcraft:tm_shellsmash",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:nautilus_shell"
+    ]
+  },
+  {
+    "move": "shoreup",
+    "result_id": "tmcraft:tm_shoreup",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "minecraft:sand",
+      "minecraft:iron_shovel"
+    ]
+  },
+  {
+    "move": "simplebeam",
+    "result_id": "tmcraft:tm_simplebeam",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:redstone"
+    ]
+  },
+  {
+    "move": "sing",
+    "result_id": "tmcraft:tm_sing",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:note_block"
+    ]
+  },
+  {
+    "move": "sketch",
+    "result_id": "tmcraft:tm_sketch",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:painting"
+    ]
+  },
+  {
+    "move": "slackoff",
+    "result_id": "tmcraft:tm_slackoff",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblefurnies:white_sofa"
+    ]
+  },
+  {
+    "move": "sleeppowder",
+    "result_id": "tmcraft:tm_sleeppowder",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:heal_powder",
+      "minecraft:lime_bed"
+    ]
+  },
+  {
+    "move": "smokescreen",
+    "result_id": "tmcraft:tm_smokescreen",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:smoke_ball"
+    ]
+  },
+  {
+    "move": "soak",
+    "result_id": "tmcraft:tm_soak",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "cobblemon:water_stone"
+    ]
+  },
+  {
+    "move": "spicyextract",
+    "result_id": "tmcraft:tm_spicyextract",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblecuisine:spice_mix"
+    ]
+  },
+  {
+    "move": "splash",
+    "result_id": "tmcraft:tm_splash",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:wet_sponge"
+    ]
+  },
+  {
+    "move": "spore",
+    "result_id": "tmcraft:tm_spore",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:spore_blossom"
+    ]
+  },
+  {
+    "move": "stockpile",
+    "result_id": "tmcraft:tm_stockpile",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:barrel"
+    ]
+  },
+  {
+    "move": "strengthsap",
+    "result_id": "tmcraft:tm_strengthsap",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:absorb_bulb"
+    ]
+  },
+  {
+    "move": "stuffcheeks",
+    "result_id": "tmcraft:tm_stuffcheeks",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:chilan_berry"
+    ]
+  },
+  {
+    "move": "supersonic",
+    "result_id": "tmcraft:tm_supersonic",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:sculk_sensor"
+    ]
+  },
+  {
+    "move": "swallow",
+    "result_id": "tmcraft:tm_swallow",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:life_orb"
+    ]
+  },
+  {
+    "move": "sweetkiss",
+    "result_id": "tmcraft:tm_sweetkiss",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "cobblemon:love_sweet",
+      "minecraft:sweet_berries"
+    ]
+  },
+  {
+    "move": "synthesis",
+    "result_id": "tmcraft:tm_synthesis",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:oak_sapling",
+      "cobblemon:potion"
+    ]
+  },
+  {
+    "move": "tailwhip",
+    "result_id": "tmcraft:tm_tailwhip",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:lagging_tail"
+    ]
+  },
+  {
+    "move": "takeheart",
+    "result_id": "tmcraft:tm_takeheart",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:heart_of_the_sea"
+    ]
+  },
+  {
+    "move": "teatime",
+    "result_id": "tmcraft:tm_teatime",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:chipped_pot"
+    ]
+  },
+  {
+    "move": "teeterdance",
+    "result_id": "tmcraft:tm_teeterdance",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:jukebox"
+    ]
+  },
+  {
+    "move": "tickle",
+    "result_id": "tmcraft:tm_tickle",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:feather"
+    ]
+  },
+  {
+    "move": "transform",
+    "result_id": "tmcraft:tm_transform",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:quick_powder"
+    ]
+  },
+  {
+    "move": "trickortreat",
+    "result_id": "tmcraft:tm_trickortreat",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "minecraft:carved_pumpkin"
+    ]
+  },
+  {
+    "move": "victorydance",
+    "result_id": "tmcraft:tm_victorydance",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:jukebox"
+    ]
+  },
+  {
+    "move": "wish",
+    "result_id": "tmcraft:tm_wish",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:nether_star"
+    ]
+  },
+  {
+    "move": "worryseed",
+    "result_id": "tmcraft:tm_worryseed",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:grassy_seed",
+      "minecraft:bell"
+    ]
+  },
+  {
+    "move": "yawn",
+    "result_id": "tmcraft:tm_yawn",
+    "disc": "copper_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:red_bed"
+    ]
+  },
+  {
+    "move": "acidarmor",
+    "result_id": "tmcraft:tm_acidarmor",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "minecraft:shield",
+      "cobblemon:black_sludge"
+    ]
+  },
+  {
+    "move": "aquajet",
+    "result_id": "tmcraft:tm_aquajet",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:firework_rocket"
+    ]
+  },
+  {
+    "move": "astonish",
+    "result_id": "tmcraft:tm_astonish",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:razor_fang"
+    ]
+  },
+  {
+    "move": "autotomize",
+    "result_id": "tmcraft:tm_autotomize",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "cobblemon:heavy_ball"
+    ]
+  },
+  {
+    "move": "banefulbunker",
+    "result_id": "tmcraft:tm_banefulbunker",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "minecraft:shield",
+      "cobblemon:poison_barb"
+    ]
+  },
+  {
+    "move": "barrage",
+    "result_id": "tmcraft:tm_barrage",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:iron_ball"
+    ]
+  },
+  {
+    "move": "bind",
+    "result_id": "tmcraft:tm_bind",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:binding_band"
+    ]
+  },
+  {
+    "move": "bite",
+    "result_id": "tmcraft:tm_bite",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:razor_fang"
+    ]
+  },
+  {
+    "move": "branchpoke",
+    "result_id": "tmcraft:tm_branchpoke",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:medicinal_leek"
+    ]
+  },
+  {
+    "move": "bubble",
+    "result_id": "tmcraft:tm_bubble",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:bubble_coral"
+    ]
+  },
+  {
+    "move": "bulletpunch",
+    "result_id": "tmcraft:tm_bulletpunch",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "cobblemon:punching_glove",
+      "minecraft:ghast_tear"
+    ]
+  },
+  {
+    "move": "chillyreception",
+    "result_id": "tmcraft:tm_chillyreception",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "cobblemon:galarica_wreath"
+    ]
+  },
+  {
+    "move": "circlethrow",
+    "result_id": "tmcraft:tm_circlethrow",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:iron_ball"
+    ]
+  },
+  {
+    "move": "coil",
+    "result_id": "tmcraft:tm_coil",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:x_accuracy",
+      "cobblemon:x_defence",
+      "cobblemon:x_attack"
+    ]
+  },
+  {
+    "move": "cometpunch",
+    "result_id": "tmcraft:tm_cometpunch",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:punching_glove",
+      "minecraft:nether_star"
+    ]
+  },
+  {
+    "move": "confusion",
+    "result_id": "tmcraft:tm_confusion",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:bell"
+    ]
+  },
+  {
+    "move": "constrict",
+    "result_id": "tmcraft:tm_constrict",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:lead"
+    ]
+  },
+  {
+    "move": "defendorder",
+    "result_id": "tmcraft:tm_defendorder",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:shield",
+      "minecraft:honeycomb"
+    ]
+  },
+  {
+    "move": "doublehit",
+    "result_id": "tmcraft:tm_doublehit",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:punching_glove"
+    ]
+  },
+  {
+    "move": "doublekick",
+    "result_id": "tmcraft:tm_doublekick",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:rabbit_foot"
+    ]
+  },
+  {
+    "move": "doubleslap",
+    "result_id": "tmcraft:tm_doubleslap",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:protective_pads"
+    ]
+  },
+  {
+    "move": "dragondarts",
+    "result_id": "tmcraft:tm_dragondarts",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "minecraft:arrow"
+    ]
+  },
+  {
+    "move": "dualchop",
+    "result_id": "tmcraft:tm_dualchop",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "cobblemon:quick_claw"
+    ]
+  },
+  {
+    "move": "dualchop",
+    "result_id": "tmcraft:tm_dualchop",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "ember",
+    "result_id": "tmcraft:tm_ember",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "fairywind",
+    "result_id": "tmcraft:tm_fairywind",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "feint",
+    "result_id": "tmcraft:tm_feint",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:trapped_chest"
+    ]
+  },
+  {
+    "move": "feintattack",
+    "result_id": "tmcraft:tm_feintattack",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:wooden_sword"
+    ]
+  },
+  {
+    "move": "firespin",
+    "result_id": "tmcraft:tm_firespin",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:wind_charge",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "flail",
+    "result_id": "tmcraft:tm_flail",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:tasty_tail"
+    ]
+  },
+  {
+    "move": "flameburst",
+    "result_id": "tmcraft:tm_flameburst",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:fire_charge"
+    ]
+  },
+  {
+    "move": "flamewheel",
+    "result_id": "tmcraft:tm_flamewheel",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "cobblemon:carbos",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "flatter",
+    "result_id": "tmcraft:tm_flatter",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:bell",
+      "cobblemon:x_special_attack"
+    ]
+  },
+  {
+    "move": "followme",
+    "result_id": "tmcraft:tm_followme",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:ender_eye"
+    ]
+  },
+  {
+    "move": "forcepalm",
+    "result_id": "tmcraft:tm_forcepalm",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:protective_pads"
+    ]
+  },
+  {
+    "move": "forestscurse",
+    "result_id": "tmcraft:tm_forestscurse",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:dark_oak_sapling",
+      "minecraft:ominous_bottle"
+    ]
+  },
+  {
+    "move": "furyattack",
+    "result_id": "tmcraft:tm_furyattack",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:x_attack",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "gastroacid",
+    "result_id": "tmcraft:tm_gastroacid",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "minecraft:slime_ball"
+    ]
+  },
+  {
+    "move": "geargrind",
+    "result_id": "tmcraft:tm_geargrind",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "cobblemon:sticky_barb"
+    ]
+  },
+  {
+    "move": "gearup",
+    "result_id": "tmcraft:tm_gearup",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "cobblemon:x_attack",
+      "cobblemon:x_special_attack"
+    ]
+  },
+  {
+    "move": "glaciate",
+    "result_id": "tmcraft:tm_glaciate",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "cobblemon:never_melt_ice",
+      "cobblemon:ice_stone"
+    ]
+  },
+  {
+    "move": "gust",
+    "result_id": "tmcraft:tm_gust",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "healorder",
+    "result_id": "tmcraft:tm_healorder",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:beehive",
+      "cobblemon:super_potion"
+    ]
+  },
+  {
+    "move": "heartstamp",
+    "result_id": "tmcraft:tm_heartstamp",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:love_sweet",
+      "minecraft:iron_sword"
+    ]
+  },
+  {
+    "move": "iceball",
+    "result_id": "tmcraft:tm_iceball",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "minecraft:snowball",
+      "minecraft:blue_ice"
+    ]
+  },
+  {
+    "move": "iceshard",
+    "result_id": "tmcraft:tm_iceshard",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "minecraft:prismarine_shard",
+      "minecraft:blue_ice"
+    ]
+  },
+  {
+    "move": "jetpunch",
+    "result_id": "tmcraft:tm_jetpunch",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "cobblemon:protective_pads",
+      "minecraft:firework_rocket"
+    ]
+  },
+  {
+    "move": "karatechop",
+    "result_id": "tmcraft:tm_karatechop",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:black_belt"
+    ]
+  },
+  {
+    "move": "kinesis",
+    "result_id": "tmcraft:tm_kinesis",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:twisted_spoon"
+    ]
+  },
+  {
+    "move": "kingsshield",
+    "result_id": "tmcraft:tm_kingsshield",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:shield",
+      "cobblemon:kings_rock"
+    ]
+  },
+  {
+    "move": "lastrespects",
+    "result_id": "tmcraft:tm_lastrespects",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:relic_coin_pouch",
+      "cobblemon:focus_sash"
+    ]
+  },
+  {
+    "move": "leafage",
+    "result_id": "tmcraft:tm_leafage",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:apricorn_leaves"
+    ]
+  },
+  {
+    "move": "lick",
+    "result_id": "tmcraft:tm_lick",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:paralyze_heal"
+    ]
+  },
+  {
+    "move": "machpunch",
+    "result_id": "tmcraft:tm_machpunch",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:punching_glove",
+      "cobblemon:carbos"
+    ]
+  },
+  {
+    "move": "memento",
+    "result_id": "tmcraft:tm_memento",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:x_attack",
+      "cobblemon:x_special_attack"
+    ]
+  },
+  {
+    "move": "mist",
+    "result_id": "tmcraft:tm_mist",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "cobblemon:smoke_ball"
+    ]
+  },
+  {
+    "move": "mudbomb",
+    "result_id": "tmcraft:tm_mudbomb",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "minecraft:mud",
+      "minecraft:tnt"
+    ]
+  },
+  {
+    "move": "mysticalpower",
+    "result_id": "tmcraft:tm_mysticalpower",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:ancient_debris"
+    ]
+  },
+  {
+    "move": "obstruct",
+    "result_id": "tmcraft:tm_obstruct",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:shield"
+    ]
+  },
+  {
+    "move": "paraboliccharge",
+    "result_id": "tmcraft:tm_paraboliccharge",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:cell_battery",
+      "cobblemon:super_potion"
+    ]
+  },
+  {
+    "move": "partingshot",
+    "result_id": "tmcraft:tm_partingshot",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:shed_shell"
+    ]
+  },
+  {
+    "move": "peck",
+    "result_id": "tmcraft:tm_peck",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "cobblemon:sharp_beak"
+    ]
+  },
+  {
+    "move": "poisongas",
+    "result_id": "tmcraft:tm_poisongas",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:smoke_ball"
+    ]
+  },
+  {
+    "move": "poisonpowder",
+    "result_id": "tmcraft:tm_poisonpowder",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:metal_powder",
+      "minecraft:poisonous_potato"
+    ]
+  },
+  {
+    "move": "populationbomb",
+    "result_id": "tmcraft:tm_populationbomb",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:cobweb"
+    ]
+  },
+  {
+    "move": "powder",
+    "result_id": "tmcraft:tm_powder",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:gunpowder"
+    ]
+  },
+  {
+    "move": "powdersnow",
+    "result_id": "tmcraft:tm_powdersnow",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "minecraft:powder_snow_bucket"
+    ]
+  },
+  {
+    "move": "powertrip",
+    "result_id": "tmcraft:tm_powertrip",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:x_attack",
+      "cobblemon:x_special_attack",
+      "cobblemon:x_defence",
+      "cobblemon:x_special_defence",
+      "cobblemon:x_speed",
+      "cobblemon:x_accuracy"
+    ]
+  },
+  {
+    "move": "psyshieldbash",
+    "result_id": "tmcraft:tm_psyshieldbash",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:shield",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "purify",
+    "result_id": "tmcraft:tm_purify",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:full_restore"
+    ]
+  },
+  {
+    "move": "pursuit",
+    "result_id": "tmcraft:tm_pursuit",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:rabbit_foot"
+    ]
+  },
+  {
+    "move": "quiverdance",
+    "result_id": "tmcraft:tm_quiverdance",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "cobblemon:x_special_attack",
+      "cobblemon:x_special_defence",
+      "cobblemon:x_speed"
+    ]
+  },
+  {
+    "move": "ragefist",
+    "result_id": "tmcraft:tm_ragefist",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:punching_glove",
+      "minecraft:phantom_membrane"
+    ]
+  },
+  {
+    "move": "ragepowder",
+    "result_id": "tmcraft:tm_ragepowder",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "cobblemon:bright_powder"
+    ]
+  },
+  {
+    "move": "reflecttype",
+    "result_id": "tmcraft:tm_reflecttype",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:mirror_herb"
+    ]
+  },
+  {
+    "move": "risingvoltage",
+    "result_id": "tmcraft:tm_risingvoltage",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:cell_battery",
+      "cobblemon:electric_seed"
+    ]
+  },
+  {
+    "move": "shadowsneak",
+    "result_id": "tmcraft:tm_shadowsneak",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "minecraft:sculk",
+      "minecraft:phantom_membrane"
+    ]
+  },
+  {
+    "move": "shelter",
+    "result_id": "tmcraft:tm_shelter",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:shield"
+    ]
+  },
+  {
+    "move": "shiftgear",
+    "result_id": "tmcraft:tm_shiftgear",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:lever"
+    ]
+  },
+  {
+    "move": "silktrap",
+    "result_id": "tmcraft:tm_silktrap",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:cobweb"
+    ]
+  },
+  {
+    "move": "skydrop",
+    "result_id": "tmcraft:tm_skydrop",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "minecraft:anvil",
+      "minecraft:feather"
+    ]
+  },
+  {
+    "move": "snaptrap",
+    "result_id": "tmcraft:tm_snaptrap",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:cobweb"
+    ]
+  },
+  {
+    "move": "sonicboom",
+    "result_id": "tmcraft:tm_sonicboom",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:sculk_shrieker"
+    ]
+  },
+  {
+    "move": "spark",
+    "result_id": "tmcraft:tm_spark",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:light_ball"
+    ]
+  },
+  {
+    "move": "spiderweb",
+    "result_id": "tmcraft:tm_spiderweb",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:spider_eye",
+      "minecraft:cobweb"
+    ]
+  },
+  {
+    "move": "spikecannon",
+    "result_id": "tmcraft:tm_spikecannon",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:arrow"
+    ]
+  },
+  {
+    "move": "spikyshield",
+    "result_id": "tmcraft:tm_spikyshield",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:shield"
+    ]
+  },
+  {
+    "move": "stickyweb",
+    "result_id": "tmcraft:tm_stickyweb",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:cobweb",
+      "minecraft:slime_ball"
+    ]
+  },
+  {
+    "move": "stringshot",
+    "result_id": "tmcraft:tm_stringshot",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:string"
+    ]
+  },
+  {
+    "move": "switcheroo",
+    "result_id": "tmcraft:tm_switcheroo",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:red_card"
+    ]
+  },
+  {
+    "move": "tachyoncutter",
+    "result_id": "tmcraft:tm_tachyoncutter",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:stonecutter",
+      "cobblemon:quick_claw"
+    ]
+  },
+  {
+    "move": "tailglow",
+    "result_id": "tmcraft:tm_tailglow",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:glowstone_dust"
+    ]
+  },
+  {
+    "move": "tarshot",
+    "result_id": "tmcraft:tm_tarshot",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "cobblemon:black_sludge"
+    ]
+  },
+  {
+    "move": "tearfullook",
+    "result_id": "tmcraft:tm_tearfullook",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:ghast_tear"
+    ]
+  },
+  {
+    "move": "thunderclap",
+    "result_id": "tmcraft:tm_thunderclap",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:thunder_stone"
+    ]
+  },
+  {
+    "move": "thundershock",
+    "result_id": "tmcraft:tm_thundershock",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "minecraft:lightning_rod"
+    ]
+  },
+  {
+    "move": "topsyturvy",
+    "result_id": "tmcraft:tm_topsyturvy",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:ink_sac"
+    ]
+  },
+  {
+    "move": "torchsong",
+    "result_id": "tmcraft:tm_torchsong",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:music_disc_blocks",
+      "minecraft:torch"
+    ]
+  },
+  {
+    "move": "toxicthread",
+    "result_id": "tmcraft:tm_toxicthread",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:poison_barb",
+      "minecraft:cobweb"
+    ]
+  },
+  {
+    "move": "twinbeam",
+    "result_id": "tmcraft:tm_twinbeam",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:psychic_seed"
+    ]
+  },
+  {
+    "move": "venomdrench",
+    "result_id": "tmcraft:tm_venomdrench",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:black_sludge"
+    ]
+  },
+  {
+    "move": "vinewhip",
+    "result_id": "tmcraft:tm_vinewhip",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:vine"
+    ]
+  },
+  {
+    "move": "wideguard",
+    "result_id": "tmcraft:tm_wideguard",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "minecraft:shield"
+    ]
+  },
+  {
+    "move": "wingattack",
+    "result_id": "tmcraft:tm_wingattack",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "minecraft:feather"
+    ]
+  },
+  {
+    "move": "wrap",
+    "result_id": "tmcraft:tm_wrap",
+    "disc": "iron_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:binding_band",
+      "minecraft:lead"
+    ]
+  },
+  {
+    "move": "accelerock",
+    "result_id": "tmcraft:tm_accelerock",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "cobblemon:sun_stone"
+    ]
+  },
+  {
+    "move": "aurorabeam",
+    "result_id": "tmcraft:tm_aurorabeam",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "cobblemon:ice_stone"
+    ]
+  },
+  {
+    "move": "barbbarrage",
+    "result_id": "tmcraft:tm_barbbarrage",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:poison_barb"
+    ]
+  },
+  {
+    "move": "boltbeak",
+    "result_id": "tmcraft:tm_boltbeak",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:sharp_beak",
+      "cobblemon:electric_seed"
+    ]
+  },
+  {
+    "move": "ceaselessedge",
+    "result_id": "tmcraft:tm_ceaselessedge",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:shell_bell",
+      "minecraft:prismarine_shard"
+    ]
+  },
+  {
+    "move": "covet",
+    "result_id": "tmcraft:tm_covet",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:bundle"
+    ]
+  },
+  {
+    "move": "destinybond",
+    "result_id": "tmcraft:tm_destinybond",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:destiny_knot"
+    ]
+  },
+  {
+    "move": "discharge",
+    "result_id": "tmcraft:tm_discharge",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:cell_battery",
+      "minecraft:glass_bottle"
+    ]
+  },
+  {
+    "move": "doubleironbash",
+    "result_id": "tmcraft:tm_doubleironbash",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:iron_ingot",
+      "cobblemon:punching_glove"
+    ]
+  },
+  {
+    "move": "eeriespell",
+    "result_id": "tmcraft:tm_eeriespell",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:galarica_wreath"
+    ]
+  },
+  {
+    "move": "extrasensory",
+    "result_id": "tmcraft:tm_extrasensory",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:ender_pearl"
+    ]
+  },
+  {
+    "move": "fakeout",
+    "result_id": "tmcraft:tm_fakeout",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:flint_and_steel",
+      "minecraft:leather"
+    ]
+  },
+  {
+    "move": "ficklebeam",
+    "result_id": "tmcraft:tm_ficklebeam",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "cobblemon:candied_apple",
+      "minecraft:glowstone_dust"
+    ]
+  },
+  {
+    "move": "fierydance",
+    "result_id": "tmcraft:tm_fierydance",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:feather",
+      "cobblemon:fire_stone"
+    ]
+  },
+  {
+    "move": "firelash",
+    "result_id": "tmcraft:tm_firelash",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:lead",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "freezedry",
+    "result_id": "tmcraft:tm_freezedry",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "cobblemon:ice_stone",
+      "minecraft:blue_ice"
+    ]
+  },
+  {
+    "move": "grudge",
+    "result_id": "tmcraft:tm_grudge",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:spell_tag"
+    ]
+  },
+  {
+    "move": "hornattack",
+    "result_id": "tmcraft:tm_hornattack",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:goat_horn"
+    ]
+  },
+  {
+    "move": "infernalparade",
+    "result_id": "tmcraft:tm_infernalparade",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "minecraft:jukebox",
+      "minecraft:lava_bucket"
+    ]
+  },
+  {
+    "move": "lavaplume",
+    "result_id": "tmcraft:tm_lavaplume",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:lava_bucket"
+    ]
+  },
+  {
+    "move": "leaftornado",
+    "result_id": "tmcraft:tm_leaftornado",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:leaf_stone",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "luminacrash",
+    "result_id": "tmcraft:tm_luminacrash",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:glowstone_dust"
+    ]
+  },
+  {
+    "move": "magnetbomb",
+    "result_id": "tmcraft:tm_magnetbomb",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:tnt",
+      "cobblemon:magnet"
+    ]
+  },
+  {
+    "move": "mirrorshot",
+    "result_id": "tmcraft:tm_mirrorshot",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:glowstone_dust",
+      "cobblemon:mirror_herb"
+    ]
+  },
+  {
+    "move": "needlearm",
+    "result_id": "tmcraft:tm_needlearm",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:punching_glove",
+      "minecraft:rose_bush"
+    ]
+  },
+  {
+    "move": "nightslash",
+    "result_id": "tmcraft:tm_nightslash",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:iron_sword",
+      "minecraft:spyglass"
+    ]
+  },
+  {
+    "move": "octazooka",
+    "result_id": "tmcraft:tm_octazooka",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:ink_sac"
+    ]
+  },
+  {
+    "move": "ominouswind",
+    "result_id": "tmcraft:tm_ominouswind",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "minecraft:ominous_bottle",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "overdrive",
+    "result_id": "tmcraft:tm_overdrive",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:cell_battery",
+      "cobblemon:toxic_orb",
+      "cobblemon:thunder_stone"
+    ]
+  },
+  {
+    "move": "poisonfang",
+    "result_id": "tmcraft:tm_poisonfang",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:razor_fang",
+      "cobblemon:poison_barb"
+    ]
+  },
+  {
+    "move": "pound",
+    "result_id": "tmcraft:tm_pound",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem"
+    ]
+  },
+  {
+    "move": "quickattack",
+    "result_id": "tmcraft:tm_quickattack",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:quick_claw"
+    ]
+  },
+  {
+    "move": "razorleaf",
+    "result_id": "tmcraft:tm_razorleaf",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:apricorn_leaves",
+      "cobblemon:razor_claw"
+    ]
+  },
+  {
+    "move": "rockthrow",
+    "result_id": "tmcraft:tm_rockthrow",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "cobblemon:hard_stone"
+    ]
+  },
+  {
+    "move": "saltcure",
+    "result_id": "tmcraft:tm_saltcure",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "scratch",
+    "result_id": "tmcraft:tm_scratch",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:razor_claw"
+    ]
+  },
+  {
+    "move": "skyuppercut",
+    "result_id": "tmcraft:tm_skyuppercut",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:punching_glove",
+      "cobblemon:protein"
+    ]
+  },
+  {
+    "move": "smog",
+    "result_id": "tmcraft:tm_smog",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:black_sludge"
+    ]
+  },
+  {
+    "move": "spiritbreak",
+    "result_id": "tmcraft:tm_spiritbreak",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:soul_sand"
+    ]
+  },
+  {
+    "move": "stomp",
+    "result_id": "tmcraft:tm_stomp",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:rabbit_foot"
+    ]
+  },
+  {
+    "move": "stoneaxe",
+    "result_id": "tmcraft:tm_stoneaxe",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "minecraft:stone_axe"
+    ]
+  },
+  {
+    "move": "strangesteam",
+    "result_id": "tmcraft:tm_strangesteam",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:campfire",
+      "cobblemon:galarica_nuts"
+    ]
+  },
+  {
+    "move": "struggle",
+    "result_id": "tmcraft:tm_struggle",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:punching_glove"
+    ]
+  },
+  {
+    "move": "suckerpunch",
+    "result_id": "tmcraft:tm_suckerpunch",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:punching_glove",
+      "minecraft:iron_sword"
+    ]
+  },
+  {
+    "move": "tackle",
+    "result_id": "tmcraft:tm_tackle",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:stone_sword"
+    ]
+  },
+  {
+    "move": "terrainpulse",
+    "result_id": "tmcraft:tm_terrainpulse",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:grass_block",
+      "minecraft:short_grass"
+    ]
+  },
+  {
+    "move": "twineedle",
+    "result_id": "tmcraft:tm_twineedle",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "cobblemon:poison_barb",
+      "minecraft:honeycomb"
+    ]
+  },
+  {
+    "move": "visegrip",
+    "result_id": "tmcraft:tm_visegrip",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:twisting_vines"
+    ]
+  },
+  {
+    "move": "vitalthrow",
+    "result_id": "tmcraft:tm_vitalthrow",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:punching_glove",
+      "cobblemon:lagging_tail"
+    ]
+  },
+  {
+    "move": "wakeupslap",
+    "result_id": "tmcraft:tm_wakeupslap",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:punching_glove",
+      "minecraft:clock"
+    ]
+  },
+  {
+    "move": "wickedblow",
+    "result_id": "tmcraft:tm_wickedblow",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:scroll_of_darkness"
+    ]
+  },
+  {
+    "move": "zingzap",
+    "result_id": "tmcraft:tm_zingzap",
+    "disc": "gold_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "minecraft:cactus"
+    ]
+  },
+  {
+    "move": "anchorshot",
+    "result_id": "tmcraft:tm_anchorshot",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:chain"
+    ]
+  },
+  {
+    "move": "aquacutter",
+    "result_id": "tmcraft:tm_aquacutter",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:stonecutter"
+    ]
+  },
+  {
+    "move": "aquastep",
+    "result_id": "tmcraft:tm_aquastep",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:note_block"
+    ]
+  },
+  {
+    "move": "behemothbash",
+    "result_id": "tmcraft:tm_behemothbash",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "mega_showdown:rusted_shield"
+    ]
+  },
+  {
+    "move": "behemothblade",
+    "result_id": "tmcraft:tm_behemothblade",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "mega_showdown:rusted_sword"
+    ]
+  },
+  {
+    "move": "bittermalice",
+    "result_id": "tmcraft:tm_bittermalice",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:spell_tag",
+      "cobblemon:never_melt_ice"
+    ]
+  },
+  {
+    "move": "blazekick",
+    "result_id": "tmcraft:tm_blazekick",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:rabbit_foot",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "blazingtorque",
+    "result_id": "tmcraft:tm_blazingtorque",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "cobblemon:carbos",
+      "minecraft:blaze_rod"
+    ]
+  },
+  {
+    "move": "chatter",
+    "result_id": "tmcraft:tm_chatter",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "minecraft:music_disc_mall"
+    ]
+  },
+  {
+    "move": "chipaway",
+    "result_id": "tmcraft:tm_chipaway",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:shield"
+    ]
+  },
+  {
+    "move": "darkestlariat",
+    "result_id": "tmcraft:tm_darkestlariat",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:wind_charge",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "direclaw",
+    "result_id": "tmcraft:tm_direclaw",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:razor_claw"
+    ]
+  },
+  {
+    "move": "dizzypunch",
+    "result_id": "tmcraft:tm_dizzypunch",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:punching_glove"
+    ]
+  },
+  {
+    "move": "dragonhammer",
+    "result_id": "tmcraft:tm_dragonhammer",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "minecraft:mace"
+    ]
+  },
+  {
+    "move": "dragonrage",
+    "result_id": "tmcraft:tm_dragonrage",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "minecraft:dragon_breath",
+      "minecraft:glowstone_dust"
+    ]
+  },
+  {
+    "move": "drillpeck",
+    "result_id": "tmcraft:tm_drillpeck",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "cobblemon:sharp_beak",
+      "minecraft:iron_ingot"
+    ]
+  },
+  {
+    "move": "esperwing",
+    "result_id": "tmcraft:tm_esperwing",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:feather",
+      "cobblemon:galarica_nuts"
+    ]
+  },
+  {
+    "move": "extremespeed",
+    "result_id": "tmcraft:tm_extremespeed",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:carbos"
+    ]
+  },
+  {
+    "move": "falsesurrender",
+    "result_id": "tmcraft:tm_falsesurrender",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:weakness_policy"
+    ]
+  },
+  {
+    "move": "fellstinger",
+    "result_id": "tmcraft:tm_fellstinger",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "cobblemon:poison_barb"
+    ]
+  },
+  {
+    "move": "fishiousrend",
+    "result_id": "tmcraft:tm_fishiousrend",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:pufferfish",
+      "cobblemon:deep_sea_tooth"
+    ]
+  },
+  {
+    "move": "flowertrick",
+    "result_id": "tmcraft:tm_flowertrick",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:iron_sword",
+      "minecraft:azure_bluet"
+    ]
+  },
+  {
+    "move": "hornleech",
+    "result_id": "tmcraft:tm_hornleech",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:goat_horn"
+    ]
+  },
+  {
+    "move": "hydrosteam",
+    "result_id": "tmcraft:tm_hydrosteam",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:campfire"
+    ]
+  },
+  {
+    "move": "hyperfang",
+    "result_id": "tmcraft:tm_hyperfang",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:razor_fang"
+    ]
+  },
+  {
+    "move": "iciclecrash",
+    "result_id": "tmcraft:tm_iciclecrash",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "minecraft:pointed_dripstone",
+      "minecraft:blue_ice"
+    ]
+  },
+  {
+    "move": "jawlock",
+    "result_id": "tmcraft:tm_jawlock",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:razor_fang",
+      "cobblemon:jaw_fossil"
+    ]
+  },
+  {
+    "move": "kowtowcleave",
+    "result_id": "tmcraft:tm_kowtowcleave",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:kings_rock",
+      "minecraft:diamond_sword"
+    ]
+  },
+  {
+    "move": "kowtowcleave",
+    "result_id": "tmcraft:tm_kowtowcleave",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:carbos",
+      "minecraft:black_bed"
+    ]
+  },
+  {
+    "move": "meteormash",
+    "result_id": "tmcraft:tm_meteormash",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "cobblemon:punching_glove"
+    ]
+  },
+  {
+    "move": "oblivionwing",
+    "result_id": "tmcraft:tm_oblivionwing",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "cobblemon:hyper_potion",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "orderup",
+    "result_id": "tmcraft:tm_orderup",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "cobblemon:room_service",
+      "cobblemon:ponigiri"
+    ]
+  },
+  {
+    "move": "poisonsting",
+    "result_id": "tmcraft:tm_poisonsting",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:poison_barb"
+    ]
+  },
+  {
+    "move": "psyblade",
+    "result_id": "tmcraft:tm_psyblade",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "minecraft:diamond_sword"
+    ]
+  },
+  {
+    "move": "signalbeam",
+    "result_id": "tmcraft:tm_signalbeam",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:glowstone"
+    ]
+  },
+  {
+    "move": "slash",
+    "result_id": "tmcraft:tm_slash",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:iron_sword"
+    ]
+  },
+  {
+    "move": "sludge",
+    "result_id": "tmcraft:tm_sludge",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:black_sludge"
+    ]
+  },
+  {
+    "move": "smellingsalts",
+    "result_id": "tmcraft:tm_smellingsalts",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:paralyze_heal"
+    ]
+  },
+  {
+    "move": "snipeshot",
+    "result_id": "tmcraft:tm_snipeshot",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:ghast_tear",
+      "cobblemon:ring_target"
+    ]
+  },
+  {
+    "move": "sparklingaria",
+    "result_id": "tmcraft:tm_sparklingaria",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "cobblemon:air_balloon"
+    ]
+  },
+  {
+    "move": "spinout",
+    "result_id": "tmcraft:tm_spinout",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "cobblemon:iron_ball",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "spiritshackle",
+    "result_id": "tmcraft:tm_spiritshackle",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:ring_target"
+    ]
+  },
+  {
+    "move": "steamroller",
+    "result_id": "tmcraft:tm_steamroller",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:piston",
+      "minecraft:pointed_dripstone"
+    ]
+  },
+  {
+    "move": "stormthrow",
+    "result_id": "tmcraft:tm_stormthrow",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:punching_glove"
+    ]
+  },
+  {
+    "move": "substitute",
+    "result_id": "tmcraft:tm_substitute",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:armor_stand"
+    ]
+  },
+  {
+    "move": "sunsteelstrike",
+    "result_id": "tmcraft:tm_sunsteelstrike",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:iron_ingot",
+      "cobblemon:sun_stone"
+    ]
+  },
+  {
+    "move": "triplearrows",
+    "result_id": "tmcraft:tm_triplearrows",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:arrow"
+    ]
+  },
+  {
+    "move": "tropkick",
+    "result_id": "tmcraft:tm_tropkick",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:rabbit_foot"
+    ]
+  },
+  {
+    "move": "venoshock",
+    "result_id": "tmcraft:tm_venoshock",
+    "disc": "emerald_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:smoke_ball"
+    ]
+  },
+  {
+    "move": "aeroblast",
+    "result_id": "tmcraft:tm_aeroblast",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "appleacid",
+    "result_id": "tmcraft:tm_appleacid",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:sweet_apple"
+    ]
+  },
+  {
+    "move": "aquatail",
+    "result_id": "tmcraft:tm_aquatail",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "cobblemon:tasty_tail"
+    ]
+  },
+  {
+    "move": "armorcannon",
+    "result_id": "tmcraft:tm_armorcannon",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "cobblemon:auspicious_armor"
+    ]
+  },
+  {
+    "move": "attackorder",
+    "result_id": "tmcraft:tm_attackorder",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:beehive"
+    ]
+  },
+  {
+    "move": "aurawheel",
+    "result_id": "tmcraft:tm_aurawheel",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:light_ball",
+      "cobblemon:iron_ball"
+    ]
+  },
+  {
+    "move": "beakblast",
+    "result_id": "tmcraft:tm_beakblast",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "cobblemon:sharp_beak",
+      "minecraft:gunpowder"
+    ]
+  },
+  {
+    "move": "belch",
+    "result_id": "tmcraft:tm_belch",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:aprijuice_blue",
+      "cobblemon:big_malasada"
+    ]
+  },
+  {
+    "move": "bitterblade",
+    "result_id": "tmcraft:tm_bitterblade",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "cobblemon:malicious_armor"
+    ]
+  },
+  {
+    "move": "bleakwindstorm",
+    "result_id": "tmcraft:tm_bleakwindstorm",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "minecraft:wind_charge",
+      "minecraft:blue_ice"
+    ]
+  },
+  {
+    "move": "burnup",
+    "result_id": "tmcraft:tm_burnup",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:campfire",
+      "minecraft:water_bucket"
+    ]
+  },
+  {
+    "move": "clangingscales",
+    "result_id": "tmcraft:tm_clangingscales",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "cobblemon:dragon_scale"
+    ]
+  },
+  {
+    "move": "combattorque",
+    "result_id": "tmcraft:tm_combattorque",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:carbos",
+      "cobblemon:muscle_band"
+    ]
+  },
+  {
+    "move": "comeuppance",
+    "result_id": "tmcraft:tm_comeuppance",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:dusk_stone",
+      "minecraft:anvil"
+    ]
+  },
+  {
+    "move": "coreenforcer",
+    "result_id": "tmcraft:tm_coreenforcer",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "mega_showdown:zygarde_core"
+    ]
+  },
+  {
+    "move": "crabhammer",
+    "result_id": "tmcraft:tm_crabhammer",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:mace"
+    ]
+  },
+  {
+    "move": "darkvoid",
+    "result_id": "tmcraft:tm_darkvoid",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:sculk_shrieker"
+    ]
+  },
+  {
+    "move": "diamondstorm",
+    "result_id": "tmcraft:tm_diamondstorm",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "minecraft:amethyst_shard"
+    ]
+  },
+  {
+    "move": "dragonenergy",
+    "result_id": "tmcraft:tm_dragonenergy",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "minecraft:dragon_breath"
+    ]
+  },
+  {
+    "move": "dragonrush",
+    "result_id": "tmcraft:tm_dragonrush",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "cobblemon:dragon_fang"
+    ]
+  },
+  {
+    "move": "drumbeating",
+    "result_id": "tmcraft:tm_drumbeating",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:note_block",
+      "cobblemon:big_root"
+    ]
+  },
+  {
+    "move": "electroshot",
+    "result_id": "tmcraft:tm_electroshot",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:metal_alloy"
+    ]
+  },
+  {
+    "move": "fierywrath",
+    "result_id": "tmcraft:tm_fierywrath",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "lumymon:ember_feather",
+      "cobblemon:galarica_nuts"
+    ]
+  },
+  {
+    "move": "firstimpression",
+    "result_id": "tmcraft:tm_firstimpression",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:bug_gem",
+      "minecraft:diamond_axe"
+    ]
+  },
+  {
+    "move": "flyingpress",
+    "result_id": "tmcraft:tm_flyingpress",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:piston",
+      "minecraft:grass_block"
+    ]
+  },
+  {
+    "move": "freezyfrost",
+    "result_id": "tmcraft:tm_freezyfrost",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "minecraft:end_crystal",
+      "cobblemon:never_melt_ice"
+    ]
+  },
+  {
+    "move": "fusionbolt",
+    "result_id": "tmcraft:tm_fusionbolt",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "minecraft:lightning_rod"
+    ]
+  },
+  {
+    "move": "glaciallance",
+    "result_id": "tmcraft:tm_glaciallance",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "minecraft:diamond_sword",
+      "cobblemon:ice_stone"
+    ]
+  },
+  {
+    "move": "glaiverush",
+    "result_id": "tmcraft:tm_glaiverush",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "minecraft:netherite_sword"
+    ]
+  },
+  {
+    "move": "gravapple",
+    "result_id": "tmcraft:tm_gravapple",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:tart_apple"
+    ]
+  },
+  {
+    "move": "hammerarm",
+    "result_id": "tmcraft:tm_hammerarm",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:mace"
+    ]
+  },
+  {
+    "move": "headsmash",
+    "result_id": "tmcraft:tm_headsmash",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "minecraft:carved_pumpkin"
+    ]
+  },
+  {
+    "move": "hyperdrill",
+    "result_id": "tmcraft:tm_hyperdrill",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:end_rod"
+    ]
+  },
+  {
+    "move": "icehammer",
+    "result_id": "tmcraft:tm_icehammer",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "minecraft:mace",
+      "cobblemon:never_melt_ice"
+    ]
+  },
+  {
+    "move": "inferno",
+    "result_id": "tmcraft:tm_inferno",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:flint_and_steel",
+      "minecraft:obsidian"
+    ]
+  },
+  {
+    "move": "junglehealing",
+    "result_id": "tmcraft:tm_junglehealing",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:jungle_sapling"
+    ]
+  },
+  {
+    "move": "landswrath",
+    "result_id": "tmcraft:tm_landswrath",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "mega_showdown:zygarde_cell"
+    ]
+  },
+  {
+    "move": "leafblade",
+    "result_id": "tmcraft:tm_leafblade",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:small_dripleaf",
+      "minecraft:iron_sword"
+    ]
+  },
+  {
+    "move": "lusterpurge",
+    "result_id": "tmcraft:tm_lusterpurge",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:bright_powder"
+    ]
+  },
+  {
+    "move": "magicaltorque",
+    "result_id": "tmcraft:tm_magicaltorque",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:lantern"
+    ]
+  },
+  {
+    "move": "magnitude",
+    "result_id": "tmcraft:tm_magnitude",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "cobblemon:iron_ball",
+      "minecraft:grass_block"
+    ]
+  },
+  {
+    "move": "makeitrain",
+    "result_id": "tmcraft:tm_makeitrain",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "cobblemon:relic_coin_pouch"
+    ]
+  },
+  {
+    "move": "moonblast",
+    "result_id": "tmcraft:tm_moonblast",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "cobblemon:moon_stone_block"
+    ]
+  },
+  {
+    "move": "moongeistbeam",
+    "result_id": "tmcraft:tm_moongeistbeam",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:moon_stone"
+    ]
+  },
+  {
+    "move": "mountaingale",
+    "result_id": "tmcraft:tm_mountaingale",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "cobblemon:never_melt_ice",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "nightdaze",
+    "result_id": "tmcraft:tm_nightdaze",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "cobblemon:reaper_cloth"
+    ]
+  },
+  {
+    "move": "noxioustorque",
+    "result_id": "tmcraft:tm_noxioustorque",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:quick_powder"
+    ]
+  },
+  {
+    "move": "psychoboost",
+    "result_id": "tmcraft:tm_psychoboost",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "mega_showdown:deoxys_meteorite"
+    ]
+  },
+  {
+    "move": "punishment",
+    "result_id": "tmcraft:tm_punishment",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:lead"
+    ]
+  },
+  {
+    "move": "pyroball",
+    "result_id": "tmcraft:tm_pyroball",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:fire_charge",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "ragingbull",
+    "result_id": "tmcraft:tm_ragingbull",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:red_wool"
+    ]
+  },
+  {
+    "move": "ragingfury",
+    "result_id": "tmcraft:tm_ragingfury",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "cobblemon:charcoal_stick",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "revelationdance",
+    "result_id": "tmcraft:tm_revelationdance",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "mega_showdown:yellow_nectar"
+    ]
+  },
+  {
+    "move": "roaroftime",
+    "result_id": "tmcraft:tm_roaroftime",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "mega_showdown:adamant_orb"
+    ]
+  },
+  {
+    "move": "rockwrecker",
+    "result_id": "tmcraft:tm_rockwrecker",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:rock_gem",
+      "cobblemon:hard_stone",
+      "cobblemon:protector"
+    ]
+  },
+  {
+    "move": "sandsearstorm",
+    "result_id": "tmcraft:tm_sandsearstorm",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "minecraft:blaze_powder",
+      "minecraft:sand",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "searingshot",
+    "result_id": "tmcraft:tm_searingshot",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "cobblemon:lucky_egg"
+    ]
+  },
+  {
+    "move": "shadowbone",
+    "result_id": "tmcraft:tm_shadowbone",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "minecraft:bone",
+      "minecraft:echo_shard"
+    ]
+  },
+  {
+    "move": "shadowpunch",
+    "result_id": "tmcraft:tm_shadowpunch",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "cobblemon:punching_glove",
+      "minecraft:soul_sand"
+    ]
+  },
+  {
+    "move": "shellsidearm",
+    "result_id": "tmcraft:tm_shellsidearm",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:poison_gem",
+      "cobblemon:tasty_tail"
+    ]
+  },
+  {
+    "move": "spacialrend",
+    "result_id": "tmcraft:tm_spacialrend",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "mega_showdown:lustrous_orb"
+    ]
+  },
+  {
+    "move": "spectralthief",
+    "result_id": "tmcraft:tm_spectralthief",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "minecraft:bundle"
+    ]
+  },
+  {
+    "move": "springtidestorm",
+    "result_id": "tmcraft:tm_springtidestorm",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "cobblemon:love_sweet",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "steelroller",
+    "result_id": "tmcraft:tm_steelroller",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "cobblemon:iron_ball",
+      "minecraft:iron_ingot"
+    ]
+  },
+  {
+    "move": "synchronoise",
+    "result_id": "tmcraft:tm_synchronoise",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:magnet"
+    ]
+  },
+  {
+    "move": "thousandwaves",
+    "result_id": "tmcraft:tm_thousandwaves",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "mega_showdown:zygarde_cell",
+      "minecraft:arrow"
+    ]
+  },
+  {
+    "move": "thousandwaves",
+    "result_id": "tmcraft:tm_thousandwaves",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "mega_showdown:zygarde_cell"
+    ]
+  },
+  {
+    "move": "thunder",
+    "result_id": "tmcraft:tm_thunder",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:thunder_stone"
+    ]
+  },
+  {
+    "move": "thunderouskick",
+    "result_id": "tmcraft:tm_thunderouskick",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "lumymon:thunder_feather",
+      "cobblemon:galarica_nuts"
+    ]
+  },
+  {
+    "move": "volttackle",
+    "result_id": "tmcraft:tm_volttackle",
+    "disc": "diamond_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:everstone",
+      "cobblemon:cell_battery"
+    ]
+  },
+  {
+    "move": "astralbarrage",
+    "result_id": "tmcraft:tm_astralbarrage",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "lumymon:calyrex_crown",
+      "minecraft:nether_star"
+    ]
+  },
+  {
+    "move": "blastburn",
+    "result_id": "tmcraft:tm_blastburn",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:fire_charge",
+      "minecraft:lava_bucket"
+    ]
+  },
+  {
+    "move": "boltstrike",
+    "result_id": "tmcraft:tm_boltstrike",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "mega_showdown:dna_splicer",
+      "cobblemon:electric_seed"
+    ]
+  },
+  {
+    "move": "boomburst",
+    "result_id": "tmcraft:tm_boomburst",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "burningbulwark",
+    "result_id": "tmcraft:tm_burningbulwark",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:leather",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "chloroblast",
+    "result_id": "tmcraft:tm_chloroblast",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:cell_battery",
+      "minecraft:oak_leaves"
+    ]
+  },
+  {
+    "move": "collisioncourse",
+    "result_id": "tmcraft:tm_collisioncourse",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:carbos"
+    ]
+  },
+  {
+    "move": "crushclaw",
+    "result_id": "tmcraft:tm_crushclaw",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:grip_claw"
+    ]
+  },
+  {
+    "move": "crushgrip",
+    "result_id": "tmcraft:tm_crushgrip",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:punching_glove",
+      "minecraft:anvil"
+    ]
+  },
+  {
+    "move": "doomdesire",
+    "result_id": "tmcraft:tm_doomdesire",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:nether_star"
+    ]
+  },
+  {
+    "move": "dragonascent",
+    "result_id": "tmcraft:tm_dragonascent",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "cobblemon:dragon_scale",
+      "minecraft:dragon_breath"
+    ]
+  },
+  {
+    "move": "electrodrift",
+    "result_id": "tmcraft:tm_electrodrift",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:carbos",
+      "cobblemon:electric_seed"
+    ]
+  },
+  {
+    "move": "eruption",
+    "result_id": "tmcraft:tm_eruption",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:lava_bucket",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "eternabeam",
+    "result_id": "tmcraft:tm_eternabeam",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:dragon_gem",
+      "minecraft:dragon_breath"
+    ]
+  },
+  {
+    "move": "finalgambit",
+    "result_id": "tmcraft:tm_finalgambit",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:red_card"
+    ]
+  },
+  {
+    "move": "fleurcannon",
+    "result_id": "tmcraft:tm_fleurcannon",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:nether_star",
+      "minecraft:allium"
+    ]
+  },
+  {
+    "move": "freezeshock",
+    "result_id": "tmcraft:tm_freezeshock",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "cobblemon:cell_battery",
+      "cobblemon:ice_stone"
+    ]
+  },
+  {
+    "move": "freezingglare",
+    "result_id": "tmcraft:tm_freezingglare",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "lumymon:glacier_feather",
+      "cobblemon:galarica_nuts"
+    ]
+  },
+  {
+    "move": "fusionflare",
+    "result_id": "tmcraft:tm_fusionflare",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "mega_showdown:dna_splicer"
+    ]
+  },
+  {
+    "move": "geomancy",
+    "result_id": "tmcraft:tm_geomancy",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:lilac"
+    ]
+  },
+  {
+    "move": "gigatonhammer",
+    "result_id": "tmcraft:tm_gigatonhammer",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:mace"
+    ]
+  },
+  {
+    "move": "headcharge",
+    "result_id": "tmcraft:tm_headcharge",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:diamond_helmet"
+    ]
+  },
+  {
+    "move": "headlongrush",
+    "result_id": "tmcraft:tm_headlongrush",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "cobblemon:assault_vest"
+    ]
+  },
+  {
+    "move": "holdback",
+    "result_id": "tmcraft:tm_holdback",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:protective_pads"
+    ]
+  },
+  {
+    "move": "hyperspacefury",
+    "result_id": "tmcraft:tm_hyperspacefury",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "mega_showdown:prison_bottle"
+    ]
+  },
+  {
+    "move": "hyperspacehole",
+    "result_id": "tmcraft:tm_hyperspacehole",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "mega_showdown:prison_bottle"
+    ]
+  },
+  {
+    "move": "iceburn",
+    "result_id": "tmcraft:tm_iceburn",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "minecraft:wind_charge",
+      "cobblemon:never_melt_ice",
+      "minecraft:blaze_powder"
+    ]
+  },
+  {
+    "move": "judgment",
+    "result_id": "tmcraft:tm_judgment",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "mega_showdown:legend_plate"
+    ]
+  },
+  {
+    "move": "lastresort",
+    "result_id": "tmcraft:tm_lastresort",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "tmcraft:copper_blank_disc",
+      "tmcraft:iron_blank_disc",
+      "tmcraft:gold_blank_disc",
+      "tmcraft:emerald_blank_disc",
+      "tmcraft:diamond_blank_disc"
+    ]
+  },
+  {
+    "move": "lightofruin",
+    "result_id": "tmcraft:tm_lightofruin",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fairy_gem",
+      "minecraft:nether_star",
+      "minecraft:glowstone_dust"
+    ]
+  },
+  {
+    "move": "lunarblessing",
+    "result_id": "tmcraft:tm_lunarblessing",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:full_restore"
+    ]
+  },
+  {
+    "move": "lunardance",
+    "result_id": "tmcraft:tm_lunardance",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "cobblemon:full_restore",
+      "minecraft:tnt"
+    ]
+  },
+  {
+    "move": "magmastorm",
+    "result_id": "tmcraft:tm_magmastorm",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:lava_bucket"
+    ]
+  },
+  {
+    "move": "metalburst",
+    "result_id": "tmcraft:tm_metalburst",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:steel_gem",
+      "minecraft:tnt",
+      "minecraft:iron_ingot"
+    ]
+  },
+  {
+    "move": "meteorassault",
+    "result_id": "tmcraft:tm_meteorassault",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "cobblemon:medicinal_leek"
+    ]
+  },
+  {
+    "move": "mindblown",
+    "result_id": "tmcraft:tm_mindblown",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "cobblemon:metronome"
+    ]
+  },
+  {
+    "move": "mistball",
+    "result_id": "tmcraft:tm_mistball",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "mega_showdown:soul_dew"
+    ]
+  },
+  {
+    "move": "multiattack",
+    "result_id": "tmcraft:tm_multiattack",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "mega_showdown:steel_memory"
+    ]
+  },
+  {
+    "move": "originpulse",
+    "result_id": "tmcraft:tm_originpulse",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "lumymon:ocean_core"
+    ]
+  },
+  {
+    "move": "petaldance",
+    "result_id": "tmcraft:tm_petaldance",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:note_block",
+      "minecraft:pink_petals"
+    ]
+  },
+  {
+    "move": "photongeyser",
+    "result_id": "tmcraft:tm_photongeyser",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "mega_showdown:n_solarizer",
+      "mega_showdown:n_lunarizer"
+    ]
+  },
+  {
+    "move": "plasmafists",
+    "result_id": "tmcraft:tm_plasmafists",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:punching_glove",
+      "cobblemon:electric_seed"
+    ]
+  },
+  {
+    "move": "powerwhip",
+    "result_id": "tmcraft:tm_powerwhip",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:vine"
+    ]
+  },
+  {
+    "move": "precipiceblades",
+    "result_id": "tmcraft:tm_precipiceblades",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:ground_gem",
+      "lumymon:earth_core"
+    ]
+  },
+  {
+    "move": "prismaticlaser",
+    "result_id": "tmcraft:tm_prismaticlaser",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:psychic_gem",
+      "mega_showdown:n_solarizer",
+      "mega_showdown:n_lunarizer"
+    ]
+  },
+  {
+    "move": "relicsong",
+    "result_id": "tmcraft:tm_relicsong",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:ancient_debris"
+    ]
+  },
+  {
+    "move": "ruination",
+    "result_id": "tmcraft:tm_ruination",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:dark_gem",
+      "minecraft:nether_star"
+    ]
+  },
+  {
+    "move": "sacredfire",
+    "result_id": "tmcraft:tm_sacredfire",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "lumymon:rainbow_wing"
+    ]
+  },
+  {
+    "move": "sacredsword",
+    "result_id": "tmcraft:tm_sacredsword",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:netherite_sword"
+    ]
+  },
+  {
+    "move": "secretsword",
+    "result_id": "tmcraft:tm_secretsword",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fighting_gem",
+      "minecraft:diamond_sword"
+    ]
+  },
+  {
+    "move": "seedflare",
+    "result_id": "tmcraft:tm_seedflare",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "cobblemon:grassy_seed"
+    ]
+  },
+  {
+    "move": "shadowforce",
+    "result_id": "tmcraft:tm_shadowforce",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:ghost_gem",
+      "mega_showdown:griseous_orb"
+    ]
+  },
+  {
+    "move": "sheercold",
+    "result_id": "tmcraft:tm_sheercold",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:ice_gem",
+      "cobblemon:never_melt_ice",
+      "minecraft:blue_ice"
+    ]
+  },
+  {
+    "move": "shelltrap",
+    "result_id": "tmcraft:tm_shelltrap",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "minecraft:nautilus_shell"
+    ]
+  },
+  {
+    "move": "skyattack",
+    "result_id": "tmcraft:tm_skyattack",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:flying_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "steameruption",
+    "result_id": "tmcraft:tm_steameruption",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:water_gem",
+      "minecraft:campfire",
+      "cobblemon:water_stone",
+      "cobblemon:fire_stone"
+    ]
+  },
+  {
+    "move": "technoblast",
+    "result_id": "tmcraft:tm_technoblast",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:tnt",
+      "cobblemon:upgrade"
+    ]
+  },
+  {
+    "move": "terastarstorm",
+    "result_id": "tmcraft:tm_terastarstorm",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "minecraft:nether_star"
+    ]
+  },
+  {
+    "move": "thrash",
+    "result_id": "tmcraft:tm_thrash",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:normal_gem",
+      "cobblemon:protective_pads"
+    ]
+  },
+  {
+    "move": "thundercage",
+    "result_id": "tmcraft:tm_thundercage",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:thunder_stone",
+      "minecraft:iron_bars"
+    ]
+  },
+  {
+    "move": "vcreate",
+    "result_id": "tmcraft:tm_vcreate",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:fire_gem",
+      "cobblemon:weak_candy",
+      "cobblemon:brittle_candy",
+      "cobblemon:numb_candy",
+      "cobblemon:coward_candy"
+    ]
+  },
+  {
+    "move": "wildboltstorm",
+    "result_id": "tmcraft:tm_wildboltstorm",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:electric_gem",
+      "cobblemon:thunder_stone",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "woodhammer",
+    "result_id": "tmcraft:tm_woodhammer",
+    "disc": "netherite_blank_disc",
+    "ingredients": [
+      "cobblemon:grass_gem",
+      "minecraft:mace"
+    ]
+  },
+  {
+    "move": "boneclub",
+    "result_id": "tmcraft:tm_boneclub",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_bonemerang",
+      "cobblemon:ground_gem",
+      "minecraft:bone"
+    ]
+  },
+  {
+    "move": "bonemerang",
+    "result_id": "tmcraft:tm_bonemerang",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_bonerush",
+      "cobblemon:ground_gem",
+      "minecraft:bone"
+    ]
+  },
+  {
+    "move": "bouncybubble",
+    "result_id": "tmcraft:tm_bouncybubble",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_bubble",
+      "cobblemon:water_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "clearsmog",
+    "result_id": "tmcraft:tm_clearsmog",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_smog",
+      "cobblemon:poison_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "conversion2",
+    "result_id": "tmcraft:tm_conversion2",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_conversion",
+      "cobblemon:normal_gem",
+      "cobblemon:upgrade"
+    ]
+  },
+  {
+    "move": "corrosivegas",
+    "result_id": "tmcraft:tm_corrosivegas",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_smog",
+      "cobblemon:poison_gem",
+      "cobblemon:smoke_ball"
+    ]
+  },
+  {
+    "move": "crosschop",
+    "result_id": "tmcraft:tm_crosschop",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_karatechop",
+      "cobblemon:fighting_gem",
+      "minecraft:piston"
+    ]
+  },
+  {
+    "move": "doubleshock",
+    "result_id": "tmcraft:tm_doubleshock",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_thunder",
+      "cobblemon:electric_gem",
+      "cobblemon:light_ball"
+    ]
+  },
+  {
+    "move": "furyswipes",
+    "result_id": "tmcraft:tm_furyswipes",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_scratch",
+      "cobblemon:normal_gem",
+      "cobblemon:quick_claw"
+    ]
+  },
+  {
+    "move": "highjumpkick",
+    "result_id": "tmcraft:tm_highjumpkick",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_jumpkick",
+      "cobblemon:fighting_gem",
+      "cobblemon:expert_belt"
+    ]
+  },
+  {
+    "move": "howl",
+    "result_id": "tmcraft:tm_howl",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_leer",
+      "cobblemon:normal_gem",
+      "cobblemon:punching_glove"
+    ]
+  },
+  {
+    "move": "hydrocannon",
+    "result_id": "tmcraft:tm_hydrocannon",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_waterpulse",
+      "cobblemon:water_gem",
+      "minecraft:heavy_core"
+    ]
+  },
+  {
+    "move": "jumpkick",
+    "result_id": "tmcraft:tm_jumpkick",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_triplekick",
+      "cobblemon:fighting_gem",
+      "minecraft:rabbit_foot"
+    ]
+  },
+  {
+    "move": "nobleroar",
+    "result_id": "tmcraft:tm_nobleroar",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_roar",
+      "cobblemon:normal_gem",
+      "minecraft:tnt"
+    ]
+  },
+  {
+    "move": "psystrike",
+    "result_id": "tmcraft:tm_psystrike",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_psyshock",
+      "cobblemon:psychic_gem",
+      "lumymon:ancient_dna"
+    ]
+  },
+  {
+    "move": "rollingkick",
+    "result_id": "tmcraft:tm_rollingkick",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_triplekick",
+      "cobblemon:fighting_gem",
+      "minecraft:wind_charge"
+    ]
+  },
+  {
+    "move": "secretpower",
+    "result_id": "tmcraft:tm_secretpower",
+    "disc": null,
+    "ingredients": []
+  },
+  {
+    "move": "stunspore",
+    "result_id": "tmcraft:tm_stunspore",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_spore",
+      "cobblemon:grass_gem",
+      "cobblemon:paralyze_heal"
+    ]
+  },
+  {
+    "move": "triplekick",
+    "result_id": "tmcraft:tm_triplekick",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_doublekick",
+      "cobblemon:fighting_gem",
+      "cobblemon:focus_sash",
+      "cobblemon:x_attack",
+      "cobblemon:x_defence"
+    ]
+  },
+  {
+    "move": "wringout",
+    "result_id": "tmcraft:tm_wringout",
+    "disc": null,
+    "ingredients": [
+      "tmcraft:tm_bind",
+      "cobblemon:normal_gem",
+      "cobblemon:binding_band"
+    ]
+  }
+]

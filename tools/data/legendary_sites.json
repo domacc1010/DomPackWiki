@@ -1,0 +1,98 @@
+[
+  {
+    "name": "groudon",
+    "region": "Hoenn",
+    "category": "legendary",
+    "biome": "minecraft:warm_ocean",
+    "dimension": "Overworld",
+    "start_height": {
+      "absolute": 0
+    },
+    "spacing": 133,
+    "separation": 99
+  },
+  {
+    "name": "kyogre",
+    "region": "Hoenn",
+    "category": "legendary",
+    "biome": "minecraft:deep_cold_ocean",
+    "dimension": "Overworld",
+    "start_height": {
+      "absolute": 0
+    },
+    "spacing": 133,
+    "separation": 99
+  },
+  {
+    "name": "regice",
+    "region": "Hoenn",
+    "category": "legendary",
+    "biome": "terralith:snowy_badlands",
+    "dimension": "Overworld",
+    "start_height": {
+      "absolute": 1
+    },
+    "spacing": 144,
+    "separation": 78
+  },
+  {
+    "name": "regirock",
+    "region": "Hoenn",
+    "category": "legendary",
+    "biome": "terralith:lush_desert",
+    "dimension": "Overworld",
+    "start_height": {
+      "absolute": 1
+    },
+    "spacing": 144,
+    "separation": 77
+  },
+  {
+    "name": "registeel",
+    "region": "Hoenn",
+    "category": "legendary",
+    "biome": "terralith:alpine_highlands",
+    "dimension": "Overworld",
+    "start_height": {
+      "absolute": 1
+    },
+    "spacing": 144,
+    "separation": 79
+  },
+  {
+    "name": "deoxys",
+    "region": "Hoenn",
+    "category": "mythical",
+    "biome": "minecraft:small_end_islands",
+    "dimension": "The End",
+    "start_height": {
+      "absolute": 150
+    },
+    "spacing": 186,
+    "separation": 86
+  },
+  {
+    "name": "jirachi",
+    "region": "Hoenn",
+    "category": "mythical",
+    "biome": "terralith:blooming_plateau",
+    "dimension": "Overworld",
+    "start_height": {
+      "absolute": 0
+    },
+    "spacing": 285,
+    "separation": 85
+  },
+  {
+    "name": "manaphy",
+    "region": "Sinnoh",
+    "category": "mythical",
+    "biome": "minecraft:deep_cold_ocean",
+    "dimension": "Overworld",
+    "start_height": {
+      "absolute": 0
+    },
+    "spacing": 166,
+    "separation": 49
+  }
+]

@@ -1,0 +1,3709 @@
+{
+  "bosses": [
+    {
+      "slug": "abomasnow",
+      "species": "abomasnow",
+      "moves": [
+        "woodhammer",
+        "icywind",
+        "razorleaf",
+        "iceshard"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "abomasnow_mega",
+      "species": "abomasnow",
+      "moves": [
+        "blizzard",
+        "woodhammer",
+        "icywind",
+        "razorleaf"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 2.0
+    },
+    {
+      "slug": "absol_mega",
+      "species": "absol",
+      "moves": [
+        "suckerpunch",
+        "nightslash",
+        "slash",
+        "pursuit"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DARK",
+      "weight": 2.0
+    },
+    {
+      "slug": "aerodactyl_mega",
+      "species": "aerodactyl",
+      "moves": [
+        "gigaimpact",
+        "skydrop",
+        "stoneedge",
+        "takedown"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ROCK",
+      "weight": 2.0
+    },
+    {
+      "slug": "aggron_mega",
+      "species": "aggron",
+      "moves": [
+        "doubleedge",
+        "irontail",
+        "takedown",
+        "ironhead"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 2.0
+    },
+    {
+      "slug": "alakazam_mega",
+      "species": "alakazam",
+      "moves": [
+        "futuresight",
+        "psychic",
+        "psyshock",
+        "psybeam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "PSYCHIC",
+      "weight": 2.0
+    },
+    {
+      "slug": "alcremie_gmax",
+      "species": "alcremie",
+      "moves": [
+        "dazzlinggleam",
+        "drainingkiss",
+        "tackle",
+        "mysticalfire"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FAIRY",
+      "weight": 1.0
+    },
+    {
+      "slug": "altaria_mega",
+      "species": "altaria",
+      "moves": [
+        "skyattack",
+        "moonblast",
+        "takedown",
+        "dragonbreath"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 2.0
+    },
+    {
+      "slug": "ampharos_mega",
+      "species": "ampharos",
+      "moves": [
+        "thunder",
+        "signalbeam",
+        "dazzlinggleam",
+        "discharge"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 2.0
+    },
+    {
+      "slug": "appletun",
+      "species": "appletun",
+      "moves": [
+        "energyball",
+        "dragonpulse",
+        "bodyslam",
+        "appleacid"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "appletun_gmax",
+      "species": "appletun",
+      "moves": [
+        "energyball",
+        "dragonpulse",
+        "appleacid",
+        "bodyslam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 1.0
+    },
+    {
+      "slug": "applin",
+      "species": "applin",
+      "moves": [
+        "astonish"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "arcanine_hisuian",
+      "species": "arcanine",
+      "moves": [
+        "flareblitz",
+        "extremespeed",
+        "bite",
+        "rockslide"
+      ],
+      "custom_properties": [
+        {
+          "name": "hisuian",
+          "value": true
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "FIRE",
+      "weight": 20.0
+    },
+    {
+      "slug": "archaludon",
+      "species": "archaludon",
+      "moves": [
+        "hyperbeam",
+        "flashcannon",
+        "electroshot",
+        "dragonclaw"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FIVE",
+      "type": "STEEL",
+      "weight": 20.0
+    },
+    {
+      "slug": "arctibax",
+      "species": "arctibax",
+      "moves": [
+        "takedown",
+        "icefang",
+        "bite",
+        "tackle"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "DRAGON",
+      "weight": 20.0
+    },
+    {
+      "slug": "audino",
+      "species": "audino",
+      "moves": [
+        "hypervoice",
+        "takedown",
+        "secretpower",
+        "zenheadbutt"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "NORMAL",
+      "weight": 20.0
+    },
+    {
+      "slug": "audino_mega",
+      "species": "audino",
+      "moves": [
+        "lastresort",
+        "doubleedge",
+        "hypervoice",
+        "takedown"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "NORMAL",
+      "weight": 2.0
+    },
+    {
+      "slug": "avalugg_hisuian",
+      "species": "avalugg",
+      "moves": [
+        "rockslide",
+        "mountaingale",
+        "doubleedge",
+        "crunch"
+      ],
+      "custom_properties": [
+        {
+          "name": "hisuian",
+          "value": true
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "ICE",
+      "weight": 20.0
+    },
+    {
+      "slug": "banette_mega",
+      "species": "banette",
+      "moves": [
+        "phantomforce",
+        "suckerpunch",
+        "feintattack",
+        "shadowsneak"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GHOST",
+      "weight": 2.0
+    },
+    {
+      "slug": "baxcalibur",
+      "species": "baxcalibur",
+      "moves": [
+        "iciclecrash",
+        "crunch",
+        "takedown",
+        "dragonclaw"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FIVE",
+      "type": "DRAGON",
+      "weight": 20.0
+    },
+    {
+      "slug": "beautifly",
+      "species": "beautifly",
+      "moves": [
+        "bugbuzz",
+        "gigadrain",
+        "silverwind",
+        "megadrain"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "beedrill_mega",
+      "species": "beedrill",
+      "moves": [
+        "fellstinger",
+        "poisonjab",
+        "pinmissile",
+        "assurance"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "BUG",
+      "weight": 2.0
+    },
+    {
+      "slug": "bisharp",
+      "species": "bisharp",
+      "moves": [
+        "nightslash",
+        "slash",
+        "assurance",
+        "feintattack"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "DARK",
+      "weight": 20.0
+    },
+    {
+      "slug": "blacephalon",
+      "species": "blacephalon",
+      "moves": [
+        "mindblown",
+        "fireblast",
+        "shadowball",
+        "mysticalfire"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "FIRE",
+      "weight": 2.0
+    },
+    {
+      "slug": "blastoise_gmax",
+      "species": "blastoise",
+      "moves": [
+        "hydropump",
+        "waterpulse",
+        "bubble",
+        "watergun"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 1.0
+    },
+    {
+      "slug": "blastoise_mega",
+      "species": "blastoise",
+      "moves": [
+        "hydropump",
+        "waterpulse",
+        "bubble",
+        "watergun"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 2.0
+    },
+    {
+      "slug": "blaziken_mega",
+      "species": "blaziken",
+      "moves": [
+        "bravebird",
+        "skyuppercut",
+        "flareblitz",
+        "bounce"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIRE",
+      "weight": 2.0
+    },
+    {
+      "slug": "blipbug",
+      "species": "blipbug",
+      "moves": [
+        "strugglebug"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_ONE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "bombirdier",
+      "species": "bombirdier",
+      "moves": [
+        "dualwingbeat",
+        "payback",
+        "rocktomb",
+        "pluck"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "FLYING",
+      "weight": 20.0
+    },
+    {
+      "slug": "brutebonnet",
+      "species": "brutebonnet",
+      "moves": [
+        "suckerpunch",
+        "thrash",
+        "payback",
+        "astonish"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "GRASS",
+      "weight": 5.0
+    },
+    {
+      "slug": "burmy_plant",
+      "species": "burmy",
+      "moves": [
+        "tackle"
+      ],
+      "custom_properties": [
+        {
+          "name": "bagworm_cloak",
+          "value": "plant"
+        }
+      ],
+      "tier": "TIER_ONE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "burmy_sandy",
+      "species": "burmy",
+      "moves": [
+        "tackle"
+      ],
+      "custom_properties": [
+        {
+          "name": "bagworm_cloak",
+          "value": "sandy"
+        }
+      ],
+      "tier": "TIER_ONE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "burmy_trash",
+      "species": "burmy",
+      "moves": [
+        "tackle"
+      ],
+      "custom_properties": [
+        {
+          "name": "bagworm_cloak",
+          "value": "trash"
+        }
+      ],
+      "tier": "TIER_ONE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "butterfree_gmax",
+      "species": "butterfree",
+      "moves": [
+        "bugbuzz",
+        "airslash",
+        "silverwind",
+        "psybeam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "BUG",
+      "weight": 1.0
+    },
+    {
+      "slug": "buzzwole",
+      "species": "buzzwole",
+      "moves": [
+        "focuspunch",
+        "superpower",
+        "hammerarm",
+        "dynamicpunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "BUG",
+      "weight": 2.0
+    },
+    {
+      "slug": "camerupt_mega",
+      "species": "camerupt",
+      "moves": [
+        "earthpower",
+        "lavaplume",
+        "flameburst",
+        "incinerate"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIRE",
+      "weight": 2.0
+    },
+    {
+      "slug": "carkol",
+      "species": "carkol",
+      "moves": [
+        "incinerate",
+        "ancientpower",
+        "tackle",
+        "rapidspin"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "ROCK",
+      "weight": 20.0
+    },
+    {
+      "slug": "castform",
+      "species": "castform",
+      "moves": [
+        "hydropump",
+        "blizzard",
+        "fireblast",
+        "weatherball"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "NORMAL",
+      "weight": 20.0
+    },
+    {
+      "slug": "celesteela",
+      "species": "celesteela",
+      "moves": [
+        "flashcannon",
+        "gigadrain",
+        "megadrain",
+        "absorb"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "STEEL",
+      "weight": 2.0
+    },
+    {
+      "slug": "centiskorch_gmax",
+      "species": "centiskorch",
+      "moves": [
+        "lunge",
+        "firelash",
+        "crunch",
+        "burnup"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIRE",
+      "weight": 1.0
+    },
+    {
+      "slug": "charizard_gmax",
+      "species": "charizard",
+      "moves": [
+        "flareblitz",
+        "slash",
+        "dragonclaw",
+        "airslash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIRE",
+      "weight": 0.5
+    },
+    {
+      "slug": "charizard_mega_x",
+      "species": "charizard",
+      "moves": [
+        "flareblitz",
+        "slash",
+        "dragonclaw",
+        "airslash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIRE",
+      "weight": 0.5
+    },
+    {
+      "slug": "charizard_mega_y",
+      "species": "charizard",
+      "moves": [
+        "flareblitz",
+        "slash",
+        "dragonclaw",
+        "airslash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIRE",
+      "weight": 0.5
+    },
+    {
+      "slug": "charjabug",
+      "species": "charjabug",
+      "moves": [
+        "spark",
+        "bite",
+        "mudslap",
+        "bugbite"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "cherrim",
+      "species": "cherrim",
+      "moves": [
+        "magicalleaf",
+        "petalblizzard",
+        "takedown",
+        "tackle"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "cherubi",
+      "species": "cherubi",
+      "moves": [
+        "magicalleaf",
+        "leafage",
+        "tackle"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "cinderace_gmax",
+      "species": "cinderace",
+      "moves": [
+        "doubleedge",
+        "bounce",
+        "headbutt",
+        "flamecharge"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIRE",
+      "weight": 1.0
+    },
+    {
+      "slug": "coalossal",
+      "species": "coalossal",
+      "moves": [
+        "incinerate",
+        "ancientpower",
+        "tackle",
+        "rapidspin"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FIVE",
+      "type": "ROCK",
+      "weight": 20.0
+    },
+    {
+      "slug": "coalossal_gmax",
+      "species": "coalossal",
+      "moves": [
+        "stoneedge",
+        "burnup",
+        "rockblast",
+        "incinerate"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ROCK",
+      "weight": 1.0
+    },
+    {
+      "slug": "cobalion",
+      "species": "cobalion",
+      "moves": [
+        "closecombat",
+        "ironhead",
+        "sacredsword",
+        "takedown"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 0.2
+    },
+    {
+      "slug": "copperajah_gmax",
+      "species": "copperajah",
+      "moves": [
+        "stomp",
+        "highhorsepower",
+        "playrough",
+        "ironhead"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 1.0
+    },
+    {
+      "slug": "corviknight_gmax",
+      "species": "corviknight",
+      "moves": [
+        "bravebird",
+        "drillpeck",
+        "pluck",
+        "furyattack"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FLYING",
+      "weight": 1.0
+    },
+    {
+      "slug": "darmanitan_galarian",
+      "species": "darmanitan",
+      "moves": [
+        "iciclecrash",
+        "bite",
+        "headbutt",
+        "icepunch"
+      ],
+      "custom_properties": [
+        {
+          "name": "galarian",
+          "value": true
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "ICE",
+      "weight": 20.0
+    },
+    {
+      "slug": "darumaka_galarian",
+      "species": "darumaka",
+      "moves": [
+        "icefang",
+        "avalanche",
+        "bite",
+        "tackle"
+      ],
+      "custom_properties": [
+        {
+          "name": "galarian",
+          "value": true
+        }
+      ],
+      "tier": "TIER_TWO",
+      "type": "ICE",
+      "weight": 20.0
+    },
+    {
+      "slug": "delcatty",
+      "species": "delcatty",
+      "moves": [
+        "doubleslap",
+        "fakeout"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "NORMAL",
+      "weight": 20.0
+    },
+    {
+      "slug": "diancie",
+      "species": "diancie",
+      "moves": [
+        "ancientpower",
+        "moonblast",
+        "powergem",
+        "rockslide"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ROCK",
+      "weight": 0.1
+    },
+    {
+      "slug": "dipplin",
+      "species": "dipplin",
+      "moves": [
+        "energyball",
+        "dragonpulse",
+        "syrupbomb",
+        "dragonbreath"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "dottler",
+      "species": "dottler",
+      "moves": [
+        "strugglebug",
+        "confusion"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "drednaw_gmax",
+      "species": "drednaw",
+      "moves": [
+        "headsmash",
+        "bodyslam",
+        "liquidation",
+        "jawlock"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 1.0
+    },
+    {
+      "slug": "duraludon",
+      "species": "duraludon",
+      "moves": [
+        "hyperbeam",
+        "flashcannon",
+        "dragonclaw",
+        "dragontail"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FIVE",
+      "type": "STEEL",
+      "weight": 20.0
+    },
+    {
+      "slug": "duraludon_gmax",
+      "species": "duraludon",
+      "moves": [
+        "hyperbeam",
+        "flashcannon",
+        "dragonclaw",
+        "dragontail"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 1.0
+    },
+    {
+      "slug": "dustox",
+      "species": "dustox",
+      "moves": [
+        "bugbuzz",
+        "silverwind",
+        "psybeam",
+        "venoshock"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "eevee_gmax",
+      "species": "eevee",
+      "moves": [
+        "swift",
+        "doubleedge",
+        "takedown",
+        "bite"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "NORMAL",
+      "weight": 1.0
+    },
+    {
+      "slug": "enamorus",
+      "species": "enamorus",
+      "moves": [
+        "springtidestorm",
+        "moonblast",
+        "extrasensory",
+        "mysticalfire"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FAIRY",
+      "weight": 0.2
+    },
+    {
+      "slug": "fezandipiti",
+      "species": "fezandipiti",
+      "moves": [
+        "tailslap",
+        "crosspoison",
+        "wingattack",
+        "moonblast"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "POISON",
+      "weight": 0.2
+    },
+    {
+      "slug": "flapple",
+      "species": "flapple",
+      "moves": [
+        "dragonrush",
+        "fly",
+        "gravapple",
+        "acrobatics"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "flapple_gmax",
+      "species": "flapple",
+      "moves": [
+        "dragonrush",
+        "fly",
+        "gravapple",
+        "acrobatics"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 1.0
+    },
+    {
+      "slug": "fluttermane",
+      "species": "fluttermane",
+      "moves": [
+        "psyshock",
+        "powergem",
+        "mysticalfire",
+        "shadowball"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "GHOST",
+      "weight": 5.0
+    },
+    {
+      "slug": "frigibax",
+      "species": "frigibax",
+      "moves": [
+        "tackle",
+        "dragontail",
+        "dragonbreath",
+        "icywind"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "DRAGON",
+      "weight": 20.0
+    },
+    {
+      "slug": "frosmoth",
+      "species": "frosmoth",
+      "moves": [
+        "blizzard",
+        "bugbuzz",
+        "aurorabeam",
+        "infestation"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "ICE",
+      "weight": 20.0
+    },
+    {
+      "slug": "gallade_mega",
+      "species": "gallade",
+      "moves": [
+        "closecombat",
+        "psychocut",
+        "falseswipe",
+        "aerialace"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "PSYCHIC",
+      "weight": 2.0
+    },
+    {
+      "slug": "garbodor_gmax",
+      "species": "garbodor",
+      "moves": [
+        "gunkshot",
+        "bodyslam",
+        "doubleslap",
+        "pound"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "POISON",
+      "weight": 1.0
+    },
+    {
+      "slug": "garchomp_mega",
+      "species": "garchomp",
+      "moves": [
+        "dragonrush",
+        "takedown",
+        "dig",
+        "dragonclaw"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 2.0
+    },
+    {
+      "slug": "gardevoir_mega",
+      "species": "gardevoir",
+      "moves": [
+        "futuresight",
+        "dreameater",
+        "moonblast",
+        "psychic"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "PSYCHIC",
+      "weight": 2.0
+    },
+    {
+      "slug": "genesect",
+      "species": "genesect",
+      "moves": [
+        "technoblast",
+        "flamecharge",
+        "bugbuzz",
+        "xscissor"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "BUG",
+      "weight": 0.1
+    },
+    {
+      "slug": "gengar_gmax",
+      "species": "gengar",
+      "moves": [
+        "darkpulse",
+        "suckerpunch",
+        "shadowball",
+        "payback"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GHOST",
+      "weight": 0.5
+    },
+    {
+      "slug": "gengar_mega",
+      "species": "gengar",
+      "moves": [
+        "dreameater",
+        "shadowball",
+        "darkpulse",
+        "hex"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GHOST",
+      "weight": 1.0
+    },
+    {
+      "slug": "glalie_mega",
+      "species": "glalie",
+      "moves": [
+        "blizzard",
+        "crunch",
+        "weatherball",
+        "icefang"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ICE",
+      "weight": 2.0
+    },
+    {
+      "slug": "gougingfire",
+      "species": "gougingfire",
+      "moves": [
+        "dragonrush",
+        "crushclaw",
+        "dragonclaw",
+        "bite"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "FIRE",
+      "weight": 3.0
+    },
+    {
+      "slug": "greattusk",
+      "species": "greattusk",
+      "moves": [
+        "closecombat",
+        "gigaimpact",
+        "earthquake",
+        "knockoff"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "GROUND",
+      "weight": 5.0
+    },
+    {
+      "slug": "greavard",
+      "species": "greavard",
+      "moves": [
+        "dig",
+        "headbutt",
+        "bite",
+        "lick"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "GHOST",
+      "weight": 20.0
+    },
+    {
+      "slug": "grimmsnarl_gmax",
+      "species": "grimmsnarl",
+      "moves": [
+        "spiritbreak",
+        "foulplay",
+        "playrough",
+        "suckerpunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DARK",
+      "weight": 1.0
+    },
+    {
+      "slug": "growlithe_hisuian",
+      "species": "growlithe",
+      "moves": [
+        "crunch",
+        "flamewheel",
+        "retaliate",
+        "firefang"
+      ],
+      "custom_properties": [
+        {
+          "name": "hisuian",
+          "value": true
+        }
+      ],
+      "tier": "TIER_THREE",
+      "type": "FIRE",
+      "weight": 20.0
+    },
+    {
+      "slug": "grubbin",
+      "species": "grubbin",
+      "moves": [
+        "bite",
+        "bugbite",
+        "mudslap"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "gulpin",
+      "species": "gulpin",
+      "moves": [
+        "acidspray",
+        "sludge",
+        "pound"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "POISON",
+      "weight": 20.0
+    },
+    {
+      "slug": "guzzlord",
+      "species": "guzzlord",
+      "moves": [
+        "gigaimpact",
+        "thrash",
+        "dragonrush",
+        "hammerarm"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "DARK",
+      "weight": 20.0
+    },
+    {
+      "slug": "gyarados_mega",
+      "species": "gyarados",
+      "moves": [
+        "thrash",
+        "aquatail",
+        "crunch",
+        "waterfall"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 2.0
+    },
+    {
+      "slug": "hatterene_gmax",
+      "species": "hatterene",
+      "moves": [
+        "psychic",
+        "dazzlinggleam",
+        "psybeam",
+        "confusion"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "PSYCHIC",
+      "weight": 1.0
+    },
+    {
+      "slug": "heliolisk",
+      "species": "heliolisk",
+      "moves": [
+        "pound",
+        "razorwind",
+        "thundershock",
+        "thunderbolt"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "ELECTRIC",
+      "weight": 20.0
+    },
+    {
+      "slug": "helioptile",
+      "species": "helioptile",
+      "moves": [
+        "bulldoze",
+        "quickattack",
+        "thundershock",
+        "pound"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "ELECTRIC",
+      "weight": 20.0
+    },
+    {
+      "slug": "heracross_mega",
+      "species": "heracross",
+      "moves": [
+        "closecombat",
+        "megahorn",
+        "thrash",
+        "throatchop"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "BUG",
+      "weight": 2.0
+    },
+    {
+      "slug": "hoopa",
+      "species": "hoopa",
+      "moves": [
+        "hyperspacehole",
+        "psychic",
+        "shadowball",
+        "darkpulse"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "PSYCHIC",
+      "weight": 0.1
+    },
+    {
+      "slug": "houndoom_mega",
+      "species": "houndoom",
+      "moves": [
+        "inferno",
+        "flamethrower",
+        "incinerate",
+        "ember"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DARK",
+      "weight": 2.0
+    },
+    {
+      "slug": "houndstone",
+      "species": "houndstone",
+      "moves": [
+        "playrough",
+        "crunch",
+        "dig",
+        "headbutt"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "GHOST",
+      "weight": 20.0
+    },
+    {
+      "slug": "hydrapple",
+      "species": "hydrapple",
+      "moves": [
+        "energyball",
+        "dragonpulse",
+        "syrupbomb",
+        "dragonbreath"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FIVE",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "indeedee_female",
+      "species": "indeedee",
+      "moves": [
+        "psychic",
+        "disarmingvoice",
+        "psybeam",
+        "storedpower"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "PSYCHIC",
+      "weight": 10.0
+    },
+    {
+      "slug": "indeedee_male",
+      "species": "indeedee",
+      "moves": [
+        "psychic",
+        "disarmingvoice",
+        "psybeam",
+        "storedpower"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "PSYCHIC",
+      "weight": 10.0
+    },
+    {
+      "slug": "inteleon_gmax",
+      "species": "inteleon",
+      "moves": [
+        "hydropump",
+        "suckerpunch",
+        "acrobatics",
+        "snipeshot"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 1.0
+    },
+    {
+      "slug": "ironboulder",
+      "species": "ironboulder",
+      "moves": [
+        "sacredsword",
+        "psychocut",
+        "megahorn",
+        "mightycleave"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "ROCK",
+      "weight": 3.0
+    },
+    {
+      "slug": "ironbundle",
+      "species": "ironbundle",
+      "moves": [
+        "icebeam",
+        "flipturn",
+        "freezedry",
+        "drillpeck"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "ICE",
+      "weight": 5.0
+    },
+    {
+      "slug": "ironcrown",
+      "species": "ironcrown",
+      "moves": [
+        "flashcannon",
+        "voltswitch",
+        "psyshock",
+        "tachyoncutter"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "STEEL",
+      "weight": 3.0
+    },
+    {
+      "slug": "ironhands",
+      "species": "ironhands",
+      "moves": [
+        "closecombat",
+        "wildcharge",
+        "forcepalm",
+        "slam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "FIGHTING",
+      "weight": 5.0
+    },
+    {
+      "slug": "ironjugulis",
+      "species": "ironjugulis",
+      "moves": [
+        "darkpulse",
+        "airslash",
+        "hypervoice",
+        "snarl"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "DARK",
+      "weight": 5.0
+    },
+    {
+      "slug": "ironleaves",
+      "species": "ironleaves",
+      "moves": [
+        "closecombat",
+        "psyblade",
+        "leafblade",
+        "sacredsword"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "GRASS",
+      "weight": 3.0
+    },
+    {
+      "slug": "ironmoth",
+      "species": "ironmoth",
+      "moves": [
+        "fierydance",
+        "sludgewave",
+        "discharge",
+        "firespin"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "FIRE",
+      "weight": 5.0
+    },
+    {
+      "slug": "ironthorns",
+      "species": "ironthorns",
+      "moves": [
+        "earthquake",
+        "pinmissile",
+        "wildcharge",
+        "rockslide"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "ROCK",
+      "weight": 5.0
+    },
+    {
+      "slug": "irontreads",
+      "species": "irontreads",
+      "moves": [
+        "wildcharge",
+        "earthquake",
+        "knockoff",
+        "stompingtantrum"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "GROUND",
+      "weight": 5.0
+    },
+    {
+      "slug": "ironvaliant",
+      "species": "ironvaliant",
+      "moves": [
+        "knockoff",
+        "closecombat",
+        "leafblade",
+        "nightslash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "FAIRY",
+      "weight": 5.0
+    },
+    {
+      "slug": "kangaskhan_mega",
+      "species": "kangaskhan",
+      "moves": [
+        "lastresort",
+        "outrage",
+        "crunch",
+        "dizzypunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "NORMAL",
+      "weight": 2.0
+    },
+    {
+      "slug": "kartana",
+      "species": "kartana",
+      "moves": [
+        "sacredsword",
+        "leafblade",
+        "nightslash",
+        "aerialace"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "GRASS",
+      "weight": 2.0
+    },
+    {
+      "slug": "keldeo",
+      "species": "keldeo",
+      "moves": [
+        "sacredsword",
+        "secretsword",
+        "hydropump",
+        "takedown"
+      ],
+      "custom_properties": [
+        {
+          "name": "sword_form",
+          "value": "resolute"
+        }
+      ],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 0.1
+    },
+    {
+      "slug": "kingambit",
+      "species": "kingambit",
+      "moves": [
+        "ironhead",
+        "retaliate",
+        "nightslash",
+        "slash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FIVE",
+      "type": "DARK",
+      "weight": 20.0
+    },
+    {
+      "slug": "kingler_gmax",
+      "species": "kingler",
+      "moves": [
+        "crabhammer",
+        "slam",
+        "razorshell",
+        "stomp"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 1.0
+    },
+    {
+      "slug": "koraidon",
+      "species": "koraidon",
+      "moves": [
+        "closecombat",
+        "flareblitz",
+        "collisioncourse",
+        "dragonclaw"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 0.2
+    },
+    {
+      "slug": "kubfu",
+      "species": "kubfu",
+      "moves": [
+        "aerialace",
+        "closecombat",
+        "headbutt",
+        "ironhead"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 0.3
+    },
+    {
+      "slug": "kyurem",
+      "species": "kyurem",
+      "moves": [
+        "glaciate",
+        "outrage",
+        "icebeam",
+        "hypervoice"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 0.2
+    },
+    {
+      "slug": "kyurem_black",
+      "species": "kyurem",
+      "moves": [
+        "glaciate",
+        "outrage",
+        "icebeam",
+        "hypervoice"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 0.1
+    },
+    {
+      "slug": "kyurem_white",
+      "species": "kyurem",
+      "moves": [
+        "glaciate",
+        "dragonpulse",
+        "icebeam",
+        "hypervoice"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 0.1
+    },
+    {
+      "slug": "landorus",
+      "species": "landorus",
+      "moves": [
+        "sandsearstorm",
+        "earthquake",
+        "stoneedge",
+        "outrage"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GROUND",
+      "weight": 0.2
+    },
+    {
+      "slug": "lapras_gmax",
+      "species": "lapras",
+      "moves": [
+        "hydropump",
+        "icebeam",
+        "bodyslam",
+        "brine"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 1.0
+    },
+    {
+      "slug": "lokix",
+      "species": "lokix",
+      "moves": [
+        "firstimpression",
+        "suckerpunch",
+        "throatchop",
+        "feint"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "lopunny_mega",
+      "species": "lopunny",
+      "moves": [
+        "highjumpkick",
+        "bounce",
+        "dizzypunch",
+        "headbutt"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "NORMAL",
+      "weight": 2.0
+    },
+    {
+      "slug": "lucario_mega",
+      "species": "lucario",
+      "moves": [
+        "dragonpulse",
+        "vacuumwave",
+        "aurasphere",
+        "closecombat"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 2.0
+    },
+    {
+      "slug": "lunala",
+      "species": "lunala",
+      "moves": [
+        "moongeistbeam",
+        "moonblast",
+        "psychic",
+        "nightdaze"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "PSYCHIC",
+      "weight": 0.2
+    },
+    {
+      "slug": "lycanroc_dusk",
+      "species": "lycanroc",
+      "moves": [
+        "stoneedge",
+        "crunch",
+        "suckerpunch",
+        "accelerock"
+      ],
+      "custom_properties": [
+        {
+          "name": "wolf_form",
+          "value": "dusk"
+        }
+      ],
+      "tier": "TIER_FOUR",
+      "type": "ROCK",
+      "weight": 10.0
+    },
+    {
+      "slug": "lycanroc_midday",
+      "species": "lycanroc",
+      "moves": [
+        "stoneedge",
+        "crunch",
+        "suckerpunch",
+        "accelerock"
+      ],
+      "custom_properties": [
+        {
+          "name": "wolf_form",
+          "value": "midday"
+        }
+      ],
+      "tier": "TIER_FOUR",
+      "type": "ROCK",
+      "weight": 10.0
+    },
+    {
+      "slug": "lycanroc_midnight",
+      "species": "lycanroc",
+      "moves": [
+        "stoneedge",
+        "crunch",
+        "rockslide",
+        "reversal"
+      ],
+      "custom_properties": [
+        {
+          "name": "wolf_form",
+          "value": "midnight"
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "ROCK",
+      "weight": 10.0
+    },
+    {
+      "slug": "machamp_gmax",
+      "species": "machamp",
+      "moves": [
+        "doubleedge",
+        "crosschop",
+        "dualchop",
+        "knockoff"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 1.0
+    },
+    {
+      "slug": "magearna",
+      "species": "magearna",
+      "moves": [
+        "fleurcannon",
+        "aurasphere",
+        "aurorabeam",
+        "flashcannon"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 0.1
+    },
+    {
+      "slug": "mandibuzz",
+      "species": "mandibuzz",
+      "moves": [
+        "airslash",
+        "knockoff",
+        "feintattack",
+        "gust"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "DARK",
+      "weight": 20.0
+    },
+    {
+      "slug": "manectric_mega",
+      "species": "manectric",
+      "moves": [
+        "thunder",
+        "discharge",
+        "shockwave",
+        "wildcharge"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 2.0
+    },
+    {
+      "slug": "marshadow",
+      "species": "marshadow",
+      "moves": [
+        "closecombat",
+        "spectralthief",
+        "icepunch",
+        "suckerpunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 0.1
+    },
+    {
+      "slug": "mawile_mega",
+      "species": "mawile",
+      "moves": [
+        "playrough",
+        "ironhead",
+        "crunch",
+        "feintattack"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 2.0
+    },
+    {
+      "slug": "medicham_mega",
+      "species": "medicham",
+      "moves": [
+        "axekick",
+        "highjumpkick",
+        "zenheadbutt",
+        "psybeam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 2.0
+    },
+    {
+      "slug": "melmetal",
+      "species": "melmetal",
+      "moves": [
+        "doubleironbash",
+        "thunderpunch",
+        "dynamicpunch",
+        "megapunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 0.2
+    },
+    {
+      "slug": "melmetal_gmax",
+      "species": "melmetal",
+      "moves": [
+        "doubleironbash",
+        "thunderpunch",
+        "dynamicpunch",
+        "megapunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 0.1
+    },
+    {
+      "slug": "meloetta",
+      "species": "meloetta",
+      "moves": [
+        "relicsong",
+        "closecombat",
+        "hypervoice",
+        "psychic"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "NORMAL",
+      "weight": 0.1
+    },
+    {
+      "slug": "meltan",
+      "species": "meltan",
+      "moves": [
+        "headbutt",
+        "flashcannon",
+        "thundershock"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 0.3
+    },
+    {
+      "slug": "meowth_gmax",
+      "species": "meowth",
+      "moves": [
+        "nightslash",
+        "playrough",
+        "slash",
+        "furyswipes"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "NORMAL",
+      "weight": 1.0
+    },
+    {
+      "slug": "metagross_mega",
+      "species": "metagross",
+      "moves": [
+        "meteormash",
+        "takedown",
+        "pursuit",
+        "zenheadbutt"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 2.0
+    },
+    {
+      "slug": "minior",
+      "species": "minior",
+      "moves": [
+        "powergem",
+        "doubleedge",
+        "rollout",
+        "ancientpower"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "ROCK",
+      "weight": 20.0
+    },
+    {
+      "slug": "miraidon",
+      "species": "miraidon",
+      "moves": [
+        "dragonpulse",
+        "overheat",
+        "hyperbeam",
+        "electrodrift"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 0.2
+    },
+    {
+      "slug": "mothim",
+      "species": "mothim",
+      "moves": [
+        "psychic",
+        "airslash",
+        "silverwind",
+        "psybeam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "munkidori",
+      "species": "munkidori",
+      "moves": [
+        "nastyplot",
+        "sludgewave",
+        "psychic",
+        "clearsmog"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "POISON",
+      "weight": 0.2
+    },
+    {
+      "slug": "naganadel",
+      "species": "naganadel",
+      "moves": [
+        "dragonpulse",
+        "airslash",
+        "venoshock",
+        "fellstinger"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "POISON",
+      "weight": 2.0
+    },
+    {
+      "slug": "nihilego",
+      "species": "nihilego",
+      "moves": [
+        "powergem",
+        "venoshock",
+        "clearsmog",
+        "acidspray"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "ROCK",
+      "weight": 2.0
+    },
+    {
+      "slug": "nymble",
+      "species": "nymble",
+      "moves": [
+        "doublekick",
+        "assurance",
+        "astonish",
+        "strugglebug"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_ONE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "okidogi",
+      "species": "okidogi",
+      "moves": [
+        "bulkup",
+        "superpower",
+        "crunch",
+        "poisonjab"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "POISON",
+      "weight": 0.2
+    },
+    {
+      "slug": "oranguru",
+      "species": "oranguru",
+      "moves": [
+        "psychic",
+        "zenheadbutt",
+        "feintattack",
+        "storedpower"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "NORMAL",
+      "weight": 20.0
+    },
+    {
+      "slug": "orbeetle",
+      "species": "orbeetle",
+      "moves": [
+        "psychic",
+        "bugbuzz",
+        "psybeam",
+        "confusion"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "orbeetle_gmax",
+      "species": "orbeetle",
+      "moves": [
+        "psychic",
+        "bugbuzz",
+        "psybeam",
+        "confusion"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "BUG",
+      "weight": 1.0
+    },
+    {
+      "slug": "oricorio_baile",
+      "species": "oricorio",
+      "moves": [
+        "hurricane",
+        "revelationdance",
+        "airslash",
+        "acrobatics"
+      ],
+      "custom_properties": [
+        {
+          "name": "dance_style",
+          "value": "baile"
+        }
+      ],
+      "tier": "TIER_FOUR",
+      "type": "FIRE",
+      "weight": 20.0
+    },
+    {
+      "slug": "oricorio_pau",
+      "species": "oricorio",
+      "moves": [
+        "hurricane",
+        "revelationdance",
+        "airslash",
+        "acrobatics"
+      ],
+      "custom_properties": [
+        {
+          "name": "dance_style",
+          "value": "pau"
+        }
+      ],
+      "tier": "TIER_FOUR",
+      "type": "PSYCHIC",
+      "weight": 20.0
+    },
+    {
+      "slug": "oricorio_pompom",
+      "species": "oricorio",
+      "moves": [
+        "hurricane",
+        "revelationdance",
+        "airslash",
+        "acrobatics"
+      ],
+      "custom_properties": [
+        {
+          "name": "dance_style",
+          "value": "pom-pom"
+        }
+      ],
+      "tier": "TIER_FOUR",
+      "type": "ELECTRIC",
+      "weight": 20.0
+    },
+    {
+      "slug": "oricorio_sensu",
+      "species": "oricorio",
+      "moves": [
+        "hurricane",
+        "revelationdance",
+        "airslash",
+        "acrobatics"
+      ],
+      "custom_properties": [
+        {
+          "name": "dance_style",
+          "value": "sensu"
+        }
+      ],
+      "tier": "TIER_FOUR",
+      "type": "GHOST",
+      "weight": 20.0
+    },
+    {
+      "slug": "palpitoad",
+      "species": "palpitoad",
+      "moves": [
+        "uproar",
+        "bubblebeam",
+        "round",
+        "mudshot"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "WATER",
+      "weight": 20.0
+    },
+    {
+      "slug": "pancham",
+      "species": "pancham",
+      "moves": [
+        "crunch",
+        "vitalthrow",
+        "slash",
+        "lowsweep"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "FIGHTING",
+      "weight": 20.0
+    },
+    {
+      "slug": "pangoro",
+      "species": "pangoro",
+      "moves": [
+        "bodyslam",
+        "crunch",
+        "vitalthrow",
+        "slash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "FIGHTING",
+      "weight": 20.0
+    },
+    {
+      "slug": "passimian",
+      "species": "passimian",
+      "moves": [
+        "doubleedge",
+        "thrash",
+        "takedown",
+        "rocksmash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "FIGHTING",
+      "weight": 20.0
+    },
+    {
+      "slug": "pawmi",
+      "species": "pawmi",
+      "moves": [
+        "nuzzle",
+        "quickattack",
+        "scratch",
+        "thundershock"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_ONE",
+      "type": "ELECTRIC",
+      "weight": 20.0
+    },
+    {
+      "slug": "pawmo",
+      "species": "pawmo",
+      "moves": [
+        "slam",
+        "spark",
+        "bite",
+        "dig"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "ELECTRIC",
+      "weight": 20.0
+    },
+    {
+      "slug": "pawmot",
+      "species": "pawmot",
+      "moves": [
+        "closecombat",
+        "slam",
+        "armthrust",
+        "spark"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "ELECTRIC",
+      "weight": 20.0
+    },
+    {
+      "slug": "pawniard",
+      "species": "pawniard",
+      "moves": [
+        "slash",
+        "assurance",
+        "feintattack",
+        "metalclaw"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "DARK",
+      "weight": 20.0
+    },
+    {
+      "slug": "pecharunt",
+      "species": "pecharunt",
+      "moves": [
+        "malignantchain",
+        "shadowball",
+        "nastyplot",
+        "faketears"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "POISON",
+      "weight": 0.1
+    },
+    {
+      "slug": "pheromosa",
+      "species": "pheromosa",
+      "moves": [
+        "highjumpkick",
+        "bugbuzz",
+        "bounce",
+        "lunge"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "BUG",
+      "weight": 2.0
+    },
+    {
+      "slug": "pidgeot_mega",
+      "species": "pidgeot",
+      "moves": [
+        "wingattack",
+        "tackle",
+        "quickattack",
+        "airslash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "NORMAL",
+      "weight": 2.0
+    },
+    {
+      "slug": "pikachu_gmax",
+      "species": "pikachu",
+      "moves": [
+        "thunderbolt",
+        "irontail",
+        "quickattack",
+        "electroball"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 1.0
+    },
+    {
+      "slug": "pinsir_mega",
+      "species": "pinsir",
+      "moves": [
+        "superpower",
+        "submission",
+        "strength",
+        "xscissor"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "BUG",
+      "weight": 2.0
+    },
+    {
+      "slug": "ragingbolt",
+      "species": "ragingbolt",
+      "moves": [
+        "discharge",
+        "thunderclap",
+        "dragonpulse",
+        "calmmind"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "ELECTRIC",
+      "weight": 3.0
+    },
+    {
+      "slug": "reshiram",
+      "species": "reshiram",
+      "moves": [
+        "blueflare",
+        "dragonpulse",
+        "hypervoice",
+        "fusionflare"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 0.2
+    },
+    {
+      "slug": "rillaboom_gmax",
+      "species": "rillaboom",
+      "moves": [
+        "woodhammer",
+        "slam",
+        "knockoff",
+        "drumbeating"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 1.0
+    },
+    {
+      "slug": "roaringmoon",
+      "species": "roaringmoon",
+      "moves": [
+        "fly",
+        "dragonrush",
+        "nightslash",
+        "zenheadbutt"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "DRAGON",
+      "weight": 5.0
+    },
+    {
+      "slug": "rockruff",
+      "species": "rockruff",
+      "moves": [
+        "bite",
+        "rockthrow",
+        "tackle"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "ROCK",
+      "weight": 20.0
+    },
+    {
+      "slug": "rolycoly",
+      "species": "rolycoly",
+      "moves": [
+        "smackdown",
+        "rapidspin",
+        "tackle"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_ONE",
+      "type": "ROCK",
+      "weight": 20.0
+    },
+    {
+      "slug": "rotom",
+      "species": "rotom",
+      "moves": [
+        "hex",
+        "shockwave",
+        "electroball",
+        "thundershock"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "ELECTRIC",
+      "weight": 10.0
+    },
+    {
+      "slug": "rotom_fan",
+      "species": "rotom",
+      "moves": [
+        "hex",
+        "shockwave",
+        "discharge",
+        "airslash"
+      ],
+      "custom_properties": [
+        {
+          "name": "appliance",
+          "value": "fan"
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "ELECTRIC",
+      "weight": 10.0
+    },
+    {
+      "slug": "rotom_frost",
+      "species": "rotom",
+      "moves": [
+        "hex",
+        "shockwave",
+        "discharge",
+        "blizzard"
+      ],
+      "custom_properties": [
+        {
+          "name": "appliance",
+          "value": "frost"
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "ELECTRIC",
+      "weight": 10.0
+    },
+    {
+      "slug": "rotom_heat",
+      "species": "rotom",
+      "moves": [
+        "hex",
+        "shockwave",
+        "discharge",
+        "overheat"
+      ],
+      "custom_properties": [
+        {
+          "name": "appliance",
+          "value": "heat"
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "ELECTRIC",
+      "weight": 10.0
+    },
+    {
+      "slug": "rotom_mow",
+      "species": "rotom",
+      "moves": [
+        "hex",
+        "shockwave",
+        "discharge",
+        "leafstorm"
+      ],
+      "custom_properties": [
+        {
+          "name": "appliance",
+          "value": "mow"
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "ELECTRIC",
+      "weight": 10.0
+    },
+    {
+      "slug": "rotom_wash",
+      "species": "rotom",
+      "moves": [
+        "hex",
+        "shockwave",
+        "discharge",
+        "hydropump"
+      ],
+      "custom_properties": [
+        {
+          "name": "appliance",
+          "value": "wash"
+        }
+      ],
+      "tier": "TIER_FIVE",
+      "type": "ELECTRIC",
+      "weight": 10.0
+    },
+    {
+      "slug": "runerigus",
+      "species": "runerigus",
+      "moves": [
+        "shadowball",
+        "slam",
+        "hex",
+        "brutalswing"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "GROUND",
+      "weight": 20.0
+    },
+    {
+      "slug": "sableye_mega",
+      "species": "sableye",
+      "moves": [
+        "foulplay",
+        "zenheadbutt",
+        "shadowclaw",
+        "knockoff"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DARK",
+      "weight": 2.0
+    },
+    {
+      "slug": "salamence_mega",
+      "species": "salamence",
+      "moves": [
+        "doubleedge",
+        "zenheadbutt",
+        "dragonclaw",
+        "crunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 2.0
+    },
+    {
+      "slug": "sandaconda_gmax",
+      "species": "sandaconda",
+      "moves": [
+        "brutalswing",
+        "slam",
+        "dig",
+        "headbutt"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GROUND",
+      "weight": 1.0
+    },
+    {
+      "slug": "sandshrew_alolan",
+      "species": "sandshrew",
+      "moves": [
+        "metalclaw",
+        "rapidspin",
+        "furycutter",
+        "rollout"
+      ],
+      "custom_properties": [
+        {
+          "name": "alolan",
+          "value": true
+        }
+      ],
+      "tier": "TIER_TWO",
+      "type": "ICE",
+      "weight": 20.0
+    },
+    {
+      "slug": "sandslash_alolan",
+      "species": "sandslash",
+      "moves": [
+        "scratch",
+        "furyswipes",
+        "slash",
+        "powdersnow"
+      ],
+      "custom_properties": [
+        {
+          "name": "alolan",
+          "value": true
+        }
+      ],
+      "tier": "TIER_FOUR",
+      "type": "ICE",
+      "weight": 20.0
+    },
+    {
+      "slug": "sandyshocks",
+      "species": "sandyshocks",
+      "moves": [
+        "earthpower",
+        "discharge",
+        "triattack",
+        "chargebeam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "ELECTRIC",
+      "weight": 5.0
+    },
+    {
+      "slug": "sceptile_mega",
+      "species": "sceptile",
+      "moves": [
+        "leafstorm",
+        "gigadrain",
+        "megadrain",
+        "slam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 2.0
+    },
+    {
+      "slug": "scizor_mega",
+      "species": "scizor",
+      "moves": [
+        "nightslash",
+        "xscissor",
+        "ironhead",
+        "slash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "BUG",
+      "weight": 2.0
+    },
+    {
+      "slug": "screamtail",
+      "species": "screamtail",
+      "moves": [
+        "crunch",
+        "psychicfangs",
+        "hypervoice",
+        "playrough"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "FAIRY",
+      "weight": 5.0
+    },
+    {
+      "slug": "seismitoad",
+      "species": "seismitoad",
+      "moves": [
+        "drainpunch",
+        "uproar",
+        "bubblebeam",
+        "round"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "WATER",
+      "weight": 20.0
+    },
+    {
+      "slug": "seviper",
+      "species": "seviper",
+      "moves": [
+        "belch",
+        "crunch",
+        "poisonjab",
+        "venoshock"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "POISON",
+      "weight": 20.0
+    },
+    {
+      "slug": "sharpedo_mega",
+      "species": "sharpedo",
+      "moves": [
+        "takedown",
+        "skullbash",
+        "liquidation",
+        "crunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 2.0
+    },
+    {
+      "slug": "skitty",
+      "species": "skitty",
+      "moves": [
+        "doubleslap",
+        "disarmingvoice",
+        "tackle",
+        "fakeout"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "NORMAL",
+      "weight": 20.0
+    },
+    {
+      "slug": "skuntank",
+      "species": "skuntank",
+      "moves": [
+        "belch",
+        "nightslash",
+        "suckerpunch",
+        "slash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "POISON",
+      "weight": 20.0
+    },
+    {
+      "slug": "slitherwing",
+      "species": "slitherwing",
+      "moves": [
+        "firstimpression",
+        "dualwingbeat",
+        "superpower",
+        "lunge"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "BUG",
+      "weight": 5.0
+    },
+    {
+      "slug": "slowbro_mega",
+      "species": "slowbro",
+      "moves": [
+        "psychic",
+        "surf",
+        "waterpulse",
+        "confusion"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 2.0
+    },
+    {
+      "slug": "snom",
+      "species": "snom",
+      "moves": [
+        "powdersnow",
+        "strugglebug"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_ONE",
+      "type": "ICE",
+      "weight": 20.0
+    },
+    {
+      "slug": "snorlax_gmax",
+      "species": "snorlax",
+      "moves": [
+        "gigaimpact",
+        "hammerarm",
+        "highhorsepower",
+        "rollout"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "NORMAL",
+      "weight": 1.0
+    },
+    {
+      "slug": "snover",
+      "species": "snover",
+      "moves": [
+        "icywind",
+        "razorleaf",
+        "iceshard",
+        "leafage"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "GRASS",
+      "weight": 20.0
+    },
+    {
+      "slug": "solgaleo",
+      "species": "solgaleo",
+      "moves": [
+        "sunsteelstrike",
+        "flareblitz",
+        "wildcharge",
+        "crunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "PSYCHIC",
+      "weight": 0.2
+    },
+    {
+      "slug": "stakataka",
+      "species": "stakataka",
+      "moves": [
+        "doubleedge",
+        "takedown",
+        "ironhead",
+        "rockblast"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "ROCK",
+      "weight": 2.0
+    },
+    {
+      "slug": "steelix_mega",
+      "species": "steelix",
+      "moves": [
+        "doubleedge",
+        "stoneedge",
+        "irontail",
+        "dig"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STEEL",
+      "weight": 2.0
+    },
+    {
+      "slug": "stunfisk",
+      "species": "stunfisk",
+      "moves": [
+        "discharge",
+        "muddywater",
+        "mudbomb",
+        "mudshot"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "GROUND",
+      "weight": 20.0
+    },
+    {
+      "slug": "stunfisk_galarian",
+      "species": "stunfisk",
+      "moves": [
+        "snaptrap",
+        "muddywater",
+        "bounce",
+        "suckerpunch"
+      ],
+      "custom_properties": [
+        {
+          "name": "galarian",
+          "value": true
+        }
+      ],
+      "tier": "TIER_FOUR",
+      "type": "GROUND",
+      "weight": 20.0
+    },
+    {
+      "slug": "stunky",
+      "species": "stunky",
+      "moves": [
+        "suckerpunch",
+        "venoshock",
+        "bite",
+        "furyswipes"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "POISON",
+      "weight": 20.0
+    },
+    {
+      "slug": "swalot",
+      "species": "swalot",
+      "moves": [
+        "sludgebomb",
+        "acidspray",
+        "pound",
+        "sludge"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "POISON",
+      "weight": 20.0
+    },
+    {
+      "slug": "swampert_mega",
+      "species": "swampert",
+      "moves": [
+        "takedown",
+        "rockslide",
+        "rockthrow",
+        "tackle"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 0.2
+    },
+    {
+      "slug": "tapubulu",
+      "species": "tapubulu",
+      "moves": [
+        "grassyterrain",
+        "megahorn",
+        "woodhammer",
+        "zenheadbutt"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 0.2
+    },
+    {
+      "slug": "tapufini",
+      "species": "tapufini",
+      "moves": [
+        "mistyterrain",
+        "moonblast",
+        "hydropump",
+        "surf"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "WATER",
+      "weight": 0.2
+    },
+    {
+      "slug": "tapukoko",
+      "species": "tapukoko",
+      "moves": [
+        "bravebird",
+        "wildcharge",
+        "discharge",
+        "electricterrain"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 0.2
+    },
+    {
+      "slug": "tapulele",
+      "species": "tapulele",
+      "moves": [
+        "moonblast",
+        "psyshock",
+        "extrasensory",
+        "psychicterrain"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "PSYCHIC",
+      "weight": 0.2
+    },
+    {
+      "slug": "terapagos_stellar",
+      "species": "terapagos",
+      "moves": [
+        "doubleedge",
+        "terastarstorm",
+        "earthpower",
+        "triattack"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "STELLAR",
+      "weight": 0.5
+    },
+    {
+      "slug": "terrakion",
+      "species": "terrakion",
+      "moves": [
+        "closecombat",
+        "stoneedge",
+        "sacredsword",
+        "takedown"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ROCK",
+      "weight": 0.2
+    },
+    {
+      "slug": "thundurus",
+      "species": "thundurus",
+      "moves": [
+        "wildboltstorm",
+        "raindance",
+        "discharge",
+        "crunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 0.2
+    },
+    {
+      "slug": "tornadus",
+      "species": "tornadus",
+      "moves": [
+        "bleakwindstorm",
+        "raindance",
+        "extrasensory",
+        "crunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FLYING",
+      "weight": 0.2
+    },
+    {
+      "slug": "toxtricity_amped_gmax",
+      "species": "toxtricity",
+      "moves": [
+        "overdrive",
+        "poisonjab",
+        "shockwave",
+        "boomburst"
+      ],
+      "custom_properties": [
+        {
+          "name": "punk_form",
+          "value": "amped"
+        }
+      ],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 0.8
+    },
+    {
+      "slug": "toxtricity_lowkey_gmax",
+      "species": "toxtricity",
+      "moves": [
+        "overdrive",
+        "poisonjab",
+        "shockwave",
+        "boomburst"
+      ],
+      "custom_properties": [
+        {
+          "name": "punk_form",
+          "value": "low_key"
+        }
+      ],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 0.8
+    },
+    {
+      "slug": "tympole",
+      "species": "tympole",
+      "moves": [
+        "bubblebeam",
+        "round",
+        "mudshot",
+        "acid"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_TWO",
+      "type": "WATER",
+      "weight": 20.0
+    },
+    {
+      "slug": "tyranitar_mega",
+      "species": "tyranitar",
+      "moves": [
+        "gigaimpact",
+        "thrash",
+        "stoneedge",
+        "earthquake"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ROCK",
+      "weight": 2.0
+    },
+    {
+      "slug": "urshifu_rapid",
+      "species": "urshifu",
+      "moves": [
+        "surgingstrikes",
+        "closecombat",
+        "ironhead",
+        "aerialace"
+      ],
+      "custom_properties": [
+        {
+          "value": "wushu_style",
+          "name": "rapid_strike"
+        }
+      ],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 0.2
+    },
+    {
+      "slug": "urshifu_rapid_gmax",
+      "species": "urshifu",
+      "moves": [
+        "surgingstrikes",
+        "closecombat",
+        "ironhead",
+        "aerialace"
+      ],
+      "custom_properties": [
+        {
+          "value": "wushu_style",
+          "name": "rapid_strike"
+        }
+      ],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 0.1
+    },
+    {
+      "slug": "urshifu_single",
+      "species": "urshifu",
+      "moves": [
+        "wickedblow",
+        "closecombat",
+        "ironhead",
+        "aerialace"
+      ],
+      "custom_properties": [
+        {
+          "value": "wushu_style",
+          "name": "single_strike"
+        }
+      ],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 0.2
+    },
+    {
+      "slug": "urshifu_single_gmax",
+      "species": "urshifu",
+      "moves": [
+        "wickedblow",
+        "closecombat",
+        "ironhead",
+        "aerialace"
+      ],
+      "custom_properties": [
+        {
+          "value": "wushu_style",
+          "name": "single_strike"
+        }
+      ],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 0.1
+    },
+    {
+      "slug": "venusaur_gmax",
+      "species": "venusaur",
+      "moves": [
+        "solarbeam",
+        "petaldance",
+        "powerwhip",
+        "takedown"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 1.0
+    },
+    {
+      "slug": "venusaur_mega",
+      "species": "venusaur",
+      "moves": [
+        "solarbeam",
+        "petaldance",
+        "powerwhip",
+        "takedown"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 2.0
+    },
+    {
+      "slug": "vikavolt",
+      "species": "vikavolt",
+      "moves": [
+        "bugbuzz",
+        "spark",
+        "bite",
+        "crunch"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "virizion",
+      "species": "virizion",
+      "moves": [
+        "closecombat",
+        "leafblade",
+        "sacredsword",
+        "retaliate"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "GRASS",
+      "weight": 0.2
+    },
+    {
+      "slug": "volcanion",
+      "species": "volcanion",
+      "moves": [
+        "overheat",
+        "steameruption",
+        "scald",
+        "incinerate"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIRE",
+      "weight": 0.1
+    },
+    {
+      "slug": "vullaby",
+      "species": "vullaby",
+      "moves": [
+        "knockoff",
+        "feintattack",
+        "pluck",
+        "furyattack"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_THREE",
+      "type": "DARK",
+      "weight": 20.0
+    },
+    {
+      "slug": "walkingwake",
+      "species": "walkingwake",
+      "moves": [
+        "flamethrower",
+        "dragonpulse",
+        "hydrosteam",
+        "hydropump"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "WATER",
+      "weight": 3.0
+    },
+    {
+      "slug": "wormadam_plant",
+      "species": "wormadam",
+      "moves": [
+        "infestation",
+        "psybeam",
+        "razorleaf",
+        "confusion"
+      ],
+      "custom_properties": [
+        {
+          "name": "bagworm_cloak",
+          "value": "plant"
+        }
+      ],
+      "tier": "TIER_THREE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "wormadam_sandy",
+      "species": "wormadam",
+      "moves": [
+        "infestation",
+        "psybeam",
+        "razorleaf",
+        "confusion"
+      ],
+      "custom_properties": [
+        {
+          "name": "bagworm_cloak",
+          "value": "sandy"
+        }
+      ],
+      "tier": "TIER_THREE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "wormadam_trash",
+      "species": "wormadam",
+      "moves": [
+        "infestation",
+        "psybeam",
+        "razorleaf",
+        "confusion"
+      ],
+      "custom_properties": [
+        {
+          "name": "bagworm_cloak",
+          "value": "trash"
+        }
+      ],
+      "tier": "TIER_THREE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "wurmple",
+      "species": "wurmple",
+      "moves": [
+        "poisonsting",
+        "tackle"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_ONE",
+      "type": "BUG",
+      "weight": 20.0
+    },
+    {
+      "slug": "xerneas",
+      "species": "xerneas",
+      "moves": [
+        "moonblast",
+        "aurorabeam",
+        "geomancy",
+        "megahorn"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FAIRY",
+      "weight": 0.2
+    },
+    {
+      "slug": "xurkitree",
+      "species": "xurkitree",
+      "moves": [
+        "zapcannon",
+        "thunderbolt",
+        "discharge",
+        "signalbeam"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SIX",
+      "type": "ELECTRIC",
+      "weight": 2.0
+    },
+    {
+      "slug": "yamask_galarian",
+      "species": "yamask",
+      "moves": [
+        "brutalswing",
+        "astonish"
+      ],
+      "custom_properties": [
+        {
+          "name": "galarian",
+          "value": true
+        }
+      ],
+      "tier": "TIER_TWO",
+      "type": "GROUND",
+      "weight": 20.0
+    },
+    {
+      "slug": "yveltal",
+      "species": "yveltal",
+      "moves": [
+        "psychic",
+        "oblivionwing",
+        "foulplay",
+        "darkpulse"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DARK",
+      "weight": 0.2
+    },
+    {
+      "slug": "zacian",
+      "species": "zacian",
+      "moves": [
+        "moonblast",
+        "closecombat",
+        "crunch",
+        "ironhead"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FAIRY",
+      "weight": 0.2
+    },
+    {
+      "slug": "zamazenta",
+      "species": "zamazenta",
+      "moves": [
+        "slash",
+        "closecombat",
+        "crunch",
+        "ironhead"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "FIGHTING",
+      "weight": 0.2
+    },
+    {
+      "slug": "zangoose",
+      "species": "zangoose",
+      "moves": [
+        "xscissor",
+        "falseswipe",
+        "crushclaw",
+        "revenge"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_FOUR",
+      "type": "NORMAL",
+      "weight": 20.0
+    },
+    {
+      "slug": "zarude",
+      "species": "zarude",
+      "moves": [
+        "powerwhip",
+        "thrash",
+        "hammerarm",
+        "uturn"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DARK",
+      "weight": 0.1
+    },
+    {
+      "slug": "zekrom",
+      "species": "zekrom",
+      "moves": [
+        "boltstrike",
+        "zenheadbutt",
+        "fusionbolt",
+        "dragonclaw"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 0.2
+    },
+    {
+      "slug": "zeraora",
+      "species": "zeraora",
+      "moves": [
+        "closecombat",
+        "plasmafists",
+        "honeclaws",
+        "slash"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "ELECTRIC",
+      "weight": 0.1
+    },
+    {
+      "slug": "zygarde",
+      "species": "zygarde",
+      "moves": [
+        "thousandarrows",
+        "crunch",
+        "earthquake",
+        "coreenforcer"
+      ],
+      "custom_properties": [],
+      "tier": "TIER_SEVEN",
+      "type": "DRAGON",
+      "weight": 0.2
+    }
+  ],
+  "modifiers": [
+    {
+      "slug": "dynamax",
+      "feature": "DYNAMAX",
+      "type": null,
+      "weight": 0.5
+    },
+    {
+      "slug": "stellar",
+      "feature": "TERA",
+      "type": "STELLAR",
+      "weight": 0.05
+    },
+    {
+      "slug": "terabug",
+      "feature": "TERA",
+      "type": "BUG",
+      "weight": 0.75
+    },
+    {
+      "slug": "teradark",
+      "feature": "TERA",
+      "type": "DARK",
+      "weight": 0.75
+    },
+    {
+      "slug": "teradragon",
+      "feature": "TERA",
+      "type": "DRAGON",
+      "weight": 0.75
+    },
+    {
+      "slug": "teraelectric",
+      "feature": "TERA",
+      "type": "ELECTRIC",
+      "weight": 0.75
+    },
+    {
+      "slug": "terafairy",
+      "feature": "TERA",
+      "type": "FAIRY",
+      "weight": 0.75
+    },
+    {
+      "slug": "terafighting",
+      "feature": "TERA",
+      "type": "FIGHTING",
+      "weight": 0.75
+    },
+    {
+      "slug": "terafire",
+      "feature": "TERA",
+      "type": "FIRE",
+      "weight": 0.75
+    },
+    {
+      "slug": "teraflying",
+      "feature": "TERA",
+      "type": "FLYING",
+      "weight": 0.75
+    },
+    {
+      "slug": "teraghost",
+      "feature": "TERA",
+      "type": "GHOST",
+      "weight": 0.75
+    },
+    {
+      "slug": "teragrass",
+      "feature": "TERA",
+      "type": "GRASS",
+      "weight": 0.75
+    },
+    {
+      "slug": "teraground",
+      "feature": "TERA",
+      "type": "GROUND",
+      "weight": 0.75
+    },
+    {
+      "slug": "teraice",
+      "feature": "TERA",
+      "type": "ICE",
+      "weight": 0.75
+    },
+    {
+      "slug": "teranormal",
+      "feature": "TERA",
+      "type": "NORMAL",
+      "weight": 0.75
+    },
+    {
+      "slug": "terapoison",
+      "feature": "TERA",
+      "type": "POISON",
+      "weight": 0.75
+    },
+    {
+      "slug": "terapsychic",
+      "feature": "TERA",
+      "type": "PSYCHIC",
+      "weight": 0.75
+    },
+    {
+      "slug": "terarock",
+      "feature": "TERA",
+      "type": "ROCK",
+      "weight": 0.75
+    },
+    {
+      "slug": "terasteel",
+      "feature": "TERA",
+      "type": "STEEL",
+      "weight": 0.75
+    },
+    {
+      "slug": "terawater",
+      "feature": "TERA",
+      "type": "WATER",
+      "weight": 0.75
+    }
+  ]
+}

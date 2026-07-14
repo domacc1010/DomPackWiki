@@ -1,0 +1,34 @@
+[
+  {
+    "result": "genesect min_perfect_ivs=3",
+    "fossils": [
+      "cobblemon:dome_fossil",
+      "cobblemon:dubious_disc",
+      "minecraft:nether_star"
+    ],
+    "slug": "genesect"
+  },
+  {
+    "result": "mewtwo min_perfect_ivs=2 aspect=legendary",
+    "fossils": [
+      "lumymon:ancient_dna",
+      "lumymon:cloning_catalyst"
+    ],
+    "slug": "mewtwo"
+  },
+  {
+    "result": "mewtwo min_perfect_ivs=4 shiny",
+    "fossils": [
+      "lumymon:ancient_dna",
+      "lumymon:cloning_catalyst_shiny"
+    ],
+    "slug": "mewtwo_shiny"
+  },
+  {
+    "result": "typenull",
+    "fossils": [
+      "lumymon:fossilized_helmet"
+    ],
+    "slug": "typenull"
+  }
+]

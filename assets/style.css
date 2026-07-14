@@ -1,0 +1,465 @@
+/* ===========================================================
+   CobbleVerse Wiki — theme
+   Palette: moss (#EDF2E9), forest (#1F3D2B), pokeball red (#E63946),
+            ingot gold (#D9A441), ink (#1B2A1F)
+   Display: 'Press Start 2P' (pixel, used sparingly)
+   Body: 'IBM Plex Sans'
+   Data: 'JetBrains Mono'
+   =========================================================== */
+
+:root{
+  --moss:#EDF2E9;
+  --panel:#F7FAF4;
+  --forest:#1F3D2B;
+  --forest-dark:#152A1E;
+  --red:#E63946;
+  --gold:#D9A441;
+  --ink:#1B2A1F;
+  --ink-soft:#4B5B4F;
+  --line:#C9D6C2;
+  --radius:4px;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--moss);
+  background-image:
+    linear-gradient(180deg, rgba(31,61,43,0.04) 0%, rgba(31,61,43,0) 180px);
+  color:var(--ink);
+  font-family:'IBM Plex Sans', sans-serif;
+  font-size:16px;
+  line-height:1.6;
+}
+
+a{color:var(--forest); text-decoration:none;}
+a:hover{color:var(--red); text-decoration:underline;}
+
+h1,h2,h3,.pixel{
+  font-family:'Press Start 2P', monospace;
+  line-height:1.5;
+  letter-spacing:0.5px;
+}
+h1{font-size:1.1rem; color:var(--forest); margin:0 0 .75rem;}
+h2{font-size:.8rem; color:var(--forest); margin:2rem 0 .75rem; padding-top:.25rem; border-top:2px solid var(--line);}
+h2:first-of-type{border-top:none; padding-top:0;}
+h3{font-size:.65rem; color:var(--ink-soft); margin:1.25rem 0 .5rem;}
+
+code, pre, .mono, table{
+  font-family:'JetBrains Mono', monospace;
+}
+
+/* ---------- pixel-bevel panel, the signature element ---------- */
+.bevel{
+  background:var(--panel);
+  border:2px solid var(--forest);
+  border-radius:var(--radius);
+  box-shadow:
+    inset 2px 2px 0 rgba(255,255,255,0.55),
+    inset -2px -2px 0 rgba(0,0,0,0.12),
+    3px 3px 0 rgba(31,61,43,0.15);
+}
+.bevel-dark{
+  background:var(--forest);
+  color:var(--moss);
+  border:2px solid var(--forest-dark);
+  border-radius:var(--radius);
+  box-shadow:
+    inset 2px 2px 0 rgba(255,255,255,0.08),
+    inset -2px -2px 0 rgba(0,0,0,0.35),
+    3px 3px 0 rgba(0,0,0,0.2);
+}
+
+/* ---------- layout ---------- */
+.shell{
+  display:grid;
+  grid-template-columns:270px 1fr;
+  min-height:100vh;
+}
+.sidebar{
+  background:var(--forest);
+  color:var(--moss);
+  padding:1.25rem 1rem 3rem;
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow-y:auto;
+  border-right:3px solid var(--forest-dark);
+}
+.brand{
+  display:block;
+  font-family:'Press Start 2P', monospace;
+  font-size:.75rem;
+  color:var(--gold);
+  margin-bottom:.25rem;
+  line-height:1.6;
+}
+.version-tag{
+  display:inline-block;
+  font-family:'JetBrains Mono', monospace;
+  font-size:.65rem;
+  background:var(--forest-dark);
+  color:var(--gold);
+  border:1px solid var(--gold);
+  border-radius:3px;
+  padding:2px 6px;
+  margin-bottom:1.25rem;
+}
+.nav-group{margin-bottom:.15rem;}
+.nav-group summary{
+  cursor:pointer;
+  list-style:none;
+  padding:.5rem .6rem;
+  border-radius:3px;
+  font-size:.85rem;
+  font-weight:600;
+  color:var(--moss);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.nav-group summary::-webkit-details-marker{display:none;}
+.nav-group summary::after{content:"▸"; color:var(--gold); font-size:.7rem; transition:transform .15s;}
+.nav-group[open] summary::after{transform:rotate(90deg);}
+.nav-group summary:hover{background:rgba(255,255,255,0.08);}
+.nav-group a{
+  display:block;
+  color:var(--moss);
+  opacity:.85;
+  font-size:.82rem;
+  padding:.4rem .6rem .4rem 1.4rem;
+  border-radius:3px;
+  text-decoration:none;
+}
+.nav-group a:hover{background:rgba(255,255,255,0.08); opacity:1; color:var(--gold);}
+.nav-single{
+  display:block;
+  color:var(--moss);
+  font-size:.85rem;
+  font-weight:600;
+  padding:.5rem .6rem;
+  border-radius:3px;
+  text-decoration:none;
+  margin-bottom:.15rem;
+}
+.nav-single:hover{background:rgba(255,255,255,0.08); color:var(--gold);}
+.nav-single.current, .nav-group a.current{
+  background:rgba(217,164,65,0.18);
+  color:var(--gold);
+  box-shadow:inset 2px 0 0 var(--gold);
+}
+
+main{padding:2.5rem 3rem 5rem; max-width:880px;}
+.crumb{
+  font-family:'JetBrains Mono', monospace;
+  font-size:.75rem;
+  color:var(--ink-soft);
+  margin-bottom:1rem;
+}
+.crumb a{color:var(--ink-soft);}
+
+.lede{color:var(--ink-soft); font-size:1.02rem; margin-bottom:1.5rem;}
+
+.card{padding:1.25rem 1.5rem; margin:1rem 0;}
+.card-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:1rem; margin:1.5rem 0;}
+.card-grid .card{margin:0;}
+.card h3{margin-top:0;}
+.card p{margin:.25rem 0 0; font-size:.92rem; color:var(--ink-soft);}
+
+.fill{
+  border:2px dashed var(--line);
+  border-radius:var(--radius);
+  padding:.9rem 1rem;
+  color:var(--ink-soft);
+  font-size:.9rem;
+  background:rgba(255,255,255,0.5);
+  margin-bottom:.75rem;
+}
+.fill::before{
+  content:"FILL IN";
+  display:block;
+  font-family:'JetBrains Mono', monospace;
+  font-size:.65rem;
+  letter-spacing:1px;
+  color:var(--gold);
+  font-weight:700;
+  margin-bottom:.35rem;
+}
+
+table{width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem;}
+th,td{border:1px solid var(--line); padding:.5rem .6rem; text-align:left;}
+th{background:var(--forest); color:var(--moss); font-family:'IBM Plex Sans',sans-serif; font-weight:600;}
+tr:nth-child(even) td{background:rgba(31,61,43,0.04);}
+
+/* pokeball-marker checklist */
+ul.tasks{list-style:none; padding-left:0; margin:1rem 0;}
+ul.tasks li{
+  position:relative;
+  padding-left:2rem;
+  margin-bottom:.55rem;
+  font-size:.95rem;
+}
+ul.tasks li::before{
+  content:"";
+  position:absolute; left:0; top:2px;
+  width:1.1rem; height:1.1rem;
+  border-radius:50%;
+  background:
+    linear-gradient(var(--red) 0 50%, #fff 50% 100%);
+  border:2px solid var(--ink);
+  box-shadow: inset 0 0 0 2px var(--panel);
+}
+
+.badge{
+  display:inline-block;
+  font-family:'JetBrains Mono', monospace;
+  font-size:.7rem;
+  padding:2px 8px;
+  border-radius:10px;
+  background:var(--gold);
+  color:var(--forest-dark);
+  font-weight:700;
+  margin-left:.4rem;
+  vertical-align:middle;
+}
+.callout{
+  border-left:4px solid var(--red);
+  background:rgba(230,57,70,0.06);
+  padding:.9rem 1.1rem;
+  border-radius:0 var(--radius) var(--radius) 0;
+  font-size:.9rem;
+  margin:1.25rem 0;
+}
+.callout strong{color:var(--red);}
+
+.stage-flow{display:flex; flex-direction:column; gap:0;}
+.stage{padding:1rem 1.25rem; position:relative;}
+.stage + .stage{margin-top:1.5rem;}
+.stage + .stage::before{
+  content:"↓";
+  position:absolute; top:-1.65rem; left:1.4rem;
+  font-family:'Press Start 2P'; color:var(--gold); font-size:.8rem;
+}
+
+footer.foot{
+  max-width:880px;
+  padding:0 3rem 3rem;
+  font-size:.75rem;
+  color:var(--ink-soft);
+  font-family:'JetBrains Mono', monospace;
+}
+
+/* ===========================================================
+   Images — generic support used across the wiki
+   =========================================================== */
+.img-frame{
+  background:var(--panel);
+  border:2px solid var(--forest);
+  border-radius:var(--radius);
+  padding:.4rem;
+  box-shadow:3px 3px 0 rgba(31,61,43,0.15);
+  display:inline-block;
+  max-width:100%;
+}
+.img-frame img{display:block; max-width:100%; border-radius:2px;}
+.img-frame figcaption{
+  font-family:'JetBrains Mono', monospace;
+  font-size:.7rem;
+  color:var(--ink-soft);
+  text-align:center;
+  padding-top:.35rem;
+}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(180px,1fr));
+  gap:1rem;
+  margin:1.25rem 0;
+}
+.gallery-grid .img-frame{width:100%;}
+main img{max-width:100%; height:auto;}
+
+/* ===========================================================
+   Type badges — shared between Pokédex + Trainer pages
+   =========================================================== */
+:root{
+  --t-normal:#A8A878; --t-fire:#F08030; --t-water:#6890F0; --t-electric:#F0C020;
+  --t-grass:#78C850; --t-ice:#98D8D8; --t-fighting:#C03028; --t-poison:#A040A0;
+  --t-ground:#E0C068; --t-flying:#A890F0; --t-psychic:#F85888; --t-bug:#A8B820;
+  --t-rock:#B8A038; --t-ghost:#705898; --t-dragon:#7038F8; --t-dark:#705848;
+  --t-steel:#B8B8D0; --t-fairy:#EE99AC; --t-unknown:#68A090;
+}
+.type-pill{
+  display:inline-flex; align-items:center; gap:.3rem;
+  font-family:'JetBrains Mono', monospace;
+  font-size:.68rem; font-weight:700; letter-spacing:.5px;
+  color:#fff; text-transform:uppercase;
+  padding:2px 9px 3px; border-radius:12px;
+  text-shadow:0 1px 1px rgba(0,0,0,0.35);
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,0.15);
+}
+.type-normal{background:var(--t-normal);} .type-fire{background:var(--t-fire);}
+.type-water{background:var(--t-water);} .type-electric{background:var(--t-electric);}
+.type-grass{background:var(--t-grass);} .type-ice{background:var(--t-ice); color:#123;}
+.type-fighting{background:var(--t-fighting);} .type-poison{background:var(--t-poison);}
+.type-ground{background:var(--t-ground); color:#3a2c0a;} .type-flying{background:var(--t-flying);}
+.type-psychic{background:var(--t-psychic);} .type-bug{background:var(--t-bug);}
+.type-rock{background:var(--t-rock);} .type-ghost{background:var(--t-ghost);}
+.type-dragon{background:var(--t-dragon);} .type-dark{background:var(--t-dark);}
+.type-steel{background:var(--t-steel); color:#26263a;} .type-fairy{background:var(--t-fairy); color:#5a1030;}
+.type-unknown{background:var(--t-unknown);}
+
+.rarity-pill{
+  display:inline-block; font-family:'JetBrains Mono',monospace; font-size:.65rem;
+  font-weight:700; letter-spacing:.5px; text-transform:uppercase;
+  padding:2px 8px; border-radius:10px; color:#fff;
+}
+.rarity-common{background:#7a8a7d;} .rarity-uncommon{background:#3f8f5e;}
+.rarity-rare{background:#3564b0;} .rarity-ultra-rare{background:linear-gradient(135deg,#a4508b,#5f0a87);}
+
+/* ===========================================================
+   Pokédex — search / filter bar + card grid + modal
+   =========================================================== */
+.dex-toolbar{
+  display:flex; flex-wrap:wrap; gap:.6rem .75rem; align-items:center;
+  background:var(--panel); border:2px solid var(--forest); border-radius:var(--radius);
+  padding:.9rem 1rem; margin:1.25rem 0 1rem;
+  box-shadow:inset 2px 2px 0 rgba(255,255,255,0.55), inset -2px -2px 0 rgba(0,0,0,0.08);
+  position:sticky; top:0; z-index:5;
+}
+.dex-search{
+  flex:1 1 220px;
+  font-family:'JetBrains Mono', monospace;
+  font-size:.9rem;
+  padding:.55rem .7rem;
+  border:2px solid var(--line);
+  border-radius:3px;
+  background:#fff;
+  color:var(--ink);
+}
+.dex-search:focus{outline:none; border-color:var(--forest);}
+.dex-chip-row{display:flex; flex-wrap:wrap; gap:.35rem;}
+.dex-chip{
+  font-family:'JetBrains Mono', monospace;
+  font-size:.68rem; font-weight:600; letter-spacing:.3px; text-transform:uppercase;
+  padding:4px 10px; border-radius:12px;
+  background:#fff; color:var(--ink-soft);
+  border:1.5px solid var(--line);
+  cursor:pointer; user-select:none;
+  transition:transform .08s;
+}
+.dex-chip:hover{border-color:var(--forest); color:var(--forest);}
+.dex-chip.active{background:var(--forest); color:var(--moss); border-color:var(--forest-dark);}
+.dex-count{
+  font-family:'JetBrains Mono', monospace; font-size:.75rem; color:var(--ink-soft);
+  margin-left:auto; white-space:nowrap;
+}
+.dex-progress{
+  font-family:'JetBrains Mono', monospace; font-size:.68rem; color:var(--gold);
+  width:100%; display:none;
+}
+.dex-progress.active{display:block;}
+
+.dex-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(148px,1fr));
+  gap:.75rem;
+  margin:1rem 0 2rem;
+}
+.dex-card{
+  background:var(--panel);
+  border:2px solid var(--forest);
+  border-radius:var(--radius);
+  padding:.6rem .5rem .7rem;
+  text-align:center;
+  cursor:pointer;
+  box-shadow:2px 2px 0 rgba(31,61,43,0.12);
+  transition:transform .08s, box-shadow .08s;
+}
+.dex-card:hover{transform:translateY(-2px); box-shadow:3px 4px 0 rgba(31,61,43,0.2);}
+.dex-card .dex-num{
+  font-family:'JetBrains Mono', monospace; font-size:.68rem; color:var(--ink-soft);
+}
+.dex-card img{width:72px; height:72px; image-rendering:pixelated; object-fit:contain;}
+.dex-card .dex-name{font-size:.82rem; font-weight:600; margin:.15rem 0 .3rem; color:var(--ink);}
+.dex-card .dex-types{display:flex; justify-content:center; gap:3px; flex-wrap:wrap; min-height:20px;}
+.dex-card .dex-types .type-pill{font-size:.58rem; padding:1px 6px 2px;}
+.dex-hidden{display:none !important;}
+.dex-empty{
+  grid-column:1/-1; text-align:center; padding:2.5rem 1rem; color:var(--ink-soft);
+  font-family:'JetBrains Mono', monospace; font-size:.85rem;
+}
+
+.dex-modal-backdrop{
+  position:fixed; inset:0; background:rgba(21,42,30,0.72);
+  display:none; align-items:flex-start; justify-content:center;
+  padding:3rem 1rem; overflow-y:auto; z-index:50;
+}
+.dex-modal-backdrop.open{display:flex;}
+.dex-modal{
+  background:var(--panel); border:3px solid var(--forest); border-radius:6px;
+  max-width:640px; width:100%; padding:1.5rem 1.75rem 1.75rem; position:relative;
+  box-shadow:6px 6px 0 rgba(0,0,0,0.25);
+}
+.dex-modal-close{
+  position:absolute; top:.75rem; right:.9rem;
+  font-family:'Press Start 2P', monospace; font-size:.8rem;
+  background:var(--forest); color:var(--moss); border:none;
+  width:2rem; height:2rem; border-radius:3px; cursor:pointer;
+}
+.dex-modal-close:hover{background:var(--red);}
+.dex-modal-head{display:flex; gap:1.25rem; align-items:center; flex-wrap:wrap;}
+.dex-modal-head img{width:120px; height:120px; image-rendering:pixelated;}
+.dex-modal-head h2{font-family:'Press Start 2P',monospace; font-size:1rem; color:var(--forest); margin:0 0 .4rem;}
+.dex-modal-types{display:flex; gap:.35rem; margin-bottom:.5rem;}
+.dex-modal-sub{font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--ink-soft);}
+.dex-stat-row{display:grid; grid-template-columns:70px 1fr 34px; align-items:center; gap:.5rem; margin:.2rem 0; font-size:.78rem;}
+.dex-stat-bar{background:var(--line); border-radius:3px; height:9px; overflow:hidden;}
+.dex-stat-fill{height:100%; background:var(--forest);}
+.dex-spawn-block{
+  border-left:3px solid var(--gold); background:rgba(217,164,65,0.08);
+  padding:.6rem .8rem; border-radius:0 3px 3px 0; margin:.5rem 0; font-size:.82rem;
+}
+.dex-loading-note{font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--ink-soft); font-style:italic;}
+
+/* ===========================================================
+   Trainers & Gyms
+   =========================================================== */
+.trainer-card{
+  background:var(--panel); border:2px solid var(--forest); border-radius:var(--radius);
+  padding:1rem 1.2rem; margin:1rem 0;
+  box-shadow:3px 3px 0 rgba(31,61,43,0.15);
+}
+.trainer-head{display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; margin-bottom:.5rem;}
+.trainer-head h3{margin:0; font-size:.85rem;}
+.rank-pill{
+  font-family:'JetBrains Mono',monospace; font-size:.65rem; font-weight:700; letter-spacing:.4px;
+  text-transform:uppercase; padding:2px 9px; border-radius:10px;
+  background:var(--gold); color:var(--forest-dark);
+}
+.rank-pill.rank-villain{background:var(--red); color:#fff;}
+.rank-pill.rank-champion{background:linear-gradient(135deg,#f0d422,#cc7a00); color:#3a2200;}
+.trainer-meta{font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--ink-soft); margin-bottom:.6rem;}
+.team-row{display:flex; flex-wrap:wrap; gap:.5rem;}
+.team-mon{
+  display:flex; flex-direction:column; align-items:center; width:64px;
+  font-size:.62rem; text-align:center; color:var(--ink-soft);
+  font-family:'JetBrains Mono',monospace;
+}
+.team-mon img{width:48px; height:48px; image-rendering:pixelated;}
+.team-mon .lvl{color:var(--forest); font-weight:700;}
+.trainer-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; margin:1rem 0;}
+.grunt-table td.mono{font-size:.78rem;}
+.region-nav{display:flex; flex-wrap:wrap; gap:.5rem; margin:1.25rem 0;}
+.region-nav a{
+  font-family:'JetBrains Mono',monospace; font-size:.75rem; font-weight:700;
+  padding:.5rem 1rem; border:2px solid var(--forest); border-radius:20px;
+  color:var(--forest); text-decoration:none; background:var(--panel);
+}
+.region-nav a:hover{background:var(--forest); color:var(--moss);}
+
+@media (max-width: 760px){
+  .shell{grid-template-columns:1fr;}
+  .sidebar{position:relative; height:auto;}
+  main{padding:1.5rem 1.25rem 3rem;}
+  .dex-toolbar{position:static;}
+}

@@ -1,0 +1,299 @@
+[
+  {
+    "slug": "exeggutor",
+    "name": "Exeggutor",
+    "dex": 103,
+    "primary_type": "grass",
+    "secondary_type": "psychic",
+    "abilities": [
+      "chlorophyll",
+      "h:harvest"
+    ],
+    "base_stats": {
+      "hp": 95,
+      "attack": 95,
+      "defence": 85,
+      "special_attack": 125,
+      "special_defence": 75,
+      "speed": 55
+    },
+    "height": 20,
+    "weight": 1200,
+    "catch_rate": 45,
+    "egg_groups": [
+      "grass"
+    ],
+    "labels": [
+      "gen1",
+      "kantonian_form"
+    ]
+  },
+  {
+    "slug": "rapidash",
+    "name": "Rapidash",
+    "dex": 78,
+    "primary_type": "fire",
+    "secondary_type": null,
+    "abilities": [
+      "runaway",
+      "flashfire",
+      "h:flamebody"
+    ],
+    "base_stats": {
+      "hp": 65,
+      "attack": 100,
+      "defence": 70,
+      "special_attack": 80,
+      "special_defence": 80,
+      "speed": 105
+    },
+    "height": 17,
+    "weight": 950,
+    "catch_rate": 60,
+    "egg_groups": [
+      "field"
+    ],
+    "labels": [
+      "gen1",
+      "kantonian_form"
+    ]
+  },
+  {
+    "slug": "zapdos",
+    "name": "Zapdos",
+    "dex": 145,
+    "primary_type": "electric",
+    "secondary_type": "flying",
+    "abilities": [
+      "pressure",
+      "h:static"
+    ],
+    "base_stats": {
+      "hp": 90,
+      "attack": 90,
+      "defence": 85,
+      "special_attack": 125,
+      "special_defence": 90,
+      "speed": 100
+    },
+    "height": 16,
+    "weight": 526,
+    "catch_rate": 3,
+    "egg_groups": [
+      "undiscovered"
+    ],
+    "labels": [
+      "gen1",
+      "legendary",
+      "kantonian_form"
+    ]
+  },
+  {
+    "slug": "lugia",
+    "name": "Lugia",
+    "dex": 249,
+    "primary_type": "psychic",
+    "secondary_type": "flying",
+    "abilities": [
+      "pressure",
+      "h:multiscale"
+    ],
+    "base_stats": {
+      "hp": 106,
+      "attack": 90,
+      "defence": 130,
+      "special_attack": 90,
+      "special_defence": 154,
+      "speed": 110
+    },
+    "height": 52,
+    "weight": 2160,
+    "catch_rate": 3,
+    "egg_groups": [
+      "undiscovered"
+    ],
+    "labels": [
+      "gen2",
+      "legendary",
+      "restricted"
+    ]
+  },
+  {
+    "slug": "rayquaza",
+    "name": "Rayquaza",
+    "dex": 384,
+    "primary_type": "dragon",
+    "secondary_type": "flying",
+    "abilities": [
+      "airlock",
+      "h:airlock"
+    ],
+    "base_stats": {
+      "hp": 105,
+      "attack": 150,
+      "defence": 90,
+      "special_attack": 150,
+      "special_defence": 90,
+      "speed": 95
+    },
+    "height": 70,
+    "weight": 2065,
+    "catch_rate": 3,
+    "egg_groups": [
+      "undiscovered"
+    ],
+    "labels": [
+      "gen3",
+      "legendary",
+      "restricted"
+    ]
+  },
+  {
+    "slug": "bisharp",
+    "name": "Bisharp",
+    "dex": 625,
+    "primary_type": "dark",
+    "secondary_type": "steel",
+    "abilities": [
+      "defiant",
+      "innerfocus",
+      "h:pressure"
+    ],
+    "base_stats": {
+      "hp": 65,
+      "attack": 125,
+      "defence": 100,
+      "special_attack": 60,
+      "special_defence": 70,
+      "speed": 70
+    },
+    "height": 16,
+    "weight": 700,
+    "catch_rate": 45,
+    "egg_groups": [
+      "human_like"
+    ],
+    "labels": [
+      "gen5"
+    ]
+  },
+  {
+    "slug": "kyurem",
+    "name": "Kyurem",
+    "dex": 646,
+    "primary_type": "dragon",
+    "secondary_type": "ice",
+    "abilities": [
+      "pressure",
+      "h:pressure"
+    ],
+    "base_stats": {
+      "hp": 125,
+      "attack": 130,
+      "defence": 90,
+      "special_attack": 130,
+      "special_defence": 90,
+      "speed": 95
+    },
+    "height": 30,
+    "weight": 3250,
+    "catch_rate": 3,
+    "egg_groups": [
+      "undiscovered"
+    ],
+    "labels": [
+      "gen5",
+      "legendary",
+      "restricted"
+    ]
+  },
+  {
+    "slug": "necrozma",
+    "name": "Necrozma",
+    "dex": 800,
+    "primary_type": "psychic",
+    "secondary_type": null,
+    "abilities": [
+      "prismarmor",
+      "h:prismarmor"
+    ],
+    "base_stats": {
+      "hp": 97,
+      "attack": 107,
+      "defence": 101,
+      "special_attack": 127,
+      "special_defence": 89,
+      "speed": 79
+    },
+    "height": 24,
+    "weight": 2300,
+    "catch_rate": 3,
+    "egg_groups": [
+      "undiscovered"
+    ],
+    "labels": [
+      "gen7",
+      "legendary",
+      "restricted"
+    ]
+  },
+  {
+    "slug": "eternatus",
+    "name": "Eternatus",
+    "dex": 890,
+    "primary_type": "poison",
+    "secondary_type": "dragon",
+    "abilities": [
+      "pressure",
+      "h:pressure"
+    ],
+    "base_stats": {
+      "hp": 140,
+      "attack": 85,
+      "defence": 95,
+      "special_attack": 145,
+      "special_defence": 95,
+      "speed": 130
+    },
+    "height": 200,
+    "weight": 9500,
+    "catch_rate": 255,
+    "egg_groups": [
+      "undiscovered"
+    ],
+    "labels": [
+      "gen8",
+      "legendary",
+      "restricted"
+    ]
+  },
+  {
+    "slug": "ursaluna",
+    "name": "Ursaluna",
+    "dex": 901,
+    "primary_type": "ground",
+    "secondary_type": "normal",
+    "abilities": [
+      "guts",
+      "bulletproof",
+      "h:unnerve"
+    ],
+    "base_stats": {
+      "hp": 130,
+      "attack": 140,
+      "defence": 105,
+      "special_attack": 45,
+      "special_defence": 80,
+      "speed": 50
+    },
+    "height": 24,
+    "weight": 2900,
+    "catch_rate": 20,
+    "egg_groups": [
+      "field"
+    ],
+    "labels": [
+      "gen8a"
+    ]
+  }
+]

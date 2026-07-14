@@ -1,0 +1,206 @@
+[
+  {
+    "npc": "kanto_cartographer",
+    "region": "Kanto",
+    "trades": [
+      {
+        "tome": "lumymon:onyx_stone",
+        "destination": "cobbleverse:kanto_brock_gym",
+        "display_name": "Brock's Gym"
+      },
+      {
+        "tome": "lumymon:cerulean_star",
+        "destination": "cobbleverse:kanto_misty_gym",
+        "display_name": "Misty's Gym"
+      },
+      {
+        "tome": "lumymon:lieutenant_medal",
+        "destination": "cobbleverse:kanto_ltsurge_gym",
+        "display_name": "Lt.Surge's Gym"
+      },
+      {
+        "tome": "lumymon:nature_fan",
+        "destination": "cobbleverse:kanto_erika_gym",
+        "display_name": "Erika's Gym"
+      },
+      {
+        "tome": "lumymon:ninja_poison",
+        "destination": "cobbleverse:kanto_koga_gym",
+        "display_name": "Koga's Gym"
+      },
+      {
+        "tome": "lumymon:hypnotic_whip",
+        "destination": "cobbleverse:kanto_sabrina_gym",
+        "display_name": "Sabrina's Gym"
+      },
+      {
+        "tome": "lumymon:cinnabar_glasses",
+        "destination": "cobbleverse:kanto_blaine_gym",
+        "display_name": "Blaine's Gym (Nether)"
+      },
+      {
+        "tome": "lumymon:boss_ring",
+        "destination": "cobbleverse:kanto_giovanni_gym",
+        "display_name": "Giovanni's Gym"
+      },
+      {
+        "tome": "lumymon:rival_sling",
+        "destination": "cobbleverse:kanto_league_tower",
+        "display_name": "Kanto League (End)"
+      }
+    ]
+  },
+  {
+    "npc": "hoenn_cartographer",
+    "region": "Hoenn",
+    "trades": [
+      {
+        "tome": "lumymon:rock_tome",
+        "destination": "cobbleverse:hoenn_petra_gym",
+        "display_name": "Petra's Gym"
+      },
+      {
+        "tome": "lumymon:fighting_glove",
+        "destination": "cobbleverse:hoenn_rudi_gym",
+        "display_name": "Rudi's Gym"
+      },
+      {
+        "tome": "lumymon:electric_connector",
+        "destination": "cobbleverse:hoenn_walter_gym",
+        "display_name": "Walter's Gym"
+      },
+      {
+        "tome": "lumymon:fire_lighter",
+        "destination": "cobbleverse:hoenn_fiammetta_gym",
+        "display_name": "Fiammetta's Gym"
+      },
+      {
+        "tome": "lumymon:normal_tablet",
+        "destination": "cobbleverse:hoenn_norman_gym",
+        "display_name": "Norman's Gym"
+      },
+      {
+        "tome": "lumymon:flying_feather",
+        "destination": "cobbleverse:hoenn_alice_gym",
+        "display_name": "Alice's Gym"
+      },
+      {
+        "tome": "lumymon:psychic_medallion",
+        "destination": "cobbleverse:hoenn_tell_pat_gym",
+        "display_name": "Tell & Pat's Gym"
+      },
+      {
+        "tome": "lumymon:water_rod",
+        "destination": "cobbleverse:hoenn_adriano_gym",
+        "display_name": "Adriano's Gym"
+      },
+      {
+        "tome": "lumymon:steel_hat",
+        "destination": "cobbleverse:hoenn_league_complex",
+        "display_name": "Hoenn League"
+      }
+    ]
+  },
+  {
+    "npc": "johto_cartographer",
+    "region": "Johto",
+    "trades": [
+      {
+        "tome": "lumymon:raptor_bracer",
+        "destination": "cobbleverse:johto_valerio_gym",
+        "display_name": "Valerio's Gym"
+      },
+      {
+        "tome": "lumymon:magnifying_glass",
+        "destination": "cobbleverse:johto_raffaello_gym",
+        "display_name": "Raffaello's Gym"
+      },
+      {
+        "tome": "lumymon:sweet_milk",
+        "destination": "cobbleverse:johto_chiara_gym",
+        "display_name": "Chiara's Gym"
+      },
+      {
+        "tome": "lumymon:spirit_scarf",
+        "destination": "cobbleverse:johto_angelo_gym",
+        "display_name": "Angelo's Gym"
+      },
+      {
+        "tome": "lumymon:heavy_dumbbell",
+        "destination": "cobbleverse:johto_furio_gym",
+        "display_name": "Furio's Gym"
+      },
+      {
+        "tome": "lumymon:secret_medicine",
+        "destination": "cobbleverse:johto_jasmine_gym",
+        "display_name": "Jasmine's Gym"
+      },
+      {
+        "tome": "lumymon:winter_staff",
+        "destination": "cobbleverse:johto_alfredo_gym",
+        "display_name": "Alfredo's Gym"
+      },
+      {
+        "tome": "lumymon:pearl_choker",
+        "destination": "cobbleverse:johto_sandra_gym",
+        "display_name": "Sandra's Gym (Nether)"
+      },
+      {
+        "tome": "lumymon:master_cape",
+        "destination": "cobbleverse:johto_league_tower",
+        "display_name": "Johto League (End)"
+      }
+    ]
+  },
+  {
+    "npc": "sinnoh_cartographer",
+    "region": "Sinnoh",
+    "trades": [
+      {
+        "tome": "lumymon:rock_casque",
+        "destination": "cobbleverse:sinnoh_pedro_gym",
+        "display_name": "Pedro's Gym"
+      },
+      {
+        "tome": "lumymon:grass_aroma",
+        "destination": "cobbleverse:sinnoh_gardenia_gym",
+        "display_name": "Gardenia's Gym"
+      },
+      {
+        "tome": "lumymon:fighting_bandage",
+        "destination": "cobbleverse:sinnoh_marzia_gym",
+        "display_name": "Marzia's Gym"
+      },
+      {
+        "tome": "lumymon:water_mask",
+        "destination": "cobbleverse:sinnoh_omar_gym",
+        "display_name": "Omar's Gym"
+      },
+      {
+        "tome": "lumymon:ghost_pendant",
+        "destination": "cobbleverse:sinnoh_fannie_gym",
+        "display_name": "Fannie's Gym"
+      },
+      {
+        "tome": "lumymon:steel_spade",
+        "destination": "cobbleverse:sinnoh_ferruccio_gym",
+        "display_name": "Ferruccio's Gym"
+      },
+      {
+        "tome": "lumymon:ice_ribbon",
+        "destination": "cobbleverse:sinnoh_bianca_gym",
+        "display_name": "Bianca's Gym"
+      },
+      {
+        "tome": "lumymon:electric_fuse",
+        "destination": "cobbleverse:sinnoh_corrado_gym",
+        "display_name": "Corrado's Gym"
+      },
+      {
+        "tome": "lumymon:draconic_fin",
+        "destination": "cobbleverse:sinnoh_league_castle",
+        "display_name": "Sinnoh Leagu"
+      }
+    ]
+  }
+]
