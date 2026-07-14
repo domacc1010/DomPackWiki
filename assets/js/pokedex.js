@@ -13,8 +13,8 @@
   "use strict";
 
   var CACHE_KEY = "cobbleverse_pokedex_cache_v1";
-  var BATCH_SIZE = 12;
-  var BATCH_DELAY_MS = 260;
+  var BATCH_SIZE = 40;
+  var BATCH_DELAY_MS = 120;
 
   var GEN_RANGES = [
     [1, 151, "Gen I"], [152, 251, "Gen II"], [252, 386, "Gen III"],
@@ -36,6 +36,15 @@
   }
   function artworkUrl(dex) {
     return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + dex + ".png";
+  }
+
+  function storageAvailable() {
+    try {
+      var k = "__cobbleverse_test__";
+      localStorage.setItem(k, "1");
+      localStorage.removeItem(k);
+      return true;
+    } catch (e) { return false; }
   }
 
   function loadCache() {
@@ -61,6 +70,13 @@
     var modal = modalBackdrop ? modalBackdrop.querySelector(".dex-modal") : null;
 
     var cache = loadCache();
+    if (!storageAvailable()) {
+      var warn = document.createElement("div");
+      warn.className = "dex-loading-note";
+      warn.style.width = "100%";
+      warn.textContent = "Note: this browser is blocking local storage on this page (common when opening the file directly instead of through a web server), so type/stat data will re-download every visit instead of staying cached. Hosting the site (or running a local server) fixes this.";
+      root.querySelector(".dex-toolbar").appendChild(warn);
+    }
     var state = { q: "", type: null, gen: null, rarity: null };
     var mons = [];
 
@@ -123,9 +139,9 @@
     }
 
     function syncChipRow(row, active) {
+      var wasActive = active.classList.contains("active");
       Array.prototype.forEach.call(row.children, function (c) { c.classList.remove("active"); });
-      if (active.classList.contains("active")) { active.classList.remove("active"); }
-      else { active.classList.add("active"); }
+      if (!wasActive) { active.classList.add("active"); }
     }
 
     function matches(m) {
@@ -181,9 +197,18 @@
     }
 
     function startEnrichment() {
-      var queue = mons.slice().sort(function (a, b) { return a.dex - b.dex; });
+      var toFetch = [];
+      mons.forEach(function (m) {
+        if (cache[m.dex]) { updateCardTypes(m); }
+        else { toFetch.push(m); }
+      });
+      if (toFetch.length === 0) {
+        progressEl.classList.remove("active");
+        return; // everything was already cached from a previous visit — nothing to do
+      }
+      toFetch.sort(function (a, b) { return a.dex - b.dex; });
       var i = 0;
-      var total = queue.length;
+      var total = toFetch.length;
       var done = 0;
       progressEl.classList.add("active");
       function nextBatch() {
@@ -192,12 +217,12 @@
           saveCache(cache);
           return;
         }
-        var batch = queue.slice(i, i + BATCH_SIZE);
+        var batch = toFetch.slice(i, i + BATCH_SIZE);
         i += BATCH_SIZE;
         Promise.all(batch.map(fetchOne)).then(function () {
           done += batch.length;
-          progressEl.textContent = "Loading live type/stat data from PokeAPI… " + Math.min(done, total) + " / " + total;
-          if (done % 60 < BATCH_SIZE) saveCache(cache);
+          progressEl.textContent = "Loading live type/stat data from PokeAPI… " + Math.min(done, total) + " / " + total + " new (rest are cached)";
+          saveCache(cache);
           setTimeout(nextBatch, BATCH_DELAY_MS);
         });
       }

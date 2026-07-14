@@ -10,9 +10,10 @@ new section), so every page's sidebar stays in sync — then run
 build_dynamic_pages.py to lay the real datapack-driven content back on top
 of the 5 pages it owns.
 
-Pages this script does NOT touch: gameplay/pokemon/index.html and
-gameplay/items/index.html keep their hand-written template content — edit
-those two files directly if you want to change them.
+Pages this script does NOT touch: gameplay/pokemon/index.html — that one is
+owned by build_dynamic_pages.py (auto-generated Pokédex app). Everything
+else, including gameplay/items/index.html, is regenerated here every run so
+its sidebar never drifts out of sync with the NAV in site_common.py.
 """
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -88,6 +89,35 @@ def build_server_features():
     for slug, title in SF_PAGES:
         write_page(f"gameplay/server-features/{slug}.html", title, server_feature_page(),
             crumb=f'<a href="../../index.html">Home</a> / Server Features / {title}')
+
+# ---------------------------------------------------------------
+def build_items_index():
+    content = """
+    <p>One page per item, or group small/similar items into a single page per category (recommended for
+    anything with dozens of near-identical entries, like TMs).</p>
+    <h2>Auto-Generated Item Pages</h2>
+    <div class="card-grid">
+      <div class="card bevel"><h3><a href="tms.html">TM Crafting</a></h3><p>Every craftable TM recipe, pulled from the datapacks.</p></div>
+      <div class="card bevel"><h3><a href="fossils.html">Fossils</a></h3><p>Fossil restoration combinations, pulled from the datapacks.</p></div>
+      <div class="card bevel"><h3><a href="mega-evolution.html">Mega Evolution</a></h3><p>Custom Mega Stones craftable on this server, pulled from the datapacks.</p></div>
+    </div>
+    <h2>Categories Still To Cover</h2>
+    <ul class="tasks">
+      <li>Pokéballs</li><li>Medicine</li><li>Evolution Stones</li><li>Held Items</li>
+      <li>Battle Items</li><li>Food</li>
+      <li>Decorative Blocks</li><li>Custom Items</li><li>Bottle Caps</li>
+    </ul>
+    <h2>Page Template</h2>
+    <div class="bevel card">
+    <h3>{Item Name}<span class="badge">TEMPLATE</span></h3>
+    <h4>What is it?</h4>""" + fill("2-3 sentences") + """
+    <h4>Where do I find it?</h4>""" + fill("Crafted / found / purchased") + """
+    <h4>How do I use it?</h4>""" + fill("Usage instructions") + """
+    <h4>Why should I care?</h4>""" + fill("Payoff / value") + """
+    <h4>Tips &amp; Strategies</h4>""" + fill("Practical tips") + """
+    </div>
+    """
+    write_page("gameplay/items/index.html", "Items", content, crumb='<a href="../../index.html">Home</a> / Items')
 
 # ---------------------------------------------------------------
 def build_decorations():
@@ -229,6 +259,7 @@ def main():
     print("Rebuilding static template pages...")
     build_home()
     build_getting_started()
+    build_items_index()
     build_mechanics()
     build_world()
     build_server_features()

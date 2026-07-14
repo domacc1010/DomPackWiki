@@ -44,6 +44,7 @@ NAV = [
         ("Overview", "gameplay/items/index.html"),
         ("TM Crafting", "gameplay/items/tms.html"),
         ("Fossils", "gameplay/items/fossils.html"),
+        ("Mega Evolution", "gameplay/items/mega-evolution.html"),
     ]),
     ("Mechanics", None, [
         ("Battle System", "gameplay/mechanics/battle-system.html"),

@@ -560,6 +560,68 @@ def build_trainers_pages():
     print(f"  trainers/index.html -> {len(trainers)} total trainers")
 
 # =================================================================
+# MEGA EVOLUTION  ->  gameplay/items/mega-evolution.html
+# =================================================================
+def build_mega_evolution_page():
+    data = load("mega_evolutions.json")
+    if not data or not data.get("stones"):
+        write_page("gameplay/items/mega-evolution.html", "Mega Evolution", basic_guide_page("Mega Evolution"),
+            crumb='<a href="../../index.html">Home</a> / Items / Mega Evolution')
+        print("  mega-evolution.html -> placeholder (no mega_evolutions.json)")
+        return
+
+    stones = data["stones"]
+    mons = load("pokemon.json") or []
+    slug_to_dex = {m["slug"]: m["dex"] for m in mons if m.get("dex")}
+
+    rows = ""
+    for s in stones:
+        name = clean_pokemon_name(s["species"]) if s["species"] else s["slug"].replace("_", " ").title()
+        form = f' <span class="badge">{s["form"]}</span>' if s["form"] else ""
+        dex = slug_to_dex.get(s["species"])
+        img = (f'<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{dex}.png" '
+               f'alt="{name}" width="32" height="32" style="image-rendering:pixelated;vertical-align:middle;margin-right:6px;">'
+               if dex else "")
+        target = f'../pokemon/index.html?mon={s["species"]}' if s["species"] else "#"
+        rows += (f'<tr><td>{img}<a href="{target}">{name}</a>{form}</td>'
+                 f'<td class="mono">{s["source_item"]}</td><td class="mono">{s["result_item"]}</td></tr>')
+
+    special_rows = "".join(
+        f'<tr><td class="mono">{s["result_item"]}</td><td class="mono">{", ".join(s["ingredients"])}</td></tr>'
+        for s in data.get("special_items", [])
+    )
+
+    content = f"""
+    <div class="callout"><strong>Auto-generated</strong> from <code>zamegas/recipe</code> and
+    <code>mega_showdown/recipe</code>. Species matched against this pack's own Pokédex data by name
+    similarity — double-check any you're unsure of in-game.</div>
+    <h2>What is it?</h2>
+    <p>CobbleVerse adds Mega Evolution via the <strong>Mega Showdown</strong> mod, and goes well beyond the
+    official Mega roster — Pokémon that never had a canon Mega form (Meganium, Greninja, Feraligatr, Emboar,
+    Zeraora, Raichu, and more) get custom Mega Stones here, alongside official ones.</p>
+    <h2>Where do I find the base stones?</h2>
+    <div class="fill">Each recipe converts a raw <code>lumymon:</code> stone into the usable
+    <code>zamega:</code> item — but the datapacks don't say where the raw stone drops. Likely a raid reward
+    for that Pokémon's Mega raid boss (see the Raids page) — confirm in-game and fill in here.</div>
+    <h2>Mega Stones <span class="badge">{len(stones)}</span></h2>
+    <table><tr><th>Pokémon</th><th>Crafted From</th><th>Result Item</th></tr>{rows}</table>
+    <h2>Special Evolution Items</h2>
+    <p>A few extra crafting recipes bundled with the Mega Showdown mod itself (Zygarde assembly, Ash-Greninja,
+    and a couple of unclear catalyst items — worth checking in-game what these actually unlock):</p>
+    <table><tr><th>Result</th><th>Ingredients</th></tr>{special_rows}</table>
+    <h2>Related Pages</h2>
+    <p>Several Mega Evolutions also appear as <a href="../mechanics/raids.html">Raid bosses</a> —
+    check the raid tiers for the ones encounterable that way.</p>
+    <h2>Tips &amp; Strategies</h2>
+    <ul class="tasks"><li>{fill("How to actually trigger a Mega Evolution in battle on this server")}</li>
+    <li>{fill("Any restrictions — one Mega per team, format legality, etc.")}</li></ul>
+    """
+    write_page("gameplay/items/mega-evolution.html", "Mega Evolution", content,
+        crumb='<a href="../../index.html">Home</a> / Items / Mega Evolution',
+        lede=f"{len(stones)} custom Mega Stones craftable on this server, pulled from the Mega Showdown datapacks.")
+    print(f"  mega-evolution.html -> {len(stones)} mega stones")
+
+# =================================================================
 def main():
     print("Building data-driven pages...")
     build_raids_page()
@@ -569,6 +631,7 @@ def main():
     build_lumymon_page()
     build_pokedex_page()
     build_trainers_pages()
+    build_mega_evolution_page()
     print("\nDone. These pages now reflect the extracted datapack data:")
     print("  gameplay/mechanics/raids.html")
     print("  gameplay/world/legendary-monuments.html")
@@ -577,6 +640,7 @@ def main():
     print("  gameplay/server-features/lumymon.html")
     print("  gameplay/pokemon/index.html  (Pokédex app)")
     print("  gameplay/trainers/*.html     (Trainers & Gyms)")
+    print("  gameplay/items/mega-evolution.html")
 
 if __name__ == "__main__":
     main()

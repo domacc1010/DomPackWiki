@@ -24,7 +24,7 @@ Every extractor is defensive: if a datapack is missing or a folder doesn't
 exist, that section just comes back empty instead of crashing, since mod
 packs get added/removed between server updates.
 """
-import json, os, re, sys, glob
+import json, os, re, sys, glob, difflib
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from site_common import clean_pokemon_name  # noqa: E402
@@ -448,6 +448,70 @@ def extract_trainers(root):
     return trainers
 
 # ---------------------------------------------------------------
+# 9. Mega Evolutions — this pack's custom "zamegas" stone system
+#    (goes well beyond the official Mega roster — Meganium, Greninja,
+#    Feraligatr, Zeraora etc. all get custom Mega forms here)
+# ---------------------------------------------------------------
+MEGA_SUFFIXES = ["nitex", "nitey", "nitez", "nite", "itex", "itey", "itez", "ite"]
+
+def guess_mega_species(stone_slug, pokemon_slugs):
+    form = None
+    base = stone_slug
+    for suf in MEGA_SUFFIXES:
+        if stone_slug.endswith(suf):
+            base = stone_slug[:-len(suf)]
+            if suf.endswith("x"):
+                form = "X"
+            elif suf.endswith("y"):
+                form = "Y"
+            elif suf.endswith("z"):
+                form = "Z"
+            break
+    if base in pokemon_slugs:
+        return base, form
+    close = difflib.get_close_matches(base, list(pokemon_slugs), n=1, cutoff=0.72)
+    return (close[0], form) if close else (None, form)
+
+def extract_mega_evolutions(root, pokemon_slugs):
+    stones = []
+    for f in find(root, "zamegas", "recipe"):
+        try:
+            d = load_json(f)
+        except Exception:
+            continue
+        slug = os.path.splitext(os.path.basename(f))[0]
+        ingredients = d.get("ingredients") or []
+        source_item = ingredients[0].get("item") if ingredients else None
+        species, form = guess_mega_species(slug, pokemon_slugs)
+        stones.append({
+            "slug": slug,
+            "source_item": (source_item or "").replace("lumymon:", ""),
+            "result_item": d.get("result", {}).get("id", "").replace("zamega:", ""),
+            "species": species,
+            "form": form,
+        })
+    stones.sort(key=lambda s: (s["species"] is None, s["species"] or s["slug"]))
+
+    special_items = []
+    for f in find(root, "mega_showdown", "recipe"):
+        try:
+            d = load_json(f)
+        except Exception:
+            continue
+        slug = os.path.splitext(os.path.basename(f))[0]
+        key = d.get("key", {})
+        ingredients = sorted(set(
+            (v.get("item") or "").replace("mega_showdown:", "").replace("minecraft:", "").replace("cobblemon:", "").replace("_", " ")
+            for v in key.values()
+        ))
+        special_items.append({
+            "slug": slug,
+            "result_item": d.get("result", {}).get("id", "").replace("mega_showdown:", ""),
+            "ingredients": ingredients,
+        })
+    return {"stones": stones, "special_items": special_items}
+
+# ---------------------------------------------------------------
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 extract_data.py /path/to/datapacks")
@@ -460,15 +524,19 @@ def main():
     out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
     os.makedirs(out_dir, exist_ok=True)
 
+    pokemon = extract_pokemon(root)
+    pokemon_slugs = {m["slug"] for m in pokemon}
+
     datasets = {
         "raids.json": extract_raids(root),
         "legendary_sites.json": extract_legendary_sites(root),
         "tm_recipes.json": extract_tm_recipes(root),
         "fossils.json": extract_fossils(root),
         "lumymon_maps.json": extract_lumymon_maps(root),
-        "pokemon.json": extract_pokemon(root),
+        "pokemon.json": pokemon,
         "species_overrides.json": extract_species_overrides(root),
         "trainers.json": extract_trainers(root),
+        "mega_evolutions.json": extract_mega_evolutions(root, pokemon_slugs),
     }
 
     for filename, data in datasets.items():

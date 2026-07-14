@@ -1,0 +1,263 @@
+{
+  "stones": [
+    {
+      "slug": "barbaracite",
+      "source_item": "barbaracite",
+      "result_item": "barbaracite",
+      "species": "barbaracle",
+      "form": null
+    },
+    {
+      "slug": "baxcalibrite",
+      "source_item": "baxcalibrite",
+      "result_item": "baxcalibrite",
+      "species": "baxcalibur",
+      "form": null
+    },
+    {
+      "slug": "chandelurite",
+      "source_item": "chandelurite",
+      "result_item": "chandelurite",
+      "species": "chandelure",
+      "form": null
+    },
+    {
+      "slug": "chesnaughtite",
+      "source_item": "chesnaughtite",
+      "result_item": "chesnaughtite",
+      "species": "chesnaught",
+      "form": null
+    },
+    {
+      "slug": "chimechite",
+      "source_item": "chimechonite",
+      "result_item": "chimechite",
+      "species": "chimecho",
+      "form": null
+    },
+    {
+      "slug": "clefablite",
+      "source_item": "clefablite",
+      "result_item": "clefablite",
+      "species": "clefable",
+      "form": null
+    },
+    {
+      "slug": "delphoxite",
+      "source_item": "delphoxite",
+      "result_item": "delphoxite",
+      "species": "delphox",
+      "form": null
+    },
+    {
+      "slug": "dragalgite",
+      "source_item": "dragalgite",
+      "result_item": "dragalgite",
+      "species": "dragalge",
+      "form": null
+    },
+    {
+      "slug": "dragoninite",
+      "source_item": "dragoninite",
+      "result_item": "dragoninite",
+      "species": "dragonite",
+      "form": null
+    },
+    {
+      "slug": "drampanite",
+      "source_item": "drampanite",
+      "result_item": "drampanite",
+      "species": "drampa",
+      "form": null
+    },
+    {
+      "slug": "eelektrossite",
+      "source_item": "eelektrossite",
+      "result_item": "eelektrossite",
+      "species": "eelektross",
+      "form": null
+    },
+    {
+      "slug": "emboarite",
+      "source_item": "emboarite",
+      "result_item": "emboarite",
+      "species": "emboar",
+      "form": null
+    },
+    {
+      "slug": "excadrite",
+      "source_item": "excadrite",
+      "result_item": "excadrite",
+      "species": "excadrill",
+      "form": null
+    },
+    {
+      "slug": "falinksite",
+      "source_item": "falinksite",
+      "result_item": "falinksite",
+      "species": "falinks",
+      "form": null
+    },
+    {
+      "slug": "feraligite",
+      "source_item": "feraligite",
+      "result_item": "feraligite",
+      "species": "feraligatr",
+      "form": null
+    },
+    {
+      "slug": "floettite",
+      "source_item": "floettite",
+      "result_item": "floettite",
+      "species": "floette",
+      "form": null
+    },
+    {
+      "slug": "froslassite",
+      "source_item": "froslassite",
+      "result_item": "froslassite",
+      "species": "froslass",
+      "form": null
+    },
+    {
+      "slug": "greninjite",
+      "source_item": "greninjite",
+      "result_item": "greninjite",
+      "species": "greninja",
+      "form": null
+    },
+    {
+      "slug": "hawluchanite",
+      "source_item": "hawluchanite",
+      "result_item": "hawluchanite",
+      "species": "hawlucha",
+      "form": null
+    },
+    {
+      "slug": "lucarionitez",
+      "source_item": "lucarionite_z",
+      "result_item": "lucarionitez",
+      "species": "lucario",
+      "form": "Z"
+    },
+    {
+      "slug": "malamarite",
+      "source_item": "malamarite",
+      "result_item": "malamarite",
+      "species": "malamar",
+      "form": null
+    },
+    {
+      "slug": "meganiumite",
+      "source_item": "meganiumite",
+      "result_item": "meganiumite",
+      "species": "meganium",
+      "form": null
+    },
+    {
+      "slug": "pyroarite",
+      "source_item": "pyroarite",
+      "result_item": "pyroarite",
+      "species": "pyroar",
+      "form": null
+    },
+    {
+      "slug": "raichunitex",
+      "source_item": "raichunite_x",
+      "result_item": "raichunitex",
+      "species": "raichu",
+      "form": "X"
+    },
+    {
+      "slug": "raichunitey",
+      "source_item": "raichunite_y",
+      "result_item": "raichunitey",
+      "species": "raichu",
+      "form": "Y"
+    },
+    {
+      "slug": "scolipite",
+      "source_item": "scolipite",
+      "result_item": "scolipite",
+      "species": "scolipede",
+      "form": null
+    },
+    {
+      "slug": "scraftinite",
+      "source_item": "scraftinite",
+      "result_item": "scraftinite",
+      "species": "scrafty",
+      "form": null
+    },
+    {
+      "slug": "skarmorite",
+      "source_item": "skarmorite",
+      "result_item": "skarmorite",
+      "species": "skarmory",
+      "form": null
+    },
+    {
+      "slug": "starminite",
+      "source_item": "starminite",
+      "result_item": "starminite",
+      "species": "starmie",
+      "form": null
+    },
+    {
+      "slug": "victreebelite",
+      "source_item": "victreebelite",
+      "result_item": "victreebelite",
+      "species": "victreebel",
+      "form": null
+    },
+    {
+      "slug": "zeraorite",
+      "source_item": "zeraorite",
+      "result_item": "zeraorite",
+      "species": "zeraora",
+      "form": null
+    },
+    {
+      "slug": "zygardite",
+      "source_item": "zygardite",
+      "result_item": "zygardite",
+      "species": "zygarde",
+      "form": null
+    }
+  ],
+  "special_items": [
+    {
+      "slug": "ash_cap",
+      "result_item": "ash_cap",
+      "ingredients": [
+        "barrier"
+      ]
+    },
+    {
+      "slug": "dormant_crystal",
+      "result_item": "dormant_crystal",
+      "ingredients": [
+        "end crystal",
+        "normal tera shard",
+        "stellar tera shard"
+      ]
+    },
+    {
+      "slug": "star_core",
+      "result_item": "star_core",
+      "ingredients": [
+        "dragon gem",
+        "obsidian",
+        "poison gem",
+        "wishing star"
+      ]
+    },
+    {
+      "slug": "zygarde_core",
+      "result_item": "zygarde_core",
+      "ingredients": [
+        "zygarde cell"
+      ]
+    }
+  ]
+}
