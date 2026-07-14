@@ -147,6 +147,10 @@ PAGE_TMPL = """<!DOCTYPE html>
   <nav class="sidebar">
     <span class="brand">COBBLEVERSE<br>WIKI</span>
     <span class="version-tag">MC 1.21.1 · Cobblemon 1.7.3</span>
+    <div class="site-search" data-depth="{depth}">
+      <input type="search" class="site-search-input" placeholder="Search the wiki…" aria-label="Search the wiki" autocomplete="off">
+      <div class="site-search-results"></div>
+    </div>
     {nav}
   </nav>
   <main>
@@ -156,6 +160,7 @@ PAGE_TMPL = """<!DOCTYPE html>
     {content}
   </main>
 </div>
+<script src="{search_js_href}"></script>
 </body>
 </html>
 """
@@ -165,10 +170,12 @@ def write_page(path, title, content, crumb="", lede=""):
     os.makedirs(os.path.dirname(full), exist_ok=True)
     depth = path.count("/")
     css_href = rel(depth, "assets/style.css")
+    search_js_href = rel(depth, "assets/js/search.js")
     lede_html = f'<p class="lede">{lede}</p>' if lede else ""
     html = PAGE_TMPL.format(
-        title=title, fonts=FONTS, css_href=css_href,
+        title=title, fonts=FONTS, css_href=css_href, depth=depth,
         nav=render_nav(path, depth), crumb=crumb, lede=lede_html, content=content,
+        search_js_href=search_js_href,
     )
     with open(full, "w") as f:
         f.write(html)

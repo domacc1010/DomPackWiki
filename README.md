@@ -16,10 +16,11 @@ a browser, or drag the folder onto Netlify / GitHub Pages / any static host.
   rosters (Team Rocket, Team Galactic, Team Aqua, Team Magma) — with real
   teams (species, level, moves, nature, ability, items) pulled straight from
   the roaming-trainer datapack.
-- Both sections re-run any time the datapacks change — no hand-editing 1000+
-  pages. Fill-in-the-blank sections marked "FILL IN" throughout the rest of
-  the site — replace with real content as you write it; delete the `.fill`
-  div once a section is written.
+- **Search** (top of the sidebar, every page) finds anything on the site —
+  page content, all 1024 Pokémon, and every named trainer — from a single
+  box. Built from `assets/data/search-index.json`, regenerated automatically
+  by `tools/build_dynamic_pages.py` as its last step (it scans the final
+  rendered HTML of every page, so it always reflects current content).
 - Items section is an index page with a copyable in-page template, since it
   will have more entries than the rest of the site — duplicate the template
   block into a new page per item once you're ready.

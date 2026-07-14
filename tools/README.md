@@ -1,7 +1,7 @@
 # Datapack → Wiki tools
 
 Scripts that turn `datapacks.zip` into real wiki content. Re-run these any
-time the server's datapacks change instead of hand-editing the 5 pages they
+time the server's datapacks change instead of hand-editing the pages they
 own.
 
 ## Setup
@@ -20,9 +20,10 @@ python3 tools/build_all.py
 ```
 `build_all.py` runs `build_static_pages.py` (every template/placeholder
 page — keeps every sidebar in sync with `site_common.py`'s NAV) and then
-`build_dynamic_pages.py` (overlays the 5 pages below with real data) in the
-right order. Run it whenever you touch `site_common.py`'s NAV, even if you
-haven't re-extracted new data.
+`build_dynamic_pages.py` (overlays the data-driven pages below with real
+data, and finishes by rebuilding the search index from the final HTML) in
+the right order. Run it whenever you touch `site_common.py`'s NAV, even if
+you haven't re-extracted new data.
 
 ## What gets extracted, and where it goes
 
@@ -36,6 +37,8 @@ haven't re-extracted new data.
 | `*/cobblemon/spawn_pool_world/*.json` (all 1024 species) | `tools/data/pokemon.json` → trimmed copy at `assets/data/pokemon.json` | `gameplay/pokemon/index.html` (Pokédex app — see below) |
 | `*/cobblemon/species/**/*.json` (10 pack-tuned legendaries) | `tools/data/species_overrides.json` | not yet rendered — full stat blocks for Zapdos/Rayquaza/Lugia/etc. if you want to hand-write callouts for the ones this pack rebalances |
 | `COBBLEVERSE-RCT-DP-v19/data/rctmod/trainers/*.json` (155 trainers) + matching `mobs/trainers/single/*.json` for spawn biome | `tools/data/trainers.json` | `gameplay/trainers/*.html` (Trainers & Gyms — one page per region + villains + other) |
+| `*/zamegas/recipe/*.json` + `*/mega_showdown/recipe/*.json` | `tools/data/mega_evolutions.json` | `gameplay/items/mega-evolution.html` |
+| *(none — built from the other pages' final rendered HTML, plus `pokemon.json`/`trainers.json`)* | `assets/data/search-index.json` | powers the search box in the sidebar on every page |
 
 Every extracted page opens with a callout marking it as auto-generated, and
 still has `fill`-style placeholders for the parts no datapack can answer

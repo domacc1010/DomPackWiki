@@ -457,6 +457,47 @@ main img{max-width:100%; height:auto;}
 }
 .region-nav a:hover{background:var(--forest); color:var(--moss);}
 
+/* ---------- site-wide search (sidebar) ---------- */
+.site-search{position:relative; margin-bottom:1rem;}
+.site-search-input{
+  width:100%;
+  font-family:'JetBrains Mono', monospace;
+  font-size:.8rem;
+  padding:.55rem .7rem;
+  border:1.5px solid rgba(255,255,255,0.25);
+  border-radius:4px;
+  background:rgba(0,0,0,0.2);
+  color:var(--moss);
+}
+.site-search-input::placeholder{color:rgba(237,242,233,0.55);}
+.site-search-input:focus{outline:none; border-color:var(--gold); background:rgba(0,0,0,0.32);}
+.site-search-results{
+  display:none;
+  position:absolute; top:calc(100% + 4px); left:0; right:-260px;
+  max-height:70vh; overflow-y:auto; z-index:40;
+  background:var(--panel); color:var(--ink);
+  border:2px solid var(--forest-dark); border-radius:4px;
+  box-shadow:4px 4px 0 rgba(0,0,0,0.3);
+}
+.site-search-results.open{display:block;}
+.site-search-result{
+  display:block; padding:.55rem .75rem; border-bottom:1px solid var(--line);
+  text-decoration:none; color:var(--ink);
+}
+.site-search-result:last-child{border-bottom:none;}
+.site-search-result:hover, .site-search-result.hi{background:rgba(217,164,65,0.16); text-decoration:none;}
+.site-search-result .ssr-title{font-size:.85rem; font-weight:600; display:flex; align-items:center; gap:.4rem;}
+.site-search-result .ssr-kind{
+  font-family:'JetBrains Mono',monospace; font-size:.58rem; text-transform:uppercase; letter-spacing:.4px;
+  padding:1px 6px; border-radius:8px; background:var(--forest); color:var(--moss); flex-shrink:0;
+}
+.site-search-result .ssr-snippet{font-size:.72rem; color:var(--ink-soft); margin-top:.1rem;}
+.site-search-empty{padding:.75rem; font-size:.78rem; color:var(--ink-soft); font-family:'JetBrains Mono',monospace;}
+
+@media (max-width: 760px){
+  .site-search-results{right:0;}
+}
+
 @media (max-width: 760px){
   .shell{grid-template-columns:1fr;}
   .sidebar{position:relative; height:auto;}

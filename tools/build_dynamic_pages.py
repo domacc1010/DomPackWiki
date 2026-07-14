@@ -13,7 +13,8 @@ category no longer exists in the datapacks), the matching page falls back
 to a blank fill-in template instead of crashing, so this is always safe to
 run even with partial data.
 """
-import json, os, sys
+import json, os, sys, glob, re
+import html as html_lib
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from site_common import write_page, fill, basic_guide_page, SITE_ROOT, clean_pokemon_name  # noqa: E402
@@ -397,7 +398,7 @@ def _trainer_card_html(t, slug_to_dex, rank_class="rank-pill"):
     if bag:
         meta_bits.append(f'Bag: {bag}')
     return f"""
-    <div class="trainer-card">
+    <div class="trainer-card" id="trainer-{t['slug']}">
       <div class="trainer-head"><h3>{t['name']}</h3><span class="{rank_class}">{t['rank']}</span></div>
       <div class="trainer-meta">{' · '.join(meta_bits)}</div>
       <div class="team-row">{team_html}</div>
@@ -622,6 +623,89 @@ def build_mega_evolution_page():
     print(f"  mega-evolution.html -> {len(stones)} mega stones")
 
 # =================================================================
+# SEARCH INDEX  ->  assets/data/search-index.json
+# =================================================================
+_TAG_RE = re.compile(r"<[^>]+>")
+_WS_RE = re.compile(r"\s+")
+_H1_RE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.S)
+_CRUMB_RE = re.compile(r'<div class="crumb">(.*?)</div>', re.S)
+_MAIN_RE = re.compile(r"<main>(.*?)</main>", re.S)
+
+def _text_of(fragment):
+    return _WS_RE.sub(" ", html_lib.unescape(_TAG_RE.sub(" ", fragment))).strip()
+
+def _page_search_fields(page_html):
+    m = _MAIN_RE.search(page_html)
+    if not m:
+        return None
+    main_html = m.group(1)
+    h1m = _H1_RE.search(main_html)
+    title = _text_of(h1m.group(1)) if h1m else ""
+    crumbm = _CRUMB_RE.search(main_html)
+    section = _text_of(crumbm.group(1)) if crumbm else ""
+    body = main_html
+    if h1m:
+        body = body.replace(h1m.group(0), " ")
+    if crumbm:
+        body = body.replace(crumbm.group(0), " ")
+    text = _text_of(body)[:1200]
+    return title, section, text
+
+REGION_FILE = {"Kanto": "kanto", "Johto": "johto", "Hoenn": "hoenn", "Sinnoh": "sinnoh", "Hisui": "hisui"}
+
+def build_search_index():
+    entries = []
+    for f in glob.glob(os.path.join(SITE_ROOT, "**", "*.html"), recursive=True):
+        rel_path = os.path.relpath(f, SITE_ROOT).replace(os.sep, "/")
+        with open(f, "r", encoding="utf-8") as fh:
+            page_html = fh.read()
+        fields = _page_search_fields(page_html)
+        if not fields:
+            continue
+        title, section, text = fields
+        if not title:
+            continue
+        entries.append({"type": "page", "title": title, "url": rel_path, "section": section, "text": text})
+
+    mons = load("pokemon.json") or []
+    for m in mons:
+        biomes = sorted({b for s in m.get("spawns", []) for b in s.get("biomes", [])})
+        bits = [f"#{m['dex']:04d}", m.get("best_bucket") or ""]
+        if biomes:
+            bits.append(", ".join(biomes[:6]))
+        entries.append({
+            "type": "pokemon", "title": m["name"],
+            "url": f"gameplay/pokemon/index.html?mon={m['slug']}",
+            "section": "Pokédex", "text": " · ".join(b for b in bits if b),
+        })
+
+    trainers = load("trainers.json") or []
+    trainer_count = 0
+    for t in trainers:
+        if "Grunt" in t["rank"]:
+            continue  # too many, too low-value individually — the org page text still covers them
+        if t.get("org"):
+            url = "gameplay/trainers/villains.html"
+        else:
+            region_file = REGION_FILE.get(t["region"])
+            url = f"gameplay/trainers/{region_file}.html" if region_file else "gameplay/trainers/other.html"
+        url += f"#trainer-{t['slug']}"
+        species = ", ".join(clean_pokemon_name(p["species"]) for p in t["team"][:6])
+        entries.append({
+            "type": "trainer", "title": t["name"],
+            "url": url, "section": "Trainers & Gyms",
+            "text": f"{t['rank']} · {t['region']} · Team: {species}",
+        })
+        trainer_count += 1
+
+    out_dir = os.path.join(SITE_ROOT, "assets", "data")
+    os.makedirs(out_dir, exist_ok=True)
+    with open(os.path.join(out_dir, "search-index.json"), "w", encoding="utf-8") as f:
+        json.dump(entries, f, separators=(",", ":"), ensure_ascii=False)
+    page_count = sum(1 for e in entries if e["type"] == "page")
+    print(f"  search-index.json -> {len(entries)} entries ({page_count} pages, {len(mons)} Pokémon, {trainer_count} trainers)")
+
+# =================================================================
 def main():
     print("Building data-driven pages...")
     build_raids_page()
@@ -632,6 +716,7 @@ def main():
     build_pokedex_page()
     build_trainers_pages()
     build_mega_evolution_page()
+    build_search_index()  # must run last — it scans the final rendered HTML of every page
     print("\nDone. These pages now reflect the extracted datapack data:")
     print("  gameplay/mechanics/raids.html")
     print("  gameplay/world/legendary-monuments.html")
@@ -641,6 +726,7 @@ def main():
     print("  gameplay/pokemon/index.html  (Pokédex app)")
     print("  gameplay/trainers/*.html     (Trainers & Gyms)")
     print("  gameplay/items/mega-evolution.html")
+    print("  assets/data/search-index.json (site-wide search)")
 
 if __name__ == "__main__":
     main()
