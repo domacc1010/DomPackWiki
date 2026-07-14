@@ -70,6 +70,7 @@
     var modal = modalBackdrop ? modalBackdrop.querySelector(".dex-modal") : null;
 
     var cache = loadCache();
+    var custom = {};  // hand-written per-Pokémon additions (assets/data/pokemon-custom.json)
     if (!storageAvailable()) {
       var warn = document.createElement("div");
       warn.className = "dex-loading-note";
@@ -80,7 +81,14 @@
     var state = { q: "", type: null, gen: null, rarity: null };
     var mons = [];
 
-    fetch(dataUrl).then(function (r) { return r.json(); }).then(function (data) {
+    // Hand-written card additions — optional file, edited directly, no rebuild
+    // needed. Loaded with cache:no-store so an edit shows up on plain refresh.
+    fetch(dataUrl.replace("pokemon.json", "pokemon-custom.json"), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (d) { custom = d || {}; })
+      .catch(function () { custom = {}; })
+      .then(function () { return fetch(dataUrl); })
+      .then(function (r) { return r.json(); }).then(function (data) {
       mons = data;
       buildFilters();
       renderGrid();
@@ -283,16 +291,34 @@
           '</div>';
       }).join("") || '<p class="dex-loading-note">No world spawn data for this species in the current datapacks (may be event/gift/evolution-only).</p>';
 
+      // Merge in hand-written additions from assets/data/pokemon-custom.json.
+      // Keyed by slug (e.g. "zapdos"). Supported fields:
+      //   name        — override the displayed name
+      //   image       — replace the artwork (path relative to this page, or URL)
+      //   note        — short highlighted callout under the header
+      //   sections    — [{title, html}] extra sections, any HTML you want
+      //   hide_spawns — true to drop the auto spawn-data block
+      //   hide_stats  — true to drop the auto base-stats block
+      var cu = custom[m.slug] || {};
+      var displayName = cu.name || m.name;
+      var artSrc = cu.image || artworkUrl(m.dex);
+      var noteHtml = cu.note ? '<div class="dex-spawn-block" style="border-left-color:var(--forest);">' + cu.note + '</div>' : '';
+      var customSections = (cu.sections || []).map(function (s) {
+        return '<h3>' + s.title + '</h3><div>' + s.html + '</div>';
+      }).join("");
+
       modal.innerHTML =
         '<button class="dex-modal-close" aria-label="Close">×</button>' +
         '<div class="dex-modal-head">' +
-        '<img src="' + artworkUrl(m.dex) + '" alt="' + m.name + '" onerror="this.src=\'' + spriteUrl(m.dex) + '\'">' +
-        '<div><h2>#' + String(m.dex).padStart(4, "0") + ' ' + m.name + '</h2>' +
+        '<img src="' + artSrc + '" alt="' + displayName + '" onerror="this.src=\'' + spriteUrl(m.dex) + '\'">' +
+        '<div><h2>#' + String(m.dex).padStart(4, "0") + ' ' + displayName + '</h2>' +
         '<div class="dex-modal-types">' + typesHtml + '</div>' +
         '<div class="dex-modal-sub">Abilities: ' + abilitiesHtml + '</div>' +
         '</div></div>' +
-        '<h3 style="margin-top:1.25rem;">Base Stats</h3>' + statsHtml +
-        '<h3>Spawn Data <span class="badge">from this server\u2019s datapacks</span></h3>' + spawnHtml;
+        noteHtml +
+        (cu.hide_stats ? '' : '<h3 style="margin-top:1.25rem;">Base Stats</h3>' + statsHtml) +
+        (cu.hide_spawns ? '' : '<h3>Spawn Data <span class="badge">from this server\u2019s datapacks</span></h3>' + spawnHtml) +
+        customSections;
 
       modal.querySelector(".dex-modal-close").addEventListener("click", closeModal);
       modalBackdrop.classList.add("open");

@@ -317,11 +317,19 @@ def build_sources():
     """
     write_page("sources.html", "Sources", content, crumb='<a href="index.html">Home</a> / Sources')
 
+def build_crafting_page():
+    # Body comes from content/gameplay/items/crafting.html (hand-written).
+    # This call just provides the title/crumb/lede wrapper.
+    write_page("gameplay/items/crafting.html", "Crafting", basic_guide_page("Crafting"),
+        crumb='<a href="../../index.html">Home</a> / Items / Crafting',
+        lede="Apricorns, Poké Ball tiers, specialty balls, and every other crafting system on the server.")
+
 def main():
     print("Rebuilding static template pages...")
     build_home()
     build_getting_started()
     build_items_index()
+    build_crafting_page()
     build_blocks_page()
     build_mechanics()
     build_world()

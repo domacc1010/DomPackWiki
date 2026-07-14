@@ -48,6 +48,7 @@ NAV = [
     ]),
     ("Items", None, [
         ("Overview", "gameplay/items/index.html"),
+        ("Crafting", "gameplay/items/crafting.html"),
         ("TM Crafting", "gameplay/items/tms.html"),
         ("Fossils", "gameplay/items/fossils.html"),
         ("Mega Evolution", "gameplay/items/mega-evolution.html"),
@@ -174,9 +175,23 @@ PAGE_TMPL = """<!DOCTYPE html>
 </html>
 """
 
+CONTENT_ROOT = os.path.join(SITE_ROOT, "content")
+
 def write_page(path, title, content, crumb="", lede=""):
     full = os.path.join(SITE_ROOT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
+
+    # HAND-WRITTEN CONTENT ALWAYS WINS: if content/<path> exists, its HTML is
+    # used as the page body instead of whatever the generator produced. The
+    # shared sidebar/template still wraps it (so the nav never drifts out of
+    # sync), but the body is yours — no rebuild will ever overwrite it.
+    # Start one from an existing page with: python3 tools/eject.py <page-path>
+    override = os.path.join(CONTENT_ROOT, path)
+    if os.path.isfile(override):
+        with open(override, "r", encoding="utf-8") as f:
+            content = f.read()
+        print(f"  [hand-written] {path}  (from content/{path})")
+
     depth = path.count("/")
     css_href = rel(depth, "assets/style.css") + "?v=" + BUILD_STAMP
     search_js_href = rel(depth, "assets/js/search.js") + "?v=" + BUILD_STAMP

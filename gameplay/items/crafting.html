@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fossils · CobbleVerse Wiki</title>
+<title>Crafting · CobbleVerse Wiki</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/style.css?v=20260714-2210">
 </head>
@@ -21,7 +21,7 @@
 <details class="nav-group"><summary>Getting Started</summary><a class="" href="../../gameplay/getting-started/starter-guide.html">Starter Guide</a><a class="" href="../../gameplay/getting-started/controls.html">Controls</a><a class="" href="../../gameplay/getting-started/commands.html">Commands</a><a class="" href="../../gameplay/getting-started/first-pokemon.html">First Pokémon</a><a class="" href="../../gameplay/getting-started/money.html">Money</a><a class="" href="../../gameplay/getting-started/badges.html">Badges</a><a class="" href="../../gameplay/getting-started/waystones.html">Waystones</a><a class="" href="../../gameplay/getting-started/breeding.html">Breeding</a><a class="" href="../../gameplay/getting-started/raids.html">Raids</a></details>
 <a class="nav-single" href="../../gameplay/pokemon/index.html">Pokémon</a>
 <details class="nav-group"><summary>Trainers & Gyms</summary><a class="" href="../../gameplay/trainers/index.html">Overview</a><a class="" href="../../gameplay/trainers/kanto.html">Kanto</a><a class="" href="../../gameplay/trainers/johto.html">Johto</a><a class="" href="../../gameplay/trainers/hoenn.html">Hoenn</a><a class="" href="../../gameplay/trainers/sinnoh.html">Sinnoh</a><a class="" href="../../gameplay/trainers/hisui.html">Hisui</a><a class="" href="../../gameplay/trainers/villains.html">Villainous Teams</a><a class="" href="../../gameplay/trainers/other.html">Other Notable Trainers</a></details>
-<details class="nav-group" open><summary>Items</summary><a class="" href="../../gameplay/items/index.html">Overview</a><a class="" href="../../gameplay/items/crafting.html">Crafting</a><a class="" href="../../gameplay/items/tms.html">TM Crafting</a><a class="current" href="../../gameplay/items/fossils.html">Fossils</a><a class="" href="../../gameplay/items/mega-evolution.html">Mega Evolution</a></details>
+<details class="nav-group" open><summary>Items</summary><a class="" href="../../gameplay/items/index.html">Overview</a><a class="current" href="../../gameplay/items/crafting.html">Crafting</a><a class="" href="../../gameplay/items/tms.html">TM Crafting</a><a class="" href="../../gameplay/items/fossils.html">Fossils</a><a class="" href="../../gameplay/items/mega-evolution.html">Mega Evolution</a></details>
 <details class="nav-group"><summary>Mechanics</summary><a class="" href="../../gameplay/mechanics/battle-system.html">Battle System</a><a class="" href="../../gameplay/mechanics/status-conditions.html">Status Conditions</a><a class="" href="../../gameplay/mechanics/weather.html">Weather</a><a class="" href="../../gameplay/mechanics/day-night.html">Day/Night Cycle</a><a class="" href="../../gameplay/mechanics/friendship.html">Friendship</a><a class="" href="../../gameplay/mechanics/breeding.html">Breeding</a><a class="" href="../../gameplay/mechanics/raids.html">Raids</a><a class="" href="../../gameplay/mechanics/pastures.html">Pastures</a><a class="" href="../../gameplay/mechanics/ride-pokemon.html">Ride Pokémon</a><a class="" href="../../gameplay/mechanics/following-pokemon.html">Following Pokémon</a><a class="" href="../../gameplay/mechanics/shiny-pokemon.html">Shiny Pokémon</a><a class="" href="../../gameplay/mechanics/legendary-spawning.html">Legendary Spawning</a><a class="" href="../../gameplay/mechanics/fishing.html">Fishing</a><a class="" href="../../gameplay/mechanics/cooking.html">Cooking</a></details>
 <details class="nav-group"><summary>World</summary><a class="" href="../../gameplay/world/biomes.html">Biomes</a><a class="" href="../../gameplay/world/structures.html">Structures</a><a class="" href="../../gameplay/world/blocks.html">Blocks</a><a class="" href="../../gameplay/world/villages.html">Villages</a><a class="" href="../../gameplay/world/legendary-monuments.html">Legendary Monuments</a><a class="" href="../../gameplay/world/waystones.html">Waystones</a><a class="" href="../../gameplay/world/nether.html">Nether</a><a class="" href="../../gameplay/world/the-end.html">The End</a><a class="" href="../../gameplay/world/custom-builds.html">Custom Builds</a></details>
 <details class="nav-group"><summary>Server Features</summary><a class="" href="../../gameplay/server-features/cobbledollars.html">CobbleDollars</a><a class="" href="../../gameplay/server-features/badges.html">CobbleVerse Badges</a><a class="" href="../../gameplay/server-features/legendary-monuments.html">Legendary Monuments</a><a class="" href="../../gameplay/server-features/safe-pastures.html">Safe Pastures</a><a class="" href="../../gameplay/server-features/lumymon.html">LumyMon</a><a class="" href="../../gameplay/server-features/cobblecuisine.html">CobbleCuisine</a><a class="" href="../../gameplay/server-features/cobblefurnies.html">CobbleFurnies</a><a class="" href="../../gameplay/server-features/economy.html">Economy Overview</a></details>
@@ -34,19 +34,71 @@
 <a class="nav-single" href="../../sources.html">Sources</a>
   </nav>
   <main>
-    <div class="crumb"><a href="../../index.html">Home</a> / Items / Fossils</div>
-    <h1>Fossils</h1>
-    <p class="lede">4 fossil combinations currently configured.</p>
-    
-    <div class="callout"><strong>Auto-generated</strong> from <code>cobblemon/fossils</code> —
-    re-run the extractor after any fossil revival changes.</div>
-    <h2>What is it?</h2>
-    <p>Fossil items can be restored into their living Pokémon at a Fossil Machine / Revival Machine.</p>
-    <h2>Restoration Table</h2>
-    <table><tr><th>Result</th><th>Required Fossil Item(s)</th></tr><tr><td>Genesect Min Perfect Ivs=3</td><td class="mono">dome fossil, dubious disc, minecraft:nether star</td></tr><tr><td>Mewtwo Min Perfect Ivs=2 Aspect=Legendary</td><td class="mono">ancient dna, cloning catalyst</td></tr><tr><td>Mewtwo Min Perfect Ivs=4 Shiny</td><td class="mono">ancient dna, cloning catalyst shiny</td></tr><tr><td>Type: Null</td><td class="mono">fossilized helmet</td></tr></table>
-    <h2>Where do I find fossils?</h2><div class="fill">Dig sites, loot tables, or purchase locations.</div>
-    <h2>Tips &amp; Strategies</h2><ul class="tasks"><li><div class="fill">Tip</div></li></ul>
-    
+    <div class="crumb"><a href="../../index.html">Home</a> / Items / Crafting</div>
+    <h1>Crafting</h1>
+    <p class="lede">Apricorns, Poké Ball tiers, specialty balls, and every other crafting system on the server.</p>
+    <!-- Hand-written content for gameplay/items/crafting.html.
+     This file IS the page body — edit freely, rebuilds never touch it.
+     Cross-checked against the official Cobblemon Wiki (Poké Ball, Apricorn,
+     Ancient Poké Ball pages). -->
+
+<div class="callout"><strong>Hand-written page</strong> — lives in
+<code>content/gameplay/items/crafting.html</code>, safe from the generators. Recipes below are
+cross-checked against the official Cobblemon Wiki; anything server-specific is marked.</div>
+
+<h2>Apricorns — the core catching resource</h2>
+<p>Apricorns grow in seven colors (red, yellow, green, blue, pink, black, white) on apricorn trees.
+Right-click a fully grown apricorn to harvest one — it regrows from a bud, taking about one Minecraft
+day, and harvesting has a ~10% chance to also drop a plantable apricorn seed. Don't break unripe buds:
+they drop nothing. Bone meal speeds growth. A small farm of each color near your base pays for itself
+fast.</p>
+
+<h2>Poké Ball crafting tiers</h2>
+<table>
+<tr><th>Tier</th><th>Recipe pattern</th><th>Catch rate</th></tr>
+<tr><td>Basic balls (Poké, Citrine, Verdant, Azure, Roseate, Slate, Premier)</td>
+<td>4 same-color apricorns around 1 <b>copper ingot</b> (red = Poké Ball, yellow = Citrine, green = Verdant, blue = Azure, pink = Roseate, black = Slate, white = Premier)</td>
+<td>1×</td></tr>
+<tr><td>Great Ball</td><td>Multi-color apricorn pattern + 1 <b>iron ingot</b></td><td>1.5×</td></tr>
+<tr><td>Ultra Ball</td><td>Multi-color apricorn pattern + 1 <b>gold ingot</b></td><td>2×</td></tr>
+<tr><td>Ancient balls (Legends Arceus style)</td><td>2 apricorns + 2 <b>Tumblestones</b> + an ingot (copper/iron/gold by tier). Sky Tumblestone makes the Feather/Wing/Jet line (throws further); Black Tumblestone makes the Ancient Heavy line</td><td>1× / 1.5× / 2×</td></tr>
+</table>
+<p>Tumblestones come from brushing suspicious sand/gravel (Fossil Dig Sites, Ruins) and can then be
+farmed — see <a href="../world/structures.html">Structures</a>.</p>
+
+<h2>Specialty balls worth crafting</h2>
+<table>
+<tr><th>Ball</th><th>Best case</th></tr>
+<tr><td>Quick Ball</td><td>5× on the <b>first turn</b> of battle — the workhorse for routine catches</td></tr>
+<tr><td>Dusk Ball</td><td>3.5× in darkness (light level 0) — caves and night hunts</td></tr>
+<tr><td>Timer Ball</td><td>Climbs each turn up to 4× — long fights against tanky targets</td></tr>
+<tr><td>Net Ball</td><td>3× vs Bug and Water types</td></tr>
+<tr><td>Dive Ball</td><td>3.5× on fully underwater targets</td></tr>
+<tr><td>Lure Ball</td><td>4× on Pokémon hooked while fishing</td></tr>
+<tr><td>Fast Ball</td><td>4× vs 100+ base Speed — flee-prone legendaries like the birds</td></tr>
+<tr><td>Heavy Ball</td><td>4× vs very heavy Pokémon (3000+ hectograms)</td></tr>
+<tr><td>Moon Ball</td><td>4× during a full moon</td></tr>
+<tr><td>Dream Ball</td><td>4× on sleeping targets — pair with Spore/Hypnosis</td></tr>
+<tr><td>Love Ball</td><td>8× when the target is the opposite gender of your lead</td></tr>
+<tr><td>Beast Ball</td><td>5× on Ultra Beasts — but 0.1× on everything else</td></tr>
+</table>
+<p>Second-tier specialty balls use an iron ingot with specific multi-color apricorn patterns — check
+the recipe book in-game or the
+<a href="https://wiki.cobblemon.com/index.php/Pok%C3%A9_Ball">official Poké Ball page</a> for exact layouts.</p>
+
+<h2>Master Ball</h2>
+<p>Not craftable through normal recipes in base Cobblemon. <em>(FILL IN: how it's obtained on this
+server — shop, Pokédex rewards, raid drops?)</em></p>
+
+<h2>Other crafting systems on this server</h2>
+<ul class="tasks">
+<li><a href="tms.html">TM Crafting</a> — 483 craftable TMs across 7 tiers (auto-generated from the datapacks).</li>
+<li><a href="mega-evolution.html">Mega Stones</a> — 32 craftable stones via the zamegas system.</li>
+<li><a href="fossils.html">Fossil restoration</a> — combine fossil halves, revive in the Restoration Tank.</li>
+<li>LumyMon radars &amp; treasure maps — see <a href="../server-features/lumymon.html">LumyMon</a>.</li>
+<li><em>(FILL IN: CobbleDollars shop prices, Cobblecuisine cooking, Bottle Caps usage…)</em></li>
+</ul>
+
   </main>
 </div>
 <script src="../../assets/js/search.js?v=20260714-2210"></script>

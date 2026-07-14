@@ -1,0 +1,13 @@
+{
+  "_how_to_use": "Add an entry keyed by the Pokémon's slug (lowercase, as in the URL ?mon=...). Fields: name, image, note, sections [{title, html}], hide_spawns, hide_stats. Edit this file directly — changes show on page refresh, NO rebuild needed. Full docs: assets/data/README.md",
+
+  "zapdos": {
+    "note": "CobbleVerse tunes this legendary specifically for this pack — its monument generates on Stony Shore (see Legendary Monuments), and a craftable Zapdos Radar exists to track it down.",
+    "sections": [
+      {
+        "title": "Server Notes (example — edit me!)",
+        "html": "<p>This section lives in <code>assets/data/pokemon-custom.json</code>. Write anything here: catch strategies, drop info, screenshots (<code>&lt;img src=\"../../assets/images/...\"&gt;</code>), links — any HTML works. Delete this example whenever you like.</p>"
+      }
+    ]
+  }
+}

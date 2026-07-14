@@ -4,6 +4,7 @@ Static HTML/CSS site, no build step. Unzip and open `index.html` directly in
 a browser, or drag the folder onto Netlify / GitHub Pages / any static host.
 
 ## What's here
+- **EDITING.md** — read this first: how to hand-edit any page (content/ overrides + tools/eject.py) or any Pokémon card (assets/data/pokemon-custom.json) without rebuilds ever overwriting your work.
 - 60+ pages, all cross-linked through a real sidebar nav (collapsible sections).
 - One shared stylesheet: `assets/style.css`.
 - **Pokémon** (`gameplay/pokemon/index.html`) is a searchable/filterable
