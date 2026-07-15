@@ -1,6 +1,6 @@
 /* ===========================================================
    CobbleVerse Wiki — theme
-   Palette: moss (#EDF2E9), forest (#1F3D2B), pokeball red (#E63946),
+   Palette: moss (#EDF2E9), purple (#1F3D2B), pokeball red (#E63946),
             ingot gold (#D9A441), ink (#1B2A1F)
    Display: 'Press Start 2P' (pixel, used sparingly)
    Body: 'IBM Plex Sans'
@@ -10,8 +10,8 @@
 :root{
   --moss:#EDF2E9;
   --panel:#F7FAF4;
-  --forest:#1F3D2B;
-  --forest-dark:#152A1E;
+  --purple:#441844;
+  --purp-dark:#22152a;
   --red:#E63946;
   --gold:#D9A441;
   --ink:#1B2A1F;
@@ -32,7 +32,7 @@ body{
   line-height:1.6;
 }
 
-a{color:var(--forest); text-decoration:none;}
+a{color:var(--purple); text-decoration:none;}
 a:hover{color:var(--red); text-decoration:underline;}
 
 h1,h2,h3,.pixel{
@@ -40,8 +40,8 @@ h1,h2,h3,.pixel{
   line-height:1.5;
   letter-spacing:0.5px;
 }
-h1{font-size:1.1rem; color:var(--forest); margin:0 0 .75rem;}
-h2{font-size:.8rem; color:var(--forest); margin:2rem 0 .75rem; padding-top:.25rem; border-top:2px solid var(--line);}
+h1{font-size:1.1rem; color:var(--purple); margin:0 0 .75rem;}
+h2{font-size:.8rem; color:var(--purple); margin:2rem 0 .75rem; padding-top:.25rem; border-top:2px solid var(--line);}
 h2:first-of-type{border-top:none; padding-top:0;}
 h3{font-size:.65rem; color:var(--ink-soft); margin:1.25rem 0 .5rem;}
 
@@ -52,7 +52,7 @@ code, pre, .mono, table{
 /* ---------- pixel-bevel panel, the signature element ---------- */
 .bevel{
   background:var(--panel);
-  border:2px solid var(--forest);
+  border:2px solid var(--purple);
   border-radius:var(--radius);
   box-shadow:
     inset 2px 2px 0 rgba(255,255,255,0.55),
@@ -60,9 +60,9 @@ code, pre, .mono, table{
     3px 3px 0 rgba(31,61,43,0.15);
 }
 .bevel-dark{
-  background:var(--forest);
+  background:var(--purple);
   color:var(--moss);
-  border:2px solid var(--forest-dark);
+  border:2px solid var(--purp-dark);
   border-radius:var(--radius);
   box-shadow:
     inset 2px 2px 0 rgba(255,255,255,0.08),
@@ -77,14 +77,14 @@ code, pre, .mono, table{
   min-height:100vh;
 }
 .sidebar{
-  background:var(--forest);
+  background:var(--purple);
   color:var(--moss);
   padding:1.25rem 1rem 3rem;
   position:sticky;
   top:0;
   height:100vh;
   overflow-y:auto;
-  border-right:3px solid var(--forest-dark);
+  border-right:3px solid var(--purp-dark);
 }
 .brand{
   display:block;
@@ -98,7 +98,7 @@ code, pre, .mono, table{
   display:inline-block;
   font-family:'JetBrains Mono', monospace;
   font-size:.65rem;
-  background:var(--forest-dark);
+  background:var(--purp-dark);
   color:var(--gold);
   border:1px solid var(--gold);
   border-radius:3px;
@@ -195,7 +195,7 @@ main{padding:2.5rem 3rem 5rem; max-width:880px;}
 
 table{width:100%; border-collapse:collapse; margin:1rem 0; font-size:.85rem;}
 th,td{border:1px solid var(--line); padding:.5rem .6rem; text-align:left;}
-th{background:var(--forest); color:var(--moss); font-family:'IBM Plex Sans',sans-serif; font-weight:600;}
+th{background:var(--purple); color:var(--moss); font-family:'IBM Plex Sans',sans-serif; font-weight:600;}
 tr:nth-child(even) td{background:rgba(31,61,43,0.04);}
 
 /* pokeball-marker checklist */
@@ -224,7 +224,7 @@ ul.tasks li::before{
   padding:2px 8px;
   border-radius:10px;
   background:var(--gold);
-  color:var(--forest-dark);
+  color:var(--purp-dark);
   font-weight:700;
   margin-left:.4rem;
   vertical-align:middle;
@@ -274,7 +274,7 @@ footer.foot{
   position:fixed;
   z-index:60;
   background:var(--panel);
-  border:2px solid var(--forest);
+  border:2px solid var(--purple);
   border-radius:4px;
   padding:4px;
   box-shadow:4px 4px 0 rgba(0,0,0,0.28);
@@ -298,7 +298,7 @@ footer.foot{
    =========================================================== */
 .img-frame{
   background:var(--panel);
-  border:2px solid var(--forest);
+  border:2px solid var(--purple);
   border-radius:var(--radius);
   padding:.4rem;
   box-shadow:3px 3px 0 rgba(31,61,43,0.15);
@@ -365,7 +365,7 @@ main img{max-width:100%; height:auto;}
    =========================================================== */
 .dex-toolbar{
   display:flex; flex-wrap:wrap; gap:.6rem .75rem; align-items:center;
-  background:var(--panel); border:2px solid var(--forest); border-radius:var(--radius);
+  background:var(--panel); border:2px solid var(--purple); border-radius:var(--radius);
   padding:.9rem 1rem; margin:1.25rem 0 1rem;
   box-shadow:inset 2px 2px 0 rgba(255,255,255,0.55), inset -2px -2px 0 rgba(0,0,0,0.08);
   position:sticky; top:0; z-index:5;
@@ -380,7 +380,7 @@ main img{max-width:100%; height:auto;}
   background:#fff;
   color:var(--ink);
 }
-.dex-search:focus{outline:none; border-color:var(--forest);}
+.dex-search:focus{outline:none; border-color:var(--purple);}
 .dex-chip-row{display:flex; flex-wrap:wrap; gap:.35rem;}
 .dex-chip{
   font-family:'JetBrains Mono', monospace;
@@ -396,9 +396,9 @@ main img{max-width:100%; height:auto;}
    browser keeps :hover stuck on a chip after tapping it, which looks
    exactly like it's still selected after deselecting. */
 @media (hover: hover){
-  .dex-chip:hover{border-color:var(--forest); color:var(--forest);}
+  .dex-chip:hover{border-color:var(--purple); color:var(--purple);}
 }
-.dex-chip.active{background:var(--forest); color:var(--moss); border-color:var(--forest-dark);}
+.dex-chip.active{background:var(--purple); color:var(--moss); border-color:var(--purp-dark);}
 .dex-count{
   font-family:'JetBrains Mono', monospace; font-size:.75rem; color:var(--ink-soft);
   margin-left:auto; white-space:nowrap;
@@ -417,7 +417,7 @@ main img{max-width:100%; height:auto;}
 }
 .dex-card{
   background:var(--panel);
-  border:2px solid var(--forest);
+  border:2px solid var(--purple);
   border-radius:var(--radius);
   padding:.6rem .5rem .7rem;
   text-align:center;
@@ -449,25 +449,25 @@ main img{max-width:100%; height:auto;}
 }
 .dex-modal-backdrop.open{display:flex;}
 .dex-modal{
-  background:var(--panel); border:3px solid var(--forest); border-radius:6px;
+  background:var(--panel); border:3px solid var(--purple); border-radius:6px;
   max-width:640px; width:100%; padding:1.5rem 1.75rem 1.75rem; position:relative;
   box-shadow:6px 6px 0 rgba(0,0,0,0.25);
 }
 .dex-modal-close{
   position:absolute; top:.75rem; right:.9rem;
   font-family:'Press Start 2P', monospace; font-size:.8rem;
-  background:var(--forest); color:var(--moss); border:none;
+  background:var(--purple); color:var(--moss); border:none;
   width:2rem; height:2rem; border-radius:3px; cursor:pointer;
 }
 .dex-modal-close:hover{background:var(--red);}
 .dex-modal-head{display:flex; gap:1.25rem; align-items:center; flex-wrap:wrap;}
 .dex-modal-head img{width:120px; height:120px; image-rendering:pixelated;}
-.dex-modal-head h2{font-family:'Press Start 2P',monospace; font-size:1rem; color:var(--forest); margin:0 0 .4rem;}
+.dex-modal-head h2{font-family:'Press Start 2P',monospace; font-size:1rem; color:var(--purple); margin:0 0 .4rem;}
 .dex-modal-types{display:flex; gap:.35rem; margin-bottom:.5rem;}
 .dex-modal-sub{font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--ink-soft);}
 .dex-stat-row{display:grid; grid-template-columns:70px 1fr 34px; align-items:center; gap:.5rem; margin:.2rem 0; font-size:.78rem;}
 .dex-stat-bar{background:var(--line); border-radius:3px; height:9px; overflow:hidden;}
-.dex-stat-fill{height:100%; background:var(--forest);}
+.dex-stat-fill{height:100%; background:var(--purple);}
 .dex-spawn-block{
   border-left:3px solid var(--gold); background:rgba(217,164,65,0.08);
   padding:.6rem .8rem; border-radius:0 3px 3px 0; margin:.5rem 0; font-size:.82rem;
@@ -478,7 +478,7 @@ main img{max-width:100%; height:auto;}
    Trainers & Gyms
    =========================================================== */
 .trainer-card{
-  background:var(--panel); border:2px solid var(--forest); border-radius:var(--radius);
+  background:var(--panel); border:2px solid var(--purple); border-radius:var(--radius);
   padding:1rem 1.2rem; margin:1rem 0;
   box-shadow:3px 3px 0 rgba(31,61,43,0.15);
 }
@@ -487,7 +487,7 @@ main img{max-width:100%; height:auto;}
 .rank-pill{
   font-family:'JetBrains Mono',monospace; font-size:.65rem; font-weight:700; letter-spacing:.4px;
   text-transform:uppercase; padding:2px 9px; border-radius:10px;
-  background:var(--gold); color:var(--forest-dark);
+  background:var(--gold); color:var(--purp-dark);
 }
 .rank-pill.rank-villain{background:var(--red); color:#fff;}
 .rank-pill.rank-champion{background:linear-gradient(135deg,#f0d422,#cc7a00); color:#3a2200;}
@@ -499,16 +499,16 @@ main img{max-width:100%; height:auto;}
   font-family:'JetBrains Mono',monospace;
 }
 .team-mon img{width:48px; height:48px; image-rendering:pixelated;}
-.team-mon .lvl{color:var(--forest); font-weight:700;}
+.team-mon .lvl{color:var(--purple); font-weight:700;}
 .trainer-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; margin:1rem 0;}
 .grunt-table td.mono{font-size:.78rem;}
 .region-nav{display:flex; flex-wrap:wrap; gap:.5rem; margin:1.25rem 0;}
 .region-nav a{
   font-family:'JetBrains Mono',monospace; font-size:.75rem; font-weight:700;
-  padding:.5rem 1rem; border:2px solid var(--forest); border-radius:20px;
-  color:var(--forest); text-decoration:none; background:var(--panel);
+  padding:.5rem 1rem; border:2px solid var(--purple); border-radius:20px;
+  color:var(--purple); text-decoration:none; background:var(--panel);
 }
-.region-nav a:hover{background:var(--forest); color:var(--moss);}
+.region-nav a:hover{background:var(--purple); color:var(--moss);}
 
 /* ---------- site-wide search (sidebar) ---------- */
 .site-search{position:relative; margin-bottom:1rem;}
@@ -529,7 +529,7 @@ main img{max-width:100%; height:auto;}
   position:absolute; top:calc(100% + 4px); left:0; right:-260px;
   max-height:70vh; overflow-y:auto; z-index:40;
   background:var(--panel); color:var(--ink);
-  border:2px solid var(--forest-dark); border-radius:4px;
+  border:2px solid var(--purp-dark); border-radius:4px;
   box-shadow:4px 4px 0 rgba(0,0,0,0.3);
 }
 .site-search-results.open{display:block;}
@@ -542,7 +542,7 @@ main img{max-width:100%; height:auto;}
 .site-search-result .ssr-title{font-size:.85rem; font-weight:600; display:flex; align-items:center; gap:.4rem;}
 .site-search-result .ssr-kind{
   font-family:'JetBrains Mono',monospace; font-size:.58rem; text-transform:uppercase; letter-spacing:.4px;
-  padding:1px 6px; border-radius:8px; background:var(--forest); color:var(--moss); flex-shrink:0;
+  padding:1px 6px; border-radius:8px; background:var(--purple); color:var(--moss); flex-shrink:0;
 }
 .site-search-result .ssr-snippet{font-size:.72rem; color:var(--ink-soft); margin-top:.1rem;}
 .site-search-empty{padding:.75rem; font-size:.78rem; color:var(--ink-soft); font-family:'JetBrains Mono',monospace;}
