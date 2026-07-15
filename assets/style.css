@@ -86,13 +86,15 @@ code, pre, .mono, table{
   overflow-y:auto;
   border-right:3px solid var(--purp-dark);
 }
-.brand{
+.brand-logo{
   display:block;
-  font-family:'Press Start 2P', monospace;
-  font-size:.75rem;
-  color:var(--gold);
   margin-bottom:.25rem;
-  line-height:1.6;
+}
+.brand-logo img{
+  display:block;
+  width:100%;
+  max-width:180px;
+  height:auto;
 }
 .version-tag{
   display:inline-block;
@@ -361,6 +363,37 @@ main img{max-width:100%; height:auto;}
 .rarity-rare{background:#3564b0;} .rarity-ultra-rare{background:linear-gradient(135deg,#a4508b,#5f0a87);}
 
 /* ===========================================================
+   Advanced search results page
+   =========================================================== */
+.adv-result-list{display:flex; flex-direction:column; gap:.6rem; margin:1rem 0 2rem;}
+.adv-result-row{
+  display:block; background:var(--panel); border:2px solid var(--forest); border-radius:var(--radius);
+  padding:.75rem 1rem; text-decoration:none; color:var(--ink);
+  box-shadow:2px 2px 0 rgba(31,61,43,0.1);
+}
+.adv-result-row:hover{text-decoration:none; box-shadow:3px 3px 0 rgba(31,61,43,0.18);}
+.adv-result-top{display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;}
+.adv-result-title{font-weight:700; font-size:.92rem; color:var(--forest-dark);}
+.adv-result-section{font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--ink-soft); margin-top:.15rem;}
+.adv-result-snippet{font-size:.8rem; color:var(--ink-soft); margin-top:.3rem;}
+
+/* ===========================================================
+   Item Database cards
+   =========================================================== */
+.item-card{
+  background:var(--panel); border:2px solid var(--forest); border-radius:var(--radius);
+  padding:.85rem 1rem; box-shadow:2px 2px 0 rgba(31,61,43,0.12);
+}
+.item-card-head{display:flex; justify-content:space-between; align-items:flex-start; gap:.5rem; margin-bottom:.35rem;}
+.item-name{font-weight:700; font-size:.92rem; color:var(--forest-dark);}
+.item-cat-pill{
+  font-size:.6rem; padding:2px 8px; cursor:default; white-space:nowrap;
+  background:var(--moss); color:var(--forest-dark); border-color:var(--line);
+}
+.item-desc{font-size:.82rem; color:var(--ink-soft); margin:0 0 .5rem;}
+.item-wiki-link{font-family:'JetBrains Mono',monospace; font-size:.7rem; color:var(--gold-dark,var(--gold));}
+
+/* ===========================================================
    Pokédex — search / filter bar + card grid + modal
    =========================================================== */
 .dex-toolbar{
@@ -414,6 +447,9 @@ main img{max-width:100%; height:auto;}
   grid-template-columns:repeat(auto-fill, minmax(148px,1fr));
   gap:.75rem;
   margin:1rem 0 2rem;
+}
+.dex-grid.items-grid{
+  grid-template-columns:repeat(auto-fill, minmax(260px,1fr));
 }
 .dex-card{
   background:var(--panel);
@@ -545,7 +581,10 @@ main img{max-width:100%; height:auto;}
   padding:1px 6px; border-radius:8px; background:var(--purple); color:var(--moss); flex-shrink:0;
 }
 .site-search-result .ssr-snippet{font-size:.72rem; color:var(--ink-soft); margin-top:.1rem;}
-.site-search-empty{padding:.75rem; font-size:.78rem; color:var(--ink-soft); font-family:'JetBrains Mono',monospace;}
+.site-search-seeall{
+  text-align:center; font-weight:700; font-size:.75rem;
+  background:rgba(217,164,65,0.1); color:var(--forest);
+}
 
 @media (max-width: 760px){
   .site-search-results{right:0;}

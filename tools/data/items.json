@@ -1,0 +1,1353 @@
+[
+ {
+  "name": "Ability Capsule",
+  "slug": "ability-capsule",
+  "category": "Stat-Changing",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Ability_Capsule",
+  "desc": "Swaps a Pokémon between its two regular abilities."
+ },
+ {
+  "name": "Ability Patch",
+  "slug": "ability-patch",
+  "category": "Stat-Changing",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Ability_Patch",
+  "desc": "Changes a Pokémon's ability to its Hidden Ability."
+ },
+ {
+  "name": "Ability Shield",
+  "slug": "ability-shield",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Ability_Shield",
+  "desc": "Prevents the holder's ability from being changed or suppressed."
+ },
+ {
+  "name": "Absorb Bulb",
+  "slug": "absorb-bulb",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Absorb_Bulb",
+  "desc": "One-use item boosting Special Attack after being hit by a Water move."
+ },
+ {
+  "name": "Air Balloon",
+  "slug": "air-balloon",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Air_Balloon",
+  "desc": "Grants Ground-type immunity until popped by a hit."
+ },
+ {
+  "name": "Ancient Poké Ball",
+  "slug": "ancient-pok-ball",
+  "category": "Poké Ball",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Ancient_Pok%C3%A9_Ball",
+  "desc": ""
+ },
+ {
+  "name": "Antidote",
+  "slug": "antidote",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Antidote",
+  "desc": "Cures poison."
+ },
+ {
+  "name": "Apricorn",
+  "slug": "apricorn",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Apricorn",
+  "desc": "Grows in 7 colors on Apricorn Trees — the core ingredient for every basic Poké Ball."
+ },
+ {
+  "name": "Aprijuice",
+  "slug": "aprijuice",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Aprijuice",
+  "desc": "A drink crafted from Apricorns, used in some recipes and to attract Pokémon."
+ },
+ {
+  "name": "Assault Vest",
+  "slug": "assault-vest",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Assault_Vest",
+  "desc": "Boosts Special Defense but prevents using status moves."
+ },
+ {
+  "name": "Auspicious Armor",
+  "slug": "auspicious-armor",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Auspicious_Armor",
+  "desc": "Evolves Charcadet → Armarouge."
+ },
+ {
+  "name": "Awakening",
+  "slug": "awakening",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Awakening",
+  "desc": "Cures sleep."
+ },
+ {
+  "name": "Berry",
+  "slug": "berry",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Berry",
+  "desc": "Grow on Berry Trees — used for cooking, held-item strategies, and curing status conditions."
+ },
+ {
+  "name": "Berry Juice",
+  "slug": "berry-juice",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Berry_Juice",
+  "desc": "Restores 20 HP when consumed."
+ },
+ {
+  "name": "Big Malasada",
+  "slug": "big-malasada",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Big_Malasada",
+  "desc": "An Alola regional snack that heals and cures status."
+ },
+ {
+  "name": "Big Root",
+  "slug": "big-root",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Big_Root",
+  "desc": "Held item that boosts HP recovered from draining moves like Giga Drain."
+ },
+ {
+  "name": "Binding Band",
+  "slug": "binding-band",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Binding_Band",
+  "desc": "Increases damage dealt by binding/trapping moves."
+ },
+ {
+  "name": "Black Augurite",
+  "slug": "black-augurite",
+  "category": "Archaeology",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Black_Augurite",
+  "desc": "Evolution item for Scyther → Kleavor (Legends: Arceus method)."
+ },
+ {
+  "name": "Black Belt",
+  "slug": "black-belt",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Black_Belt",
+  "desc": "Held item boosting Fighting-type moves."
+ },
+ {
+  "name": "Black Glasses",
+  "slug": "black-glasses",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Black_Glasses",
+  "desc": "Held item boosting Dark-type moves."
+ },
+ {
+  "name": "Black Sludge",
+  "slug": "black-sludge",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Black_Sludge",
+  "desc": "Restores HP every turn for Poison types, damages others."
+ },
+ {
+  "name": "Blunder Policy",
+  "slug": "blunder-policy",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Blunder_Policy",
+  "desc": "Sharply boosts Speed after one of the holder's moves misses."
+ },
+ {
+  "name": "Braised Vivichoke",
+  "slug": "braised-vivichoke",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Braised_Vivichoke",
+  "desc": "A cooked Vivichoke dish."
+ },
+ {
+  "name": "Bright Powder",
+  "slug": "bright-powder",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Bright_Powder",
+  "desc": "Slightly lowers the accuracy of moves used against the holder."
+ },
+ {
+  "name": "Burn Heal",
+  "slug": "burn-heal",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Burn_Heal",
+  "desc": "Cures burn."
+ },
+ {
+  "name": "Campfire Pot",
+  "slug": "campfire-pot",
+  "category": "Poké Ball",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Campfire_Pot",
+  "desc": ""
+ },
+ {
+  "name": "Candied Apple",
+  "slug": "candied-apple",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Candied_Apple",
+  "desc": "A sweet food item."
+ },
+ {
+  "name": "Candied Berries",
+  "slug": "candied-berries",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Candied_Berries",
+  "desc": "A sweet food item made from Berries."
+ },
+ {
+  "name": "Casteliacone",
+  "slug": "casteliacone",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Casteliacone",
+  "desc": "A Unova regional snack food."
+ },
+ {
+  "name": "Cell Battery",
+  "slug": "cell-battery",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Cell_Battery",
+  "desc": "One-use item boosting Attack after being hit by an Electric move."
+ },
+ {
+  "name": "Charcoal Stick",
+  "slug": "charcoal-stick",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Charcoal_Stick",
+  "desc": "Held item boosting Fire-type moves."
+ },
+ {
+  "name": "Chipped Pot",
+  "slug": "chipped-pot",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Chipped_Pot",
+  "desc": "Evolves Sinistea → Polteageist (Chipped/Cracked form matters for value)."
+ },
+ {
+  "name": "Choice Band",
+  "slug": "choice-band",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Choice_Band",
+  "desc": "Boosts Attack but locks the holder into one move."
+ },
+ {
+  "name": "Choice Scarf",
+  "slug": "choice-scarf",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Choice_Scarf",
+  "desc": "Boosts Speed but locks the holder into one move."
+ },
+ {
+  "name": "Choice Specs",
+  "slug": "choice-specs",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Choice_Specs",
+  "desc": "Boosts Special Attack but locks the holder into one move."
+ },
+ {
+  "name": "Cleanse Tag",
+  "slug": "cleanse-tag",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Cleanse_Tag",
+  "desc": "Reduces the rate of wild encounters while walking."
+ },
+ {
+  "name": "Clear Amulet",
+  "slug": "clear-amulet",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Clear_Amulet",
+  "desc": "Prevents the holder's stats from being lowered by opponents."
+ },
+ {
+  "name": "Covert Cloak",
+  "slug": "covert-cloak",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Covert_Cloak",
+  "desc": "Prevents secondary/additional effects of moves used on the holder."
+ },
+ {
+  "name": "Cracked Pot",
+  "slug": "cracked-pot",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Cracked_Pot",
+  "desc": "Evolves Sinistea → Polteageist (Chipped/Cracked form matters for value)."
+ },
+ {
+  "name": "Damp Rock",
+  "slug": "damp-rock",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Damp_Rock",
+  "desc": "Extends the duration of Rain Dance."
+ },
+ {
+  "name": "Deep Sea Scale",
+  "slug": "deep-sea-scale",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Deep_Sea_Scale",
+  "desc": "Evolves Clamperl → Gorebyss."
+ },
+ {
+  "name": "Deep Sea Tooth",
+  "slug": "deep-sea-tooth",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Deep_Sea_Tooth",
+  "desc": "Evolves Clamperl → Huntail."
+ },
+ {
+  "name": "Destiny Knot",
+  "slug": "destiny-knot",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Destiny_Knot",
+  "desc": "Passes on more IVs when breeding; also links infatuation both ways in battle."
+ },
+ {
+  "name": "Dire Hit",
+  "slug": "dire-hit",
+  "category": "Stat-Changing",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Dire_Hit",
+  "desc": "Raises the user's critical hit ratio in battle."
+ },
+ {
+  "name": "Dragon Fang",
+  "slug": "dragon-fang",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Dragon_Fang",
+  "desc": "Held item boosting Dragon-type moves."
+ },
+ {
+  "name": "Dragon Scale",
+  "slug": "dragon-scale",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Dragon_Scale",
+  "desc": "Evolves Seadra → Kingdra."
+ },
+ {
+  "name": "Dubious Disc",
+  "slug": "dubious-disc",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Dubious_Disc",
+  "desc": "Evolves Porygon2 → Porygon-Z."
+ },
+ {
+  "name": "Eject Button",
+  "slug": "eject-button",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Eject_Button",
+  "desc": "Switches the holder out after it's hit."
+ },
+ {
+  "name": "Eject Pack",
+  "slug": "eject-pack",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Eject_Pack",
+  "desc": "Switches the holder out after any of its stats drop."
+ },
+ {
+  "name": "Electirizer",
+  "slug": "electirizer",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Electirizer",
+  "desc": "Evolves Electabuzz → Electivire."
+ },
+ {
+  "name": "Elixir",
+  "slug": "elixir",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Elixir",
+  "desc": "Restores 10 PP to all moves."
+ },
+ {
+  "name": "Ether",
+  "slug": "ether",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Ether",
+  "desc": "Restores 10 PP to one move."
+ },
+ {
+  "name": "Everstone",
+  "slug": "everstone",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Everstone",
+  "desc": "Prevents evolution; passes down a specific nature when bred."
+ },
+ {
+  "name": "Eviolite",
+  "slug": "eviolite",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Eviolite",
+  "desc": "Boosts Defense and Special Defense for Pokémon that can still evolve."
+ },
+ {
+  "name": "Evolution Stone",
+  "slug": "evolution-stone",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Evolution_Stone",
+  "desc": "Fire/Water/Thunder/Leaf/Moon/Sun/Shiny/Dusk/Ice/Dawn Stone — interact to trigger a stone evolution."
+ },
+ {
+  "name": "Exp. Candy",
+  "slug": "exp-candy",
+  "category": "Stat-Changing",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Exp._Candy",
+  "desc": "Grants a set amount of experience points."
+ },
+ {
+  "name": "Exp. Share",
+  "slug": "exp-share",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Exp._Share",
+  "desc": "Held item that splits earned experience with the rest of the party."
+ },
+ {
+  "name": "Expert Belt",
+  "slug": "expert-belt",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Expert_Belt",
+  "desc": "Boosts moves that are super effective."
+ },
+ {
+  "name": "Fairy Feather",
+  "slug": "fairy-feather",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Fairy_Feather",
+  "desc": "Held item boosting Fairy-type moves."
+ },
+ {
+  "name": "Feather",
+  "slug": "feather",
+  "category": "Stat-Changing",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Feather",
+  "desc": "Held/consumed to permanently raise a specific stat by 1 EV point."
+ },
+ {
+  "name": "Fine Remedy",
+  "slug": "fine-remedy",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Fine_Remedy",
+  "desc": "Cures status conditions, mid-tier."
+ },
+ {
+  "name": "Flame Orb",
+  "slug": "flame-orb",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Flame_Orb",
+  "desc": "Burns the holder over time."
+ },
+ {
+  "name": "Float Stone",
+  "slug": "float-stone",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Float_Stone",
+  "desc": "Halves the holder's weight."
+ },
+ {
+  "name": "Focus Band",
+  "slug": "focus-band",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Focus_Band",
+  "desc": "Small chance to survive a KO hit with 1 HP."
+ },
+ {
+  "name": "Focus Sash",
+  "slug": "focus-sash",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Focus_Sash",
+  "desc": "Guarantees surviving a KO hit with 1 HP if at full HP."
+ },
+ {
+  "name": "Fossil",
+  "slug": "fossil",
+  "category": "Archaeology",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Fossil",
+  "desc": "Restore extinct Pokémon at a Fossil Machine — see this wiki's Fossils page for real combinations."
+ },
+ {
+  "name": "Full Heal",
+  "slug": "full-heal",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Full_Heal",
+  "desc": "Cures any status condition."
+ },
+ {
+  "name": "Full Restore",
+  "slug": "full-restore",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Full_Restore",
+  "desc": "Fully restores HP and cures any status condition."
+ },
+ {
+  "name": "Galarica Cuff",
+  "slug": "galarica-cuff",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Galarica_Cuff",
+  "desc": "Evolves Galarian Yamask → Runerigus condition item."
+ },
+ {
+  "name": "Galarica Nuts",
+  "slug": "galarica-nuts",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Galarica_Nuts",
+  "desc": "Crafts into Galarica Cuff/Wreath, used for Alolan/Galarian evolution items."
+ },
+ {
+  "name": "Galarica Wreath",
+  "slug": "galarica-wreath",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Galarica_Wreath",
+  "desc": "Evolves Galarian Slowpoke → Slowking (Galarian)."
+ },
+ {
+  "name": "Grip Claw",
+  "slug": "grip-claw",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Grip_Claw",
+  "desc": "Extends binding-move duration to the maximum."
+ },
+ {
+  "name": "Guard Spec",
+  "slug": "guard-spec",
+  "category": "Stat-Changing",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Guard_Spec",
+  "desc": "Prevents the user's side's stats from being lowered for 5 turns."
+ },
+ {
+  "name": "Hard Stone",
+  "slug": "hard-stone",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Hard_Stone",
+  "desc": "Held item boosting Rock-type moves."
+ },
+ {
+  "name": "Heal Powder",
+  "slug": "heal-powder",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Heal_Powder",
+  "desc": "Cures status conditions (Berry Powder line)."
+ },
+ {
+  "name": "Hearty Grains",
+  "slug": "hearty-grains",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Hearty_Grains",
+  "desc": "A farmable feed crop."
+ },
+ {
+  "name": "Heat Rock",
+  "slug": "heat-rock",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Heat_Rock",
+  "desc": "Extends the duration of Sunny Day."
+ },
+ {
+  "name": "Heavy-Duty Boots",
+  "slug": "heavy-duty-boots",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Heavy-Duty_Boots",
+  "desc": "Immunity to entry hazards."
+ },
+ {
+  "name": "Hyper Potion",
+  "slug": "hyper-potion",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Hyper_Potion",
+  "desc": "Restores 200 HP."
+ },
+ {
+  "name": "Hyper Training",
+  "slug": "hyper-training",
+  "category": "Stat-Changing",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Hyper_Training",
+  "desc": "Maximizes an IV on a fully-leveled Pokémon."
+ },
+ {
+  "name": "Ice Heal",
+  "slug": "ice-heal",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Ice_Heal",
+  "desc": "Cures freeze."
+ },
+ {
+  "name": "Icy Rock",
+  "slug": "icy-rock",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Icy_Rock",
+  "desc": "Extends the duration of Hail/Snow."
+ },
+ {
+  "name": "Iron Ball",
+  "slug": "iron-ball",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Iron_Ball",
+  "desc": "Doubles the holder's weight and grounds Flying types."
+ },
+ {
+  "name": "Jubilife Muffin",
+  "slug": "jubilife-muffin",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Jubilife_Muffin",
+  "desc": "A Sinnoh (Hisui-era) snack food."
+ },
+ {
+  "name": "King's Rock",
+  "slug": "kings-rock",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/King%27s_Rock",
+  "desc": "Evolves Poliwhirl → Politoed and Slowpoke → Slowking when traded/used."
+ },
+ {
+  "name": "Lagging Tail",
+  "slug": "lagging-tail",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Lagging_Tail",
+  "desc": "Makes the holder move last in its priority bracket."
+ },
+ {
+  "name": "Lava Cookie",
+  "slug": "lava-cookie",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Lava_Cookie",
+  "desc": "A Hoenn regional snack that heals and cures status."
+ },
+ {
+  "name": "Leftovers",
+  "slug": "leftovers",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Leftovers",
+  "desc": "Restores a small amount of HP every turn."
+ },
+ {
+  "name": "Life Orb",
+  "slug": "life-orb",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Life_Orb",
+  "desc": "Boosts move power at the cost of recoil damage."
+ },
+ {
+  "name": "Light Ball",
+  "slug": "light-ball",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Light_Ball",
+  "desc": "Sharply boosts Pikachu's Attack and Special Attack."
+ },
+ {
+  "name": "Light Clay",
+  "slug": "light-clay",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Light_Clay",
+  "desc": "Extends the duration of Reflect and Light Screen."
+ },
+ {
+  "name": "Link Cable",
+  "slug": "link-cable",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Link_Cable",
+  "desc": "Trade-evolution item usable without an actual trade."
+ },
+ {
+  "name": "Loaded Dice",
+  "slug": "loaded-dice",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Loaded_Dice",
+  "desc": "Improves the odds of multi-hit moves landing more hits."
+ },
+ {
+  "name": "Lucky Egg",
+  "slug": "lucky-egg",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Lucky_Egg",
+  "desc": "Held item that boosts experience gained in battle."
+ },
+ {
+  "name": "Luminous Moss",
+  "slug": "luminous-moss",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Luminous_Moss",
+  "desc": "One-use item boosting Special Defense after being hit by a Water move."
+ },
+ {
+  "name": "Lumiose Galette",
+  "slug": "lumiose-galette",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Lumiose_Galette",
+  "desc": "A Kalos regional snack food."
+ },
+ {
+  "name": "Magmarizer",
+  "slug": "magmarizer",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Magmarizer",
+  "desc": "Evolves Magmar → Magmortar."
+ },
+ {
+  "name": "Magnet",
+  "slug": "magnet",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Magnet",
+  "desc": "Held item boosting Electric-type moves."
+ },
+ {
+  "name": "Malicious Armor",
+  "slug": "malicious-armor",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Malicious_Armor",
+  "desc": "Evolves Charcadet → Ceruledge."
+ },
+ {
+  "name": "Masterpiece Teacup",
+  "slug": "masterpiece-teacup",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Masterpiece_Teacup",
+  "desc": "Evolves Poltchageist → Sinistcha (rare Unremarkable Masterpiece form)."
+ },
+ {
+  "name": "Max Elixir",
+  "slug": "max-elixir",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Max_Elixir",
+  "desc": "Fully restores PP to all moves."
+ },
+ {
+  "name": "Max Ether",
+  "slug": "max-ether",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Max_Ether",
+  "desc": "Fully restores PP to one move."
+ },
+ {
+  "name": "Max Potion",
+  "slug": "max-potion",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Max_Potion",
+  "desc": "Fully restores HP."
+ },
+ {
+  "name": "Max Revive",
+  "slug": "max-revive",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Max_Revive",
+  "desc": "Revives a fainted Pokémon with full HP."
+ },
+ {
+  "name": "Medicinal Brew",
+  "slug": "medicinal-brew",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Medicinal_Brew",
+  "desc": "A brewed healing item."
+ },
+ {
+  "name": "Medicinal Leek",
+  "slug": "medicinal-leek",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Medicinal_Leek",
+  "desc": "A farmable crop used in several cooking recipes."
+ },
+ {
+  "name": "Mental Herb",
+  "slug": "mental-herb",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Mental_Herb",
+  "desc": "Held item that snaps a Pokémon out of infatuation, Taunt, Encore, and similar effects."
+ },
+ {
+  "name": "Metal Alloy",
+  "slug": "metal-alloy",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Metal_Alloy",
+  "desc": "Evolves Bisharp → Kingambit."
+ },
+ {
+  "name": "Metal Coat",
+  "slug": "metal-coat",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Metal_Coat",
+  "desc": "Evolves Onix → Steelix and Scyther → Scizor."
+ },
+ {
+  "name": "Metal Powder",
+  "slug": "metal-powder",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Metal_Powder",
+  "desc": "Boosts Ditto's Defense."
+ },
+ {
+  "name": "Metronome",
+  "slug": "metronome",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Metronome",
+  "desc": "Power ramps up the longer the same move is used consecutively."
+ },
+ {
+  "name": "Miracle Seed",
+  "slug": "miracle-seed",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Miracle_Seed",
+  "desc": "Held item boosting Grass-type moves."
+ },
+ {
+  "name": "Mirror Herb",
+  "slug": "mirror-herb",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Mirror_Herb",
+  "desc": "Held item that copies an opponent's stat boost back onto the holder."
+ },
+ {
+  "name": "Mochi",
+  "slug": "mochi",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Mochi",
+  "desc": ""
+ },
+ {
+  "name": "Moomoo Milk",
+  "slug": "moomoo-milk",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Moomoo_Milk",
+  "desc": "Restores HP when consumed by a Pokémon."
+ },
+ {
+  "name": "Mulch",
+  "slug": "mulch",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Mulch",
+  "desc": "Farming material with soil/growth uses."
+ },
+ {
+  "name": "Muscle Band",
+  "slug": "muscle-band",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Muscle_Band",
+  "desc": "Held item that slightly boosts physical move power."
+ },
+ {
+  "name": "Mystic Water",
+  "slug": "mystic-water",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Mystic_Water",
+  "desc": "Held item boosting Water-type moves."
+ },
+ {
+  "name": "Never-Melt Ice",
+  "slug": "never-melt-ice",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Never-Melt_Ice",
+  "desc": "Held item boosting Ice-type moves."
+ },
+ {
+  "name": "Old Gateau",
+  "slug": "old-gateau",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Old_Gateau",
+  "desc": "A Sinnoh regional snack that heals and cures status."
+ },
+ {
+  "name": "Open-Faced Sandwich",
+  "slug": "open-faced-sandwich",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Open-Faced_Sandwich",
+  "desc": "A customizable sandwich food item."
+ },
+ {
+  "name": "Oval Stone",
+  "slug": "oval-stone",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Oval_Stone",
+  "desc": "Evolves Happiny → Chansey (during the day)."
+ },
+ {
+  "name": "Paralyze Heal",
+  "slug": "paralyze-heal",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Paralyze_Heal",
+  "desc": "Cures paralysis."
+ },
+ {
+  "name": "Peat Block",
+  "slug": "peat-block",
+  "category": "Archaeology",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Peat_Block",
+  "desc": "Evolution item for Ursaring → Ursaluna in Legends: Arceus style play."
+ },
+ {
+  "name": "Pep-Up Flower",
+  "slug": "pep-up-flower",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pep-Up_Flower",
+  "desc": "A farmable flower with cooking uses."
+ },
+ {
+  "name": "Pewter Crunchies",
+  "slug": "pewter-crunchies",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pewter_Crunchies",
+  "desc": "A regional Kanto snack food."
+ },
+ {
+  "name": "Poison Barb",
+  "slug": "poison-barb",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Poison_Barb",
+  "desc": "Held item boosting Poison-type moves."
+ },
+ {
+  "name": "Poké Bait",
+  "slug": "pok-bait",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pok%C3%A9_Bait",
+  "desc": "Thrown to attract wild Pokémon without battling."
+ },
+ {
+  "name": "Poké Ball",
+  "slug": "pok-ball",
+  "category": "Poké Ball",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pok%C3%A9_Ball",
+  "desc": "The standard catching device — 1x catch rate, craftable from 4 red apricorns and a copper ingot."
+ },
+ {
+  "name": "Poké Cake",
+  "slug": "pok-cake",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pok%C3%A9_Cake",
+  "desc": "A more advanced Campfire Pot food item."
+ },
+ {
+  "name": "Poké Rod",
+  "slug": "pok-rod",
+  "category": "Poké Ball",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pok%C3%A9_Rod",
+  "desc": ""
+ },
+ {
+  "name": "Poké Snack",
+  "slug": "pok-snack",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pok%C3%A9_Snack",
+  "desc": "Made in a Campfire Pot — attracts wild Pokémon when placed."
+ },
+ {
+  "name": "Pokédex",
+  "slug": "pok-dex",
+  "category": "Poké Ball",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pok%C3%A9dex",
+  "desc": ""
+ },
+ {
+  "name": "Pokémon Model",
+  "slug": "pok-mon-model",
+  "category": "Miscellaneous",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pok%C3%A9mon_Model",
+  "desc": ""
+ },
+ {
+  "name": "Ponigiri",
+  "slug": "ponigiri",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Ponigiri",
+  "desc": "A regional snack food item."
+ },
+ {
+  "name": "Potato Mochi",
+  "slug": "potato-mochi",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Potato_Mochi",
+  "desc": "A regional snack food."
+ },
+ {
+  "name": "Potion",
+  "slug": "potion",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Potion",
+  "desc": "Restores 20 HP."
+ },
+ {
+  "name": "Pottery Sherd",
+  "slug": "pottery-sherd",
+  "category": "Miscellaneous",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Pottery_Sherd",
+  "desc": "A decorative archaeology find."
+ },
+ {
+  "name": "Power Anklet",
+  "slug": "power-anklet",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Power_Anklet",
+  "desc": ""
+ },
+ {
+  "name": "Power Band",
+  "slug": "power-band",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Power_Band",
+  "desc": ""
+ },
+ {
+  "name": "Power Belt",
+  "slug": "power-belt",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Power_Belt",
+  "desc": ""
+ },
+ {
+  "name": "Power Bracer",
+  "slug": "power-bracer",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Power_Bracer",
+  "desc": ""
+ },
+ {
+  "name": "Power Herb",
+  "slug": "power-herb",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Power_Herb",
+  "desc": "Held item letting two-turn moves like Solar Beam fire in a single turn."
+ },
+ {
+  "name": "Power Lens",
+  "slug": "power-lens",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Power_Lens",
+  "desc": ""
+ },
+ {
+  "name": "Power Weight",
+  "slug": "power-weight",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Power_Weight",
+  "desc": ""
+ },
+ {
+  "name": "Prism Scale",
+  "slug": "prism-scale",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Prism_Scale",
+  "desc": "Evolves Feebas → Milotic."
+ },
+ {
+  "name": "Protective Pads",
+  "slug": "protective-pads",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Protective_Pads",
+  "desc": "Protects the holder from contact-move side effects."
+ },
+ {
+  "name": "Protector",
+  "slug": "protector",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Protector",
+  "desc": "Evolves Rhydon → Rhyperior."
+ },
+ {
+  "name": "Punching Glove",
+  "slug": "punching-glove",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Punching_Glove",
+  "desc": "Boosts punching move power and removes their contact flag."
+ },
+ {
+  "name": "Quick Claw",
+  "slug": "quick-claw",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Quick_Claw",
+  "desc": "Occasional chance to move first regardless of Speed."
+ },
+ {
+  "name": "Quick Powder",
+  "slug": "quick-powder",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Quick_Powder",
+  "desc": "Boosts Ditto's Speed."
+ },
+ {
+  "name": "Rage Candy Bar",
+  "slug": "rage-candy-bar",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Rage_Candy_Bar",
+  "desc": "A Johto regional snack that heals and cures status."
+ },
+ {
+  "name": "Rare Candy",
+  "slug": "rare-candy",
+  "category": "Stat-Changing",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Rare_Candy",
+  "desc": "Instantly raises a Pokémon's level by one."
+ },
+ {
+  "name": "Razor Claw",
+  "slug": "razor-claw",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Razor_Claw",
+  "desc": "Evolves Sneasel → Weavile at night."
+ },
+ {
+  "name": "Razor Fang",
+  "slug": "razor-fang",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Razor_Fang",
+  "desc": "Evolves Gligar → Gliscor at night."
+ },
+ {
+  "name": "Reaper Cloth",
+  "slug": "reaper-cloth",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Reaper_Cloth",
+  "desc": "Evolves Dusclops → Dusknoir."
+ },
+ {
+  "name": "Red Card",
+  "slug": "red-card",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Red_Card",
+  "desc": "Forces the attacker to switch out after hitting the holder."
+ },
+ {
+  "name": "Relic Coin",
+  "slug": "relic-coin",
+  "category": "Miscellaneous",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Relic_Coin",
+  "desc": "Gimmighoul-line currency item."
+ },
+ {
+  "name": "Remedy",
+  "slug": "remedy",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Remedy",
+  "desc": "Cures status conditions."
+ },
+ {
+  "name": "Revival Herb",
+  "slug": "revival-herb",
+  "category": "Berries & Agriculture",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Revival_Herb",
+  "desc": "Fully heals HP and cures status, but sharply lowers Friendship."
+ },
+ {
+  "name": "Revive",
+  "slug": "revive",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Revive",
+  "desc": "Revives a fainted Pokémon with half HP."
+ },
+ {
+  "name": "Ring Target",
+  "slug": "ring-target",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Ring_Target",
+  "desc": "Removes one of the holder's type immunities."
+ },
+ {
+  "name": "Rocky Helmet",
+  "slug": "rocky-helmet",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Rocky_Helmet",
+  "desc": "Damages attackers that make contact with the holder."
+ },
+ {
+  "name": "Room Service",
+  "slug": "room-service",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Room_Service",
+  "desc": "Lowers Speed once under Trick Room."
+ },
+ {
+  "name": "Sachet",
+  "slug": "sachet",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Sachet",
+  "desc": "Evolves Spritzee → Aromatisse."
+ },
+ {
+  "name": "Safety Goggles",
+  "slug": "safety-goggles",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Safety_Goggles",
+  "desc": "Protects from weather damage and powder moves."
+ },
+ {
+  "name": "Scope Lens",
+  "slug": "scope-lens",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Scope_Lens",
+  "desc": "Raises the holder's critical hit ratio."
+ },
+ {
+  "name": "Scroll of Darkness",
+  "slug": "scroll-of-darkness",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Scroll_of_Darkness",
+  "desc": "Evolves Kubfu → Urshifu (Single Strike Style)."
+ },
+ {
+  "name": "Scroll of Waters",
+  "slug": "scroll-of-waters",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Scroll_of_Waters",
+  "desc": "Evolves Kubfu → Urshifu (Rapid Strike Style)."
+ },
+ {
+  "name": "Sharp Beak",
+  "slug": "sharp-beak",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Sharp_Beak",
+  "desc": "Held item boosting Flying-type moves."
+ },
+ {
+  "name": "Shed Shell",
+  "slug": "shed-shell",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Shed_Shell",
+  "desc": "Guarantees the holder can switch out or flee."
+ },
+ {
+  "name": "Shell Bell",
+  "slug": "shell-bell",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Shell_Bell",
+  "desc": "Restores some HP to the holder based on damage it deals."
+ },
+ {
+  "name": "Shell Helmet",
+  "slug": "shell-helmet",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Shell_Helmet",
+  "desc": "Cosmetic/held item related to Clamperl-line Pokémon."
+ },
+ {
+  "name": "Silk Scarf",
+  "slug": "silk-scarf",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Silk_Scarf",
+  "desc": "Held item boosting Normal-type moves."
+ },
+ {
+  "name": "Silver Powder",
+  "slug": "silver-powder",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Silver_Powder",
+  "desc": "Held item boosting Bug-type moves."
+ },
+ {
+  "name": "Sinister Tea",
+  "slug": "sinister-tea",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Sinister_Tea",
+  "desc": "A themed food item."
+ },
+ {
+  "name": "Smithing Template",
+  "slug": "smithing-template",
+  "category": "Miscellaneous",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Smithing_Template",
+  "desc": "Used for equipment/armor trim crafting."
+ },
+ {
+  "name": "Smoke Ball",
+  "slug": "smoke-ball",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Smoke_Ball",
+  "desc": "Guarantees escape from wild encounters."
+ },
+ {
+  "name": "Smoked-Tail Curry",
+  "slug": "smoked-tail-curry",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Smoked-Tail_Curry",
+  "desc": "A Galar-style curry dish."
+ },
+ {
+  "name": "Smooth Rock",
+  "slug": "smooth-rock",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Smooth_Rock",
+  "desc": "Extends the duration of Sandstorm."
+ },
+ {
+  "name": "Soft Sand",
+  "slug": "soft-sand",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Soft_Sand",
+  "desc": "Held item boosting Ground-type moves."
+ },
+ {
+  "name": "Soothe Bell",
+  "slug": "soothe-bell",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Soothe_Bell",
+  "desc": "Increases the rate a Pokémon gains Friendship."
+ },
+ {
+  "name": "Spell Tag",
+  "slug": "spell-tag",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Spell_Tag",
+  "desc": "Held item boosting Ghost-type moves."
+ },
+ {
+  "name": "Sticky Barb",
+  "slug": "sticky-barb",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Sticky_Barb",
+  "desc": "Damages the holder each turn and can transfer via contact moves."
+ },
+ {
+  "name": "Super Potion",
+  "slug": "super-potion",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Super_Potion",
+  "desc": "Restores 50 HP."
+ },
+ {
+  "name": "Superb Remedy",
+  "slug": "superb-remedy",
+  "category": "Medicine",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Superb_Remedy",
+  "desc": "Cures status conditions and restores some HP."
+ },
+ {
+  "name": "Sweet",
+  "slug": "sweet",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Sweet",
+  "desc": ""
+ },
+ {
+  "name": "Sweet Apple",
+  "slug": "sweet-apple",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Sweet_Apple",
+  "desc": "Evolves Applin → Appletun."
+ },
+ {
+  "name": "Syrupy Apple",
+  "slug": "syrupy-apple",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Syrupy_Apple",
+  "desc": "Evolves Dipplin → Hydrapple."
+ },
+ {
+  "name": "Tart Apple",
+  "slug": "tart-apple",
+  "category": "Evolution Items",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Tart_Apple",
+  "desc": "Evolves Applin → Flapple."
+ },
+ {
+  "name": "Tasty Tail",
+  "slug": "tasty-tail",
+  "category": "Food & Consumables",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Tasty_Tail",
+  "desc": "A cooking/fishing-related consumable."
+ },
+ {
+  "name": "Terrain Extender",
+  "slug": "terrain-extender",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Terrain_Extender",
+  "desc": "Extends the duration of active terrain effects."
+ },
+ {
+  "name": "Terrain Seeds",
+  "slug": "terrain-seeds",
+  "category": "Held Item (Battle)",
+  "wiki_url": "https://wiki.cobblemon.com/index.php/Terrain_Seeds",
+  "desc": ""
+ }
+]

@@ -946,12 +946,74 @@ def build_search_index():
         })
         trainer_count += 1
 
+    items = load("items.json") or []
+    for it in items:
+        entries.append({
+            "type": "item", "title": it["name"],
+            "url": f"gameplay/items/database.html?q={it['name'].replace(' ', '+')}",
+            "section": it["category"],
+            "text": it.get("desc", ""),
+        })
+
     out_dir = os.path.join(SITE_ROOT, "assets", "data")
     os.makedirs(out_dir, exist_ok=True)
     with open(os.path.join(out_dir, "search-index.json"), "w", encoding="utf-8") as f:
         json.dump(entries, f, separators=(",", ":"), ensure_ascii=False)
     page_count = sum(1 for e in entries if e["type"] == "page")
-    print(f"  search-index.json -> {len(entries)} entries ({page_count} pages, {len(mons)} Pokémon, {trainer_count} trainers)")
+    print(f"  search-index.json -> {len(entries)} entries ({page_count} pages, {len(mons)} Pokémon, {trainer_count} trainers, {len(items)} items)")
+
+# =================================================================
+# ITEM DATABASE  ->  gameplay/items/database.html
+# =================================================================
+def build_items_database_page():
+    items = load("items.json")
+    if not items:
+        write_page("gameplay/items/database.html", "Item Database", basic_guide_page("Item Database"),
+            crumb='<a href="../../index.html">Home</a> / Items / Item Database')
+        print("  items/database.html -> placeholder (no items.json)")
+        return
+
+    data_dir = os.path.join(SITE_ROOT, "assets", "data")
+    os.makedirs(data_dir, exist_ok=True)
+    with open(os.path.join(data_dir, "items.json"), "w", encoding="utf-8") as f:
+        json.dump(items, f, separators=(",", ":"), ensure_ascii=False)
+
+    cat_counts = {}
+    for it in items:
+        cat_counts[it["category"]] = cat_counts.get(it["category"], 0) + 1
+    cat_summary = " · ".join(f"{v} {k}" for k, v in sorted(cat_counts.items(), key=lambda kv: -kv[1]))
+
+    content = f"""
+    <div class="callout"><strong>{len(items)} items</strong>, scraped from the official
+    <a href="https://wiki.cobblemon.com/index.php?title=Category:Item" target="_blank" rel="noopener">Cobblemon Wiki's item category</a>
+    and organized using its own category structure. Summaries are written fresh for this wiki, not copied —
+    click through to the official page on any card for full detail, crafting recipes, and images.</div>
+    <p class="mono" style="font-size:.75rem;">{cat_summary}</p>
+
+    <div data-items-root data-items-json="../../assets/data/items.json">
+      <div class="dex-toolbar">
+        <input class="dex-search" type="search" placeholder="Search items by name or effect…" aria-label="Search items">
+        <span class="dex-count"></span>
+        <div class="dex-chip-row categories" aria-label="Filter by category"></div>
+      </div>
+      <div class="dex-grid items-grid"><div class="dex-empty">Loading items…</div></div>
+    </div>
+
+    <p class="mono" style="font-size:.7rem;">A handful of very recently added items may not be listed yet —
+    the <a href="https://wiki.cobblemon.com/index.php?title=Category:Item" target="_blank" rel="noopener">official category page</a>
+    is always the complete, current source.</p>
+    """
+    write_page("gameplay/items/database.html", "Item Database", content,
+        crumb='<a href="../../index.html">Home</a> / Items / Item Database',
+        lede=f"{len(items)} items across {len(cat_counts)} categories — search, filter, click through for full detail.")
+
+    path = os.path.join(SITE_ROOT, "gameplay/items/database.html")
+    with open(path, "r", encoding="utf-8") as f:
+        html = f.read()
+    html = html.replace("</body>", f'<script src="../../assets/js/items.js?v={BUILD_STAMP}"></script>\n</body>')
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"  items/database.html -> {len(items)} items across {len(cat_counts)} categories")
 
 # =================================================================
 def main():
@@ -966,6 +1028,7 @@ def main():
     build_pokedex_page()
     build_trainers_pages()
     build_mega_evolution_page()
+    build_items_database_page()
     build_search_index()  # must run last — it scans the final rendered HTML of every page
     print("\nDone. These pages now reflect the extracted datapack data:")
     print("  gameplay/mechanics/raids.html")

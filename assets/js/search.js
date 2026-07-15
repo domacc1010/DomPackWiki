@@ -9,7 +9,7 @@
   "use strict";
 
   var MAX_RESULTS = 9;
-  var KIND_LABEL = { page: "Page", pokemon: "Pokémon", trainer: "Trainer" };
+  var KIND_LABEL = { page: "Page", pokemon: "Pokémon", trainer: "Trainer", item: "Item" };
 
   function debounce(fn, ms) {
     var t;
@@ -52,7 +52,7 @@
         results.classList.add("open");
         return;
       }
-      results.innerHTML = items.map(function (it, i) {
+      var rows = items.map(function (it, i) {
         var href = prefix + it.url;
         var snippet = (it.text || "").slice(0, 110);
         return '<a class="site-search-result" data-i="' + i + '" href="' + href + '">' +
@@ -60,6 +60,9 @@
           (it.section ? '<div class="ssr-snippet">' + it.section + '</div>' : (snippet ? '<div class="ssr-snippet">' + snippet + '…</div>' : '')) +
           '</a>';
       }).join("");
+      var seeAllHref = prefix + "search.html?q=" + encodeURIComponent(q);
+      rows += '<a class="site-search-result site-search-seeall" href="' + seeAllHref + '">See all results &amp; filters →</a>';
+      results.innerHTML = rows;
       results.classList.add("open");
     }
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CobbleVerse Wiki · CobbleVerse Wiki</title>
+<title>Advanced Search · CobbleVerse Wiki</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css?v=20260715-0755">
 </head>
@@ -17,8 +17,8 @@
       <input type="search" class="site-search-input" placeholder="Search the wiki…" aria-label="Search the wiki" autocomplete="off">
       <div class="site-search-results"></div>
     </div>
-    <a class="nav-single current" href="index.html">Home</a>
-<a class="nav-single" href="search.html">Advanced Search</a>
+    <a class="nav-single" href="index.html">Home</a>
+<a class="nav-single current" href="search.html">Advanced Search</a>
 <details class="nav-group"><summary>Getting Started</summary><a class="" href="gameplay/getting-started/starter-guide.html">Starter Guide</a><a class="" href="gameplay/getting-started/controls.html">Controls</a><a class="" href="gameplay/getting-started/commands.html">Commands</a><a class="" href="gameplay/getting-started/first-pokemon.html">First Pokémon</a><a class="" href="gameplay/getting-started/money.html">Money</a><a class="" href="gameplay/getting-started/badges.html">Badges</a><a class="" href="gameplay/getting-started/waystones.html">Waystones</a><a class="" href="gameplay/getting-started/breeding.html">Breeding</a><a class="" href="gameplay/getting-started/raids.html">Raids</a></details>
 <a class="nav-single" href="gameplay/pokemon/index.html">Pokémon</a>
 <details class="nav-group"><summary>Trainers & Gyms</summary><a class="" href="gameplay/trainers/index.html">Overview</a><a class="" href="gameplay/trainers/kanto.html">Kanto</a><a class="" href="gameplay/trainers/johto.html">Johto</a><a class="" href="gameplay/trainers/hoenn.html">Hoenn</a><a class="" href="gameplay/trainers/sinnoh.html">Sinnoh</a><a class="" href="gameplay/trainers/hisui.html">Hisui</a><a class="" href="gameplay/trainers/villains.html">Villainous Teams</a><a class="" href="gameplay/trainers/other.html">Other Notable Trainers</a></details>
@@ -35,28 +35,28 @@
 <a class="nav-single" href="sources.html">Sources</a>
   </nav>
   <main>
-    <div class="crumb">Home</div>
-    <h1>CobbleVerse Wiki</h1>
-    <p class="lede">The official guide for CobbleVerse — a DomPack player guide, not a pasted-together mod list.</p>
+    <div class="crumb"><a href="index.html">Home</a> / Advanced Search</div>
+    <h1>Advanced Search</h1>
+    <p class="lede">Search everything on this wiki in one place — pages, Pokémon, trainers, and items — with filters.</p>
     
-    <div class="card-grid">
-      <div class="card bevel"><h3>Getting Started</h3><p>New player onboarding — starter, controls, commands, first Pokémon, waystones.</p></div>
-      <div class="card bevel"><h3>Pokémon</h3><p>The largest section. Types, spawns, moves, breeding, competitive builds.</p></div>
-      <div class="card bevel"><h3>Server Features</h3><p>CobbleDollars, Badges, Legendary Monuments — systems unique to this server.</p></div>
-      <div class="card bevel"><h3>Technical</h3><p>Admin commands, configs, performance mods, troubleshooting.</p></div>
+    <div class="callout">Search across every page, all 1024 Pokémon, every named trainer, and the
+    <a href="gameplay/items/database.html">Item Database</a> — all from one place. Pick a type to narrow
+    results, then (where useful) a section/category within that type.</div>
+
+    <div data-search-root data-depth="0">
+      <div class="dex-toolbar">
+        <input class="dex-search" type="search" placeholder="Search everything…" aria-label="Search everything" autocomplete="off">
+        <span class="dex-count"></span>
+        <div class="dex-chip-row types" aria-label="Filter by type"></div>
+        <div class="dex-chip-row sections" aria-label="Filter by section or category"></div>
+      </div>
+      <div class="adv-result-list"><div class="dex-empty">Loading search index…</div></div>
     </div>
-    <h2>Server Systems</h2>
-    <ul class="tasks">
-      <li>CobbleDollars</li><li>Badges</li><li>Legendary Monuments</li>
-      <li>Safe Pastures</li><li>Economy</li><li>Custom Features</li>
-    </ul>
-    <div class="callout"><strong>Build order tip:</strong> Write Server Features first (no source exists anywhere
-    else for those), then Getting Started (short, high traffic), then batch-generate Pokémon pages last from the
-    Cobblemon datapacks — see the Sources page.</div>
     
   </main>
 </div>
 <script src="assets/js/search.js?v=20260715-0755"></script>
 <script src="assets/js/peek.js?v=20260715-0755"></script>
+<script src="assets/js/advsearch.js?v=20260715-0755"></script>
 </body>
 </html>

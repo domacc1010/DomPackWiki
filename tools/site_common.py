@@ -24,6 +24,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
 # ---------------------------------------------------------------
 NAV = [
     ("Home", "index.html", None),
+    ("Advanced Search", "search.html", None),
     ("Getting Started", None, [
         ("Starter Guide", "gameplay/getting-started/starter-guide.html"),
         ("Controls", "gameplay/getting-started/controls.html"),
@@ -48,6 +49,7 @@ NAV = [
     ]),
     ("Items", None, [
         ("Overview", "gameplay/items/index.html"),
+        ("Item Database", "gameplay/items/database.html"),
         ("Crafting", "gameplay/items/crafting.html"),
         ("TM Crafting", "gameplay/items/tms.html"),
         ("Fossils", "gameplay/items/fossils.html"),
@@ -153,7 +155,7 @@ PAGE_TMPL = """<!DOCTYPE html>
 <body>
 <div class="shell">
   <nav class="sidebar">
-    <span class="brand">COBBLEVERSE<br>WIKI</span>
+    <a href="{home_href}" class="brand-logo"><img src="{logo_href}" alt="CobbleVerse Wiki"></a>
     <span class="version-tag">MC 1.21.1 · Cobblemon 1.7.3</span>
     <span class="build-tag">build {build_stamp}</span>
     <div class="site-search" data-depth="{depth}">
@@ -196,11 +198,14 @@ def write_page(path, title, content, crumb="", lede=""):
     css_href = rel(depth, "assets/style.css") + "?v=" + BUILD_STAMP
     search_js_href = rel(depth, "assets/js/search.js") + "?v=" + BUILD_STAMP
     peek_js_href = rel(depth, "assets/js/peek.js") + "?v=" + BUILD_STAMP
+    logo_href = rel(depth, "assets/images/website/icon.png") + "?v=" + BUILD_STAMP
+    home_href = rel(depth, "index.html")
     lede_html = f'<p class="lede">{lede}</p>' if lede else ""
     html = PAGE_TMPL.format(
         title=title, fonts=FONTS, css_href=css_href, depth=depth,
         nav=render_nav(path, depth), crumb=crumb, lede=lede_html, content=content,
         search_js_href=search_js_href, peek_js_href=peek_js_href, build_stamp=BUILD_STAMP,
+        logo_href=logo_href, home_href=home_href,
     )
     with open(full, "w") as f:
         f.write(html)

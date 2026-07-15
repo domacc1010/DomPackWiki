@@ -18,10 +18,20 @@ a browser, or drag the folder onto Netlify / GitHub Pages / any static host.
   teams (species, level, moves, nature, ability, items) pulled straight from
   the roaming-trainer datapack.
 - **Search** (top of the sidebar, every page) finds anything on the site —
-  page content, all 1024 Pokémon, and every named trainer — from a single
-  box. Built from `assets/data/search-index.json`, regenerated automatically
-  by `tools/build_dynamic_pages.py` as its last step (it scans the final
-  rendered HTML of every page, so it always reflects current content).
+  page content, all 1024 Pokémon, every named trainer, and every item — from
+  a single box, live as you type. Built from `assets/data/search-index.json`,
+  regenerated automatically by `tools/build_dynamic_pages.py` as its last
+  step (it scans the final rendered HTML of every page, so it always
+  reflects current content).
+- **Item Database** (`gameplay/items/database.html`) — 193 items scraped from
+  the official Cobblemon Wiki's item category, organized into the wiki's own
+  categories (Poké Ball, Held Item, Evolution Items, Medicine, etc.) with
+  original one-line summaries and a link to the official page for full
+  detail. Same search/filter grid pattern as the Pokédex.
+- **Advanced Search** (`search.html`, linked at the top of every sidebar) —
+  a full results page searching everything at once (pages, Pokémon,
+  trainers, items) with type and category filters. The sidebar's quick
+  search links here via "See all results & filters."
 - Items section is an index page with a copyable in-page template, since it
   will have more entries than the rest of the site — duplicate the template
   block into a new page per item once you're ready.

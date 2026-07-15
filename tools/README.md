@@ -47,6 +47,27 @@ still has `fill`-style placeholders for the parts no datapack can answer
 (where to find something in-world, tips, strategy) — the goal is to remove
 the tedious data-entry, not replace the writing.
 
+### The Item Database (`gameplay/items/database.html`)
+Scraped from the official Cobblemon Wiki's `Category:Item` (223 pages) and
+its curated `Items` overview page (which supplies clean categories: Poké
+Ball, Held Item, Evolution Items, Medicine, Stat-Changing, Berries &
+Agriculture, Food & Consumables, Archaeology, Miscellaneous). 193 items made
+it through after filtering out non-item wiki pages (talk/template/user
+sandbox pages that were incorrectly in the category). Summaries are written
+fresh for this wiki, not copied from the source — each card links out to the
+official page for full detail/images. Source data: `tools/data/items.json`
+(re-run the scrape and re-paste into `tools/data/items.json` if the item
+roster changes — there's no automated re-scrape script since it required a
+one-time upload of the category page's HTML).
+
+### Advanced Search (`search.html`)
+A dedicated results page with type + section filters, reading the same
+`assets/data/search-index.json` the sidebar search uses. The sidebar
+dropdown's "See all results & filters" link lands here with the query
+pre-filled. No separate data file — `build_search_page()` in
+`build_static_pages.py` just builds the shell; `assets/js/advsearch.js`
+does the filtering client-side.
+
 ### The Blocks page (`gameplay/world/blocks.html`)
 Unlike everything else in this table, block definitions (what a Healing
 Machine does, what an Apricorn Tree drops) are compiled into the Cobblemon

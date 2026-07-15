@@ -17,7 +17,35 @@ its sidebar never drifts out of sync with the NAV in site_common.py.
 """
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from site_common import write_page, fill, basic_guide_page, server_feature_page  # noqa: E402
+from site_common import write_page, fill, basic_guide_page, server_feature_page, SITE_ROOT, BUILD_STAMP  # noqa: E402
+
+# ---------------------------------------------------------------
+# ADVANCED SEARCH  ->  search.html (root)
+# ---------------------------------------------------------------
+def build_search_page():
+    content = """
+    <div class="callout">Search across every page, all 1024 Pokémon, every named trainer, and the
+    <a href="gameplay/items/database.html">Item Database</a> — all from one place. Pick a type to narrow
+    results, then (where useful) a section/category within that type.</div>
+
+    <div data-search-root data-depth="0">
+      <div class="dex-toolbar">
+        <input class="dex-search" type="search" placeholder="Search everything…" aria-label="Search everything" autocomplete="off">
+        <span class="dex-count"></span>
+        <div class="dex-chip-row types" aria-label="Filter by type"></div>
+        <div class="dex-chip-row sections" aria-label="Filter by section or category"></div>
+      </div>
+      <div class="adv-result-list"><div class="dex-empty">Loading search index…</div></div>
+    </div>
+    """
+    write_page("search.html", "Advanced Search", content, crumb='<a href="index.html">Home</a> / Advanced Search',
+        lede="Search everything on this wiki in one place — pages, Pokémon, trainers, and items — with filters.")
+    path = os.path.join(SITE_ROOT, "search.html")
+    with open(path, "r", encoding="utf-8") as f:
+        html = f.read()
+    html = html.replace("</body>", f'<script src="assets/js/advsearch.js?v={BUILD_STAMP}"></script>\n</body>')
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html)
 
 # ---------------------------------------------------------------
 # HOME
@@ -327,6 +355,7 @@ def build_crafting_page():
 def main():
     print("Rebuilding static template pages...")
     build_home()
+    build_search_page()
     build_getting_started()
     build_items_index()
     build_crafting_page()
